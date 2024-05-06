@@ -837,7 +837,7 @@ export class ModelosComponent implements OnInit {
         // Obtener la posición actual del scroll en el eje Y
         const scrollYPos = window.scrollY || window.pageYOffset;
 
-        console.log(scrollYPos)
+        // console.log(scrollYPos)
 
         if (scrollYPos < 550){
           if (this.banner) {

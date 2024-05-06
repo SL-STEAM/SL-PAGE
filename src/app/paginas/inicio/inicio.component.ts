@@ -19,7 +19,7 @@ import { ViewportScroller } from '@angular/common';
 
 
 export class InicioComponent implements OnInit {
-  
+
   @ViewChild('videoElement', { static: false }) videoElement?: ElementRef;
   @ViewChild('playButton', { static: false }) playButton?: ElementRef;
 
@@ -51,7 +51,7 @@ export class InicioComponent implements OnInit {
   cartaPantalla: boolean = true;
   cartaTuerca: boolean = true;
   cartaCabeza: boolean = true;
-  
+
 
   marginTopDiv: string = '30px';
 
@@ -90,7 +90,7 @@ export class InicioComponent implements OnInit {
   @ViewChild('crea') crea!: ElementRef;
   @ViewChild('arriesga') arriesga!: ElementRef;
   @ViewChild('provo') provo!: ElementRef;
-  
+
   botonPerpis: boolean = true;
   botonDina: boolean = true;
   botonCrea: boolean = true;
@@ -127,14 +127,12 @@ export class InicioComponent implements OnInit {
 
   indiceFlechaProvo: number = 0;
 
-  animationContainerComillas: HTMLElement | null = null;
+  // animationContainerComillas: HTMLElement | null = null;
 
-  
+
 
   constructor(private viewportScroller: ViewportScroller, private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder, private showmodal: ModalService){
- 
-     
-   
+
   }
 
 
@@ -153,7 +151,7 @@ export class InicioComponent implements OnInit {
         this.botonPerpis = true;
       }
 
-      
+
     }
   }
 
@@ -172,7 +170,7 @@ export class InicioComponent implements OnInit {
         this.botonDina = true;
       }
 
-      
+
     }
   }
 
@@ -191,7 +189,7 @@ export class InicioComponent implements OnInit {
         this.botonCrea = true;
       }
 
-      
+
     }
   }
 
@@ -208,7 +206,7 @@ export class InicioComponent implements OnInit {
         this.botonArriesga = true;
       }
 
-      
+
     }
   }
 
@@ -225,11 +223,11 @@ export class InicioComponent implements OnInit {
         this.botonProvo = true;
       }
 
-      
+
     }
   }
 
-  
+
   cambiarF(){
     this.facebook = false;
     this.facebookColor = true;
@@ -260,7 +258,7 @@ export class InicioComponent implements OnInit {
     this.emailColor = false;
   }
 
-  
+
   cambiarL(){
     this.link = false;
     this.linkColor = true;
@@ -271,7 +269,7 @@ export class InicioComponent implements OnInit {
     this.linkColor = false;
   }
 
-  
+
   cambiarI(){
     this.instagram = false;
     this.instagramColor = true;
@@ -306,7 +304,7 @@ export class InicioComponent implements OnInit {
 }
 
 
- 
+
   mostrarInfoEmpresas(){
 
     this.botonEmpresasBlanco = false;
@@ -386,33 +384,33 @@ export class InicioComponent implements OnInit {
       const offset = sectionToScrollTo.getBoundingClientRect().top; // Calcula la posición del elemento respecto a la parte superior de la ventana
       const duration = 300; // Duración del desplazamiento en milisegundos
       const start = this.viewportScroller.getScrollPosition(); // Posición de inicio
-  
+
       let startTime: number;
-  
+
       // Función de animación para realizar el desplazamiento suave
       const animateScroll = (timestamp: number) => {
         startTime = startTime || timestamp;
         const progress = timestamp - startTime;
         const easeInOutQuad = (t: number) => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-  
+
         this.viewportScroller.scrollToPosition([start[0], easeInOutQuad(progress / duration) * offset + start[1]]);
-  
+
         if (progress < duration) {
           requestAnimationFrame(animateScroll);
         }
       };
-  
+
       requestAnimationFrame(animateScroll);
     }
   }
 
-  ngOnInit(): void {    
-   
+  ngOnInit(): void {
+
 
     window.scrollTo(0, 0);
-    
+
     const animationContainer = document.getElementById('cerebro');
-  
+
     if (animationContainer) {
       const animation1 = lottie.loadAnimation({ container: animationContainer, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/cerebrito.json' });
       animation1.addEventListener('DOMLoaded', () => {
@@ -420,15 +418,15 @@ export class InicioComponent implements OnInit {
     }
 
     const animationContainerOnda = document.getElementById('ondaGris');
-  
+
     if (animationContainerOnda) {
-      const animation1 = lottie.loadAnimation({ container: animationContainerOnda, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/ondaGris.json' });
+      const animation1 = lottie.loadAnimation({ container: animationContainerOnda, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/OndaColores.json' });
       animation1.addEventListener('DOMLoaded', () => {
       });
     }
 
     const animationContainer2 = document.getElementById('ojo');
-  
+
     if (animationContainer2) {
       const animation2 = lottie.loadAnimation({ container: animationContainer2, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/ojos.json' });
       animation2.addEventListener('DOMLoaded', () => {
@@ -441,34 +439,36 @@ export class InicioComponent implements OnInit {
       const animation3 = lottie.loadAnimation({ container: animationContainer3, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/flecha.json' });
       animation3.addEventListener('DOMLoaded', () => {
       });
-    }    
+    }
 
     const animationContainer22 = document.getElementById('invisub');
-  
+
     if (animationContainer22) {
       const animation22 = lottie.loadAnimation({ container: animationContainer22, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/invisub.json' });
       animation22.addEventListener('DOMLoaded', () => {
       });
 
-      
+
     animation22.setSpeed(0.8);
     }
 
     const animationContainer2222 = document.getElementById('tx');
-  
+
     if (animationContainer2222) {
-      
+
       timer(5400).subscribe(() => {
 
-      const animation63 = lottie.loadAnimation({ container: animationContainer2222, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/tx.json' });
- 
+      const animation63 = lottie.loadAnimation({ container: animationContainer2222, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/tx.json' });
+
     animation63.addEventListener('DOMLoaded', () => {
     });
 
-    animation63.setSpeed(0.6);
+    animation63.setSpeed(0.9);
 
     });
-    
+
+
+
 
 
     }
@@ -486,7 +486,7 @@ export class InicioComponent implements OnInit {
     }
 
     const animationContainer111 = document.getElementById('perspicaces');
-  
+
     if (animationContainer111) {
       const animation1 = lottie.loadAnimation({ container: animationContainer111, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/Medio/perpi.json' });
       animation1.addEventListener('DOMLoaded', () => {
@@ -496,7 +496,7 @@ export class InicioComponent implements OnInit {
     }
 
     const animationContainer222 = document.getElementById('posit');
-  
+
     if (animationContainer222) {
       const animation2 = lottie.loadAnimation({ container: animationContainer222, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Iconosinicio/posit.json' });
       animation2.addEventListener('DOMLoaded', () => {
@@ -589,7 +589,7 @@ export class InicioComponent implements OnInit {
     const animationContainerDina = document.getElementById('dina');
 
     if (animationContainerDina) {
-      const animation3 = lottie.loadAnimation({ container: animationContainerDina, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Medio/dina.json' });
+      const animation3 = lottie.loadAnimation({ container: animationContainerDina, renderer: 'svg', loop: false, autoplay: false, path: 'assets/json/Medio/dina.json' });
       animation3.addEventListener('DOMLoaded', () => {
       });
 
@@ -599,11 +599,11 @@ export class InicioComponent implements OnInit {
     const animationContainerCrea = document.getElementById('crea');
 
     if (animationContainerCrea) {
-      const animation3 = lottie.loadAnimation({ container: animationContainerCrea, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Medio/crea.json' });
+      const animation3 = lottie.loadAnimation({ container: animationContainerCrea, renderer: 'svg', loop: false, autoplay: false, path: 'assets/json/Medio/crea.json' });
       animation3.addEventListener('DOMLoaded', () => {
       });
 
-      animation3.setSpeed(0.3);
+      // animation3.setSpeed(0.3);
     }
 
 
@@ -629,16 +629,21 @@ export class InicioComponent implements OnInit {
     }
 
 
+    const animationComillas = document.getElementById('comillas2');
 
+    if (animationComillas) {
+      const animations = lottie.loadAnimation({ container: animationComillas, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/comillas2.json' });
+      animations.addEventListener('DOMLoaded', () => {
+      });
+    }
 
- 
 
   }
 
 
   banderaLinea1 = true;
 
-  
+
   banderaLinea2 = true;
 
   banderaLinea3 = true;
@@ -647,7 +652,6 @@ export class InicioComponent implements OnInit {
 
   banderaLineaInit = true;
 
-  
   banderaLineaInitC= true;
 
   @HostListener('window:scroll', ['$event'])
@@ -655,7 +659,7 @@ export class InicioComponent implements OnInit {
         // Obtener la posición actual del scroll en el eje Y
         const scrollYPos = window.scrollY || window.pageYOffset;
 
-        console.log(scrollYPos)
+        // console.log(scrollYPos)
 
         if (scrollYPos < 1040){
           if (this.banner) {
@@ -668,55 +672,18 @@ export class InicioComponent implements OnInit {
           }
         }
 
-        if(scrollYPos < 50){
-
-          if(this.animationContainerComillas){
-            this.animationContainerComillas.innerHTML = '';
-          }
-
-        }
-        
-        if(scrollYPos > 320){
-
-          
-          this.animationContainerComillas = document.getElementById('comillas2');
-
-          if (this.animationContainerComillas) {
-            const animation5 = lottie.loadAnimation({ container: this.animationContainerComillas, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/comillas.json' });
-            animation5.addEventListener('DOMLoaded', () => {
-            });
-      
-            animation5.setSpeed(1.1);
-
-
-            if(scrollYPos > 809){
-
-              this.animationContainerComillas.innerHTML = '';
-            }
-
-         
-
-            
-
-           
-
-          }
-
-          
-        }
-
 
         if(scrollYPos > 1050 && this.banderaLinea1 == true){
 
           this.banderaLinea1 = false;
-          
+
           const animationContainer5 = document.getElementById('somos');
 
           if (animationContainer5) {
             const animation5 = lottie.loadAnimation({ container: animationContainer5, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/somos.json' });
             animation5.addEventListener('DOMLoaded', () => {
             });
-      
+
             animation5.setSpeed(0.27333);
           }
 
@@ -726,9 +693,9 @@ export class InicioComponent implements OnInit {
             const animation6 = lottie.loadAnimation({ container: animationContainer6, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/lineaTexto.json' });
             animation6.addEventListener('DOMLoaded', () => {
             });
-      
+
             animation6.setSpeed(0.2);
-      
+
           }
 
 
@@ -738,27 +705,27 @@ export class InicioComponent implements OnInit {
         if(scrollYPos > 3220 && this.banderaLinea4 == true){
 
           this.banderaLinea4 = false;
-          
+
           const animationContainerChico = document.getElementById('mancae1');
 
           if (animationContainerChico) {
 
-          
-      
+
+
             timer(0).subscribe(() => {
-      
-            const animation16 = lottie.loadAnimation({ container: animationContainerChico, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/mancae1.json' });
+
+            const animation16 = lottie.loadAnimation({ container: animationContainerChico, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/mancae1.json' });
             animation16.addEventListener('DOMLoaded', () => {
             });
-      
-            animation16.setSpeed(0.2);
-      
+
+            animation16.setSpeed(0.1);
+
             if (this.panama) {
               this.panama.nativeElement.style.display = 'block';
             }
-      
+
           });
-      
+
           }
         }
 
@@ -776,9 +743,9 @@ export class InicioComponent implements OnInit {
             this.tituloPuente.nativeElement.style.display = 'block';
           }
 
-  
 
-          
+
+
 
         }
 
@@ -805,34 +772,34 @@ export class InicioComponent implements OnInit {
           const animationcabezota = document.getElementById('cabezota');
 
           if (animationcabezota) {
-            const animation5 = lottie.loadAnimation({ container: animationcabezota, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/cabezota2.json' });
+            const animation5 = lottie.loadAnimation({ container: animationcabezota, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/cabezota2.json' });
             animation5.addEventListener('DOMLoaded', () => {
             });
-      
+
             animation5.setSpeed(1);
           }
 
           const animationbola1 = document.getElementById('bola1');
 
           if (animationbola1) {
-            const animation5 = lottie.loadAnimation({ container: animationbola1, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/op1.json' });
+            const animation5 = lottie.loadAnimation({ container: animationbola1, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/op1.json' });
             animation5.addEventListener('DOMLoaded', () => {
             });
-      
-            animation5.setSpeed(1);
+
+            animation5.setSpeed(2);
           }
 
 
-          
+
           const animationContainer7 = document.getElementById('lineaTexto3');
 
           if (animationContainer7) {
             const animation7 = lottie.loadAnimation({ container: animationContainer7, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/lineaTexto.json' });
             animation7.addEventListener('DOMLoaded', () => {
             });
-      
+
             animation7.setSpeed(0.5);
-      
+
           }
 
           const animationContainer9 = document.getElementById('lineaTexto5');
@@ -841,9 +808,9 @@ export class InicioComponent implements OnInit {
             const animation9 = lottie.loadAnimation({ container: animationContainer9, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/lineaTexto.json' });
             animation9.addEventListener('DOMLoaded', () => {
             });
-      
+
             animation9.setSpeed(0.2);
-      
+
           }
 
           const animationContainer8 = document.getElementById('lineaTexto4');
@@ -852,9 +819,9 @@ export class InicioComponent implements OnInit {
             const animation8 = lottie.loadAnimation({ container: animationContainer8, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/lineaTexto.json' });
             animation8.addEventListener('DOMLoaded', () => {
             });
-      
+
             animation8.setSpeed(0.2);
-      
+
           }
         }
 
@@ -874,39 +841,39 @@ export class InicioComponent implements OnInit {
     }
 
     const animationContainer23 = document.getElementById('titulomapa');
-  
+
     if (animationContainer23) {
 
       timer(0.1).subscribe(() => {
 
       const animation23 = lottie.loadAnimation({ container: animationContainer23, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/titulomapa.json' });
- 
+
     animation23.addEventListener('DOMLoaded', () => {
     });
 
     animation23.setSpeed(0.27777);
 
   });
-    
+
 
 
     }
 
     const animationContainer63 = document.getElementById('titulomapa2');
-  
+
     if (animationContainer63) {
 
       timer(0.1).subscribe(() => {
 
       const animation63 = lottie.loadAnimation({ container: animationContainer63, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/titulomapa2.json' });
- 
+
     animation63.addEventListener('DOMLoaded', () => {
     });
 
     animation63.setSpeed(0.27777);
 
   });
-    
+
 
 
     }
@@ -963,7 +930,7 @@ export class InicioComponent implements OnInit {
 
     if (animationContainer13) {
 
-      
+
       timer(3000).subscribe(() => {
 
       const animation13 = lottie.loadAnimation({ container: animationContainer13, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/azuleichon.json' });
@@ -984,9 +951,9 @@ export class InicioComponent implements OnInit {
 
     if (animationContainer14) {
 
-      
+
       timer(5500).subscribe(() => {
-      
+
       const animation14 = lottie.loadAnimation({ container: animationContainer14, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/azuleichon.json' });
       animation14.addEventListener('DOMLoaded', () => {
       });
@@ -1063,7 +1030,7 @@ export class InicioComponent implements OnInit {
     }
 
 
-    
+
     const animationContainer18 = document.getElementById('dominicana');
 
     if (animationContainer18) {

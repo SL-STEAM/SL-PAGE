@@ -1,37 +1,37 @@
 
 
-<div class="contenido" style="background-color: rgb(0, 0, 0);">    
+<div class="contenido" style="background-color: rgb(0, 0, 0); width: 100vw;">    
     <!-- Inicio  slider  -->
       
 
     
 
-    <div class="video-container" style="margin-right: -90px; margin-top: -10px; margin-bottom: 137px;">
+    <div class="video-container" style="margin-bottom: 137px;">
 
-      <img style="width: 74%; margin-left: 220px;" src="assets/videos/animados.gif" alt="Mi GIF">
+      <img style="width: 74%; margin-left: 410px; position: relative;" src="assets/videos/animados.gif" alt="Mi GIF">
 
-        <div class="texto-superpuesto subtitleMain" style=" margin-left: -100px; margin-top: -50px;">
+        <div class="texto-superpuesto subtitleMain" style=" margin-left: -180px; margin-top: 100px;">
 
-          <span style="font-size: 45px; font-family: 'Century Gothic' ; font-weight: bold; margin-left: 30px;" class="animate-text delay-1">¡Hola!</span>
-          <p  class="texto2 animate-text delay-2" style="margin-top: -20px; margin-left: 30px;">Te damos la bienvenida a SL</p>
+          <span style="font-size: 45px; font-family: 'Century Gothic' ; font-weight: bold; margin-left: 0px;" class="animate-text delay-1">¡Hola!</span>
+          <p  class="texto2 animate-text delay-2" style="margin-top: -18px; margin-left: 0px; margin-bottom: -16px;">Te damos la bienvenida a SL</p>
      
-          <span class="animate-text delay-3"  style="font-size: 48px; font-family: 'Century Gothic' ; font-weight: bold; margin-left: 30px;">HACEMOS VISIBLE</span>
+          <span class="animate-text delay-3"  style="font-size: 45px; font-family: 'Century Gothic'; font-weight: bold; margin-left: 0px;">HACEMOS VISIBLE</span>
           <!-- con el margin top de -80px lo bajo o lo subo-->
-          <p id="invisub" class="texto-superpuestoTituloBanner animate-text delay-4" style="margin-top: -100px; margin-left: 3px;"></p>
-          <p id="tx" class="texto-superpuestoTituloBanner2" style="margin-top: -390px; margin-left: 18px;"></p>
+          <p id="invisub" class="texto-superpuestoTituloBanner animate-text delay-4" style="margin-top: -120px; margin-left: 55px; width: 620px;"></p>
+          <p id="tx" class="texto-superpuestoTituloBanner2" style="margin-top: -370px;"></p>
         </div>
 
 
     </div>
     <!-- Fin  slider  --> 
     
-    <div class="row">
+    <div class="row" style="border: 2px solid #ff000000;">
      <!-- Onda animada-->
-     <br><br><br><br><br><br><br><br><br>
-    <p id="ondaGris" style="position: absolute; width: 180%; margin-left: -80px; margin-top: -700px"> </p>
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p id="ondaGris" style="position: absolute; width: 115%; margin-left: -10%; margin-top: -350px; "> </p>
 
 
-    <p id="comillas2" style="position: absolute; width: 68%; margin-top: -150px; margin-left : 220px;"> </p>
+    <p id="comillas2" style="position: absolute; width: 85%; margin-top: -47px; margin-left: 150px; "> </p>
     
   </div>
 
@@ -42,20 +42,20 @@
     <div class="banner" #banner style="display: none;">
       <ul class="redes-sociales">
         
-        <li><a *ngIf="arquetipos" href="#" (mouseover)="cambiarA()"><img style="width: 50px;" src="assets/imagenes/iconos/arquetipos.svg" alt="Link"></a>
-          <a *ngIf="arquetiposColor" href="#" (mouseout)="cambiarABlanco()"><img style="width: 50px;" src="assets/imagenes/iconos/arquetiposColor.svg" alt="Link"></a>
+        <li><a *ngIf="arquetipos" href="#" target="_blank" rel="noopener noreferrer" (mouseover)="cambiarA()"><img style="width: 50px;" src="assets/imagenes/iconos/arquetipos.svg" alt="Link"></a>
+          <a *ngIf="arquetiposColor" href="#" target="_blank" rel="noopener noreferrer" (mouseout)="cambiarABlanco()"><img style="width: 50px;" src="assets/imagenes/iconos/arquetiposColor.svg" alt="Link"></a>
         </li>
         <li style="margin-top: -2px;"><a *ngIf="email" href="#" (mouseover)="cambiarE()"><img style="width: 40px;" src="assets/imagenes/iconos/email.svg" alt="email"></a>
-          <a *ngIf="emailColor" href="#" (mouseout)="cambiarEBlanco()"><img style="width: 40px;" src="assets/imagenes/iconos/emailColor.svg" alt="email"></a>
+          <a *ngIf="emailColor" href="#" target="_blank" rel="noopener noreferrer" (mouseout)="cambiarEBlanco()"><img style="width: 40px;" src="assets/imagenes/iconos/emailColor.svg" alt="email"></a>
         </li>
         <li><a *ngIf="facebook" href="#" (mouseover)="cambiarF()"><img style="width: 35px;" src="assets/imagenes/iconos/facebook.svg" alt="Facebook"></a>
-          <a *ngIf="facebookColor" href="#" (mouseout)="cambiarFBlanco()"><img style="width: 35px;" src="assets/imagenes/iconos/facebookColor.svg" alt="Facebook"></a>
+          <a *ngIf="facebookColor" href="#" target="_blank" rel="noopener noreferrer" (mouseout)="cambiarFBlanco()"><img style="width: 35px;" src="assets/imagenes/iconos/facebookColor.svg" alt="Facebook"></a>
         </li>
-        <li><a *ngIf="instagram" href="#" (mouseover)="cambiarI()"><img style="width: 35px;" src="assets/imagenes/iconos/instagram.svg" alt="Instagram"></a>
-          <a *ngIf="instagramColor" href="#" (mouseout)="cambiarIBlanco()"><img style="width: 35px;" src="assets/imagenes/iconos/instagramColor.svg" alt="Instagram"></a>
+        <li><a *ngIf="instagram" href="#" target="_blank" rel="noopener noreferrer" (mouseover)="cambiarI()"><img style="width: 35px;" src="assets/imagenes/iconos/instagram.svg" alt="Instagram"></a>
+          <a *ngIf="instagramColor" href="#" target="_blank" rel="noopener noreferrer" (mouseout)="cambiarIBlanco()"><img style="width: 35px;" src="assets/imagenes/iconos/instagramColor.svg" alt="Instagram"></a>
         </li>
-        <li><a *ngIf="link" href="#" (mouseover)="cambiarL()"><img style="width: 35px;" src="assets/imagenes/iconos/link.svg" alt="Link"></a>
-          <a *ngIf="linkColor" href="#" (mouseout)="cambiarLBlanco()"><img style="width: 35px;" src="assets/imagenes/iconos/linkColor.svg" alt="Link"></a>
+        <li><a *ngIf="link" href="#" target="_blank" (mouseover)="cambiarL()"><img style="width: 35px;" src="assets/imagenes/iconos/link.svg" alt="Link"></a>
+          <a *ngIf="linkColor" href="https://www.linkedin.com/company/sl-insights-arquetypos" target="_blank" rel="noopener noreferrer" (mouseout)="cambiarLBlanco()"><img style="width: 35px;" src="assets/imagenes/iconos/linkColor.svg" alt="Link"></a>
         </li>
         
         <!-- Añade más iconos de redes sociales si lo deseas -->
@@ -70,10 +70,10 @@
 
       <div class="col-md-6 subtitleMain" style="background-color: #F9F9F9;">
         <div class="card custom-card border-0" style="background-color: #F9F9F9;"> <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta -->  
-          <img style="width:147%; background-color: transparent; margin-top: -110px; margin-left: -150px;" src="assets/videos/myg3.gif" alt="Mi GIF"> 
+          <img style="width:180%; background-color: transparent; margin-top: -75px; margin-left: -315px;" src="assets/videos/myg3.gif" alt="Mi GIF"> 
           <!-- boton Mago-->
 
-            <button class="btn custom-button10" style="position: absolute; font-size: 22.5px; margin-left: 445px; margin-top: 340px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic; cursor: pointer;"><strong>Hablemos</strong></button>
+            <button class="btn custom-button10" style="position: absolute; font-size: 22px; border: 2px solid #ffffff00; margin-left: 690px; margin-top: 830px; padding-left: 50px; padding-right: 50px; font-family: Century Gothic; cursor: pointer;"><strong>Hablemos</strong></button>
 
                
         </div>
@@ -88,34 +88,33 @@
     
 
 
-    <div class="row" style="background-color: #F9F9F9;">
+    <div class="row" style="background-color: #ffffff;">
 
-      <div class="container" style="background-color: #F9F9F9; margin-top: -3.5%;" >
+      <div class="container" style="background-color: #ffffff; margin-top: 5px;" >
 
 
           <!-- Primera fila -->
-        <div class="row" style="background-color: #F9F9F9;">
-            <div class="col-md-12" style="background-color: #F9F9F9; text-transform: none;">
-                <div class="card custom-card border-0" style="background-color: #F9F9F9; text-align: center;"> <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta -->
+        <div class="row" style="background-color: #ffffff;">
+            <div class="col-md-12" style="background-color: #ffffff; text-transform: none;">
+                <div class="card custom-card border-0" style="background-color: #ffffff; text-align: center;"> <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta -->
                   <!-- ACA FONDO DE SOMOS-->
                   <!-- SOMOS ID-->
                 
                       <!-- Aca va el titulo Somos reemplazando el ID de la imagen-->
-                  <p id="somos" style="position: absolute; width: 70%; margin-top: -185px;  margin-left : 145px; background-color: transparent; z-index: 3;"> </p>
+                  <p id="somos" style="position: absolute; width: 40%; margin-top: -75px;  margin-left: 330px; background-color: transparent; z-index: 3;"> </p>
                 </div>
             </div>
         </div>
 
 
         <!-- Segunda fila ( Desde aca comienzan los divs de las cards ) -->
-          <div class="row" style="margin-top: 10px;">
+          <div class="row justify-content-center align-content-center" style="margin-top: 40px; gap: 1%;">
 
-            <div class="col-md-4" style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
-              <div class="card plan custom-card cartas text-center" style="padding: auto; background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 65%;" id="card_plan_1">
+            <div class="col-md-3" style="padding-top: 5px; padding-bottom: 5px;">
+              <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;" id="card_plan_1">
 
                 <img src="assets/imagenes/imaFichas/perpis.svg" alt="Nueva Imagen" class="zoom-in" style=" object-fit: cover; position: absolute; margin-left: 0px; margin-top: -5px; height: 100%">
                 
-
 
                   <div class="card-body plan-card-body" style="width: 600px; height: 230px;">
                     <span class="miparrafo"> </span>
@@ -126,12 +125,12 @@
             </div>
 
 
-            <div class="col-md-4" style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
-              <div class="card plan custom-card cartas text-center" style="padding: auto; background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 65%;" id="card_plan_1">
+            <div class="col-md-3" style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
+              <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;" id="card_plan_1">
 
                 <div class="card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
 
-                  <p id="dina" style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;"> </p>
+                  <!-- <p id="dina" style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;"> </p> -->
 
                </div>
 
@@ -145,10 +144,10 @@
             </div>
 
 
-            <div class="col-md-4" style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
-              <div class="card plan custom-card cartas text-center" style="padding: auto; background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 65%;" id="card_plan_1">
+            <div class="col-md-3" style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
+              <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;" id="card_plan_1">
 
-                <p id="crea" style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;"> </p>
+                <!-- <p id="crea" style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;"> </p> -->
 
              
                   <div class="card-body plan-card-body" style=" padding-top: 250px;">
@@ -160,10 +159,10 @@
           </div>
 
           
-          <div class="row" style="margin-top: -30px;">
+          <div class="row justify-content-center align-content-center" style="margin-top: -30px; gap: 1%;">
 
 
-            <div class="col-md-4" style="text-align: center;">
+            <div class="col-md-3" style="text-align: center;">
 
               <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
 
@@ -173,18 +172,18 @@
            </div>
 
 
-            <div class="col-md-4" style="text-align: center;">
+            <div class="col-md-3" style="text-align: center;">
 
               <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
               
               <strong><span style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Dinámicos</span></strong>
 
-              <img style="width: 20px; margin: 10px; margin-bottom: 30px;  cursor: pointer;" (click)="displayDina()" [src]="flechaCerradaDina" alt="">
+              <img style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;" (click)="displayDina()" [src]="flechaCerradaDina" alt="">
          
             </div>
 
 
-            <div class="col-md-4" style="text-align: center;">
+            <div class="col-md-3" style="text-align: center;">
               
               <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
 
@@ -196,13 +195,13 @@
 
           </div>
 
-          <div class="row" style="margin-top: 5px;">
+          <div class="row justify-content-center align-content-center" style="margin-top: 5px;">
 
 
 
-            <div class="col-md-4" style="text-align: center; padding-left: 100px; padding-right: 80px;">
+            <div class="col-md-3" style="text-align: center; padding-left: 25px; padding-right: 55px;">
               <div class="perpis" #perpis style="display: none;">
-              <p style=" font-size: 18px; font-family: Century Gothic; line-height: 1; text-align: left;"><strong>¡Vemos más allá de
+              <p style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
                 lo evidente!</strong> <br> <br> Percibimos los detalles y
                 las sutilezas que pasan
                 desapercibidos a los ojos
@@ -215,9 +214,9 @@
             </div>
 
 
-            <div class="col-md-4" style="text-align: center; padding-left: 100px; padding-right: 80px;">
+            <div class="col-md-3" style="text-align: center; padding-left: 45px; padding-right: 33px;">
               <div #dina style="display: none;">
-              <p style=" font-size: 18px; font-family: Century Gothic; line-height: 1; text-align: left;"><strong>¡Vemos más allá de
+              <p style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
                 lo evidente!</strong> <br> <br> Percibimos los detalles y
                 las sutilezas que pasan
                 desapercibidos a los ojos
@@ -230,10 +229,10 @@
             </div>
 
 
-            <div class="col-md-4" style="text-align: center; padding-left: 100px; padding-right: 80px;">
+            <div class="col-md-3" style="text-align: center; padding-left: 62px; padding-right: 20px;">
               <div #crea style="display: none;">
-              <p style=" font-size: 18px; font-family: Century Gothic; line-height: 1; text-align: left;"><strong>¡Vemos más allá de
-                lo evidente!</strong> <br> <br> Percibimos los detalles y g
+              <p style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
+                lo evidente!</strong> <br> <br> Percibimos los detalles y
                 las sutilezas que pasan
                 desapercibidos a los ojos
                 de muchos. Analizamos
@@ -246,12 +245,12 @@
 
           </div>
 
-            <div class="row" style="margin-top: -30px;">
+            <div class="row justify-content-center align-content-center" style="margin-top: 0px; gap: 1%;">
 
               <div class="col-md-2"></div>
 
-            <div class="col-md-4" style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
-              <div class="card plan custom-card cartas text-center" style="padding: auto; background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 65%;" id="card_plan_1">
+            <div class="col-md-3" style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
+              <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;" id="card_plan_1">
   
                 <div class="card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
   
@@ -267,8 +266,8 @@
               </div>
             </div>
 
-            <div class="col-md-4" style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
-              <div class="card plan custom-card cartas text-center" style="padding: auto; background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 65%;" id="card_plan_1">
+            <div class="col-md-3" style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
+              <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;" id="card_plan_1">
   
                 <div class="card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
   
@@ -288,11 +287,11 @@
 
           </div>
 
-          <div class="row" style="margin-top: -30px;">
+          <div class="row justify-content-center align-content-center" style="margin-top: -30px; gap: 1%;">
 
             <div class="col-md-2"></div>
           
-            <div class="col-md-4" style="text-align: center;">
+            <div class="col-md-3" style="text-align: center;">
               
               <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
 
@@ -303,7 +302,7 @@
 
             </div>
 
-            <div class="col-md-4" style="text-align: center;">
+            <div class="col-md-3" style="text-align: center;">
 
               <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
             
@@ -318,13 +317,13 @@
           </div>
 
           
-          <div class="row" style="margin-top: 5px;">
+          <div class="row justify-content-center align-content-center" style="margin-top: 5px; gap: 1%;">
 
             <div class="col-md-2"></div>
           
-            <div class="col-md-4" style="text-align: center; padding-left: 100px; padding-right: 80px;">
+            <div class="col-md-3" style="text-align: center; padding-left: 40px; padding-right: 25px;">
               <div #arriesga style="display: none;">
-              <p style=" font-size: 18px; font-family: Century Gothic; line-height: 1; text-align: left;"><strong>¡Vemos más allá de
+              <p style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
                 lo evidente!</strong> <br> <br> Percibimos los detalles y
                 las sutilezas que pasan
                 desapercibidos a los ojos
@@ -336,9 +335,9 @@
             </div>
             </div>
 
-            <div class="col-md-4" style="text-align: center; padding-left: 100px; padding-right: 80px;">
+            <div class="col-md-3" style="text-align: center; padding-left: 30px; padding-right: 30px;">
               <div #provo style="display: none;">
-              <p style=" font-size: 18px; font-family: Century Gothic; line-height: 1; text-align: left;"><strong>¡Vemos más allá de
+              <p style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
                 lo evidente!</strong> <br> <br> Percibimos los detalles y
                 las sutilezas que pasan
                 desapercibidos a los ojos
@@ -365,21 +364,19 @@
 
   
   <!-- ESTE SERA EL CONTAINER FINAL ANYTES DE PASAR A MODELOS DEL LAND PAGE-->
-  <div class="mapa-container" style="margin-top: -50px;">
+  <div class="mapa-container" style="margin-top: 0px;">
 
-    <div class="row" style="margin-bottom: 30px;">
+    <div class="row" style="margin-bottom: 0px;">
 
       <div class="container" style="background-color: transparent;" >
         <!-- Primera fila -->
         <div class="row">
           <!-- Este div no modificar el color-->
-            <div class="col-md-5 subtitleMain justify-content-center" style="background-color: transparent;">
-                <div class="card custom-card border-0 justify-content-center" style="background-color: transparent; margin-right: 36px;">
-          
-                  <img style="width: 265%; background-color: transparent; margin-left: 22.5px; margin-top: -100px ;" src="assets/videos/nb.gif" alt="Mi GIF"> 
+            <div class="justify-content-center" style="background-color: transparent;">
+               
+                  <img style="width: 100%; background-color: transparent;" src="assets/videos/nb.gif" alt="Mi GIF"> 
                   
                   
-                </div>
               </div>
             </div>
         <!-- este es el Div del boton
@@ -397,10 +394,10 @@
     
  
     <!-- Carrusel-->
-    <div class="row" style="background-color: #4DB2B0; height: 45px; margin-top: -90px;">
+    <div class="row" style="background-color: #4DB2B0; height: 60px; margin-top: 0px; width: 100vw;">
 
       <div class="container"><strong>
-        <p class="texto" style="color: white; margin-top: 5px; font-family: Century Gothic ;font-size: 22px;">  INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR <span style="font-size: 22px;"> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span> <span style="font-size: 22px;"> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span> <span style="font-size: 22px;"> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span> <span style="font-size: 22px;"> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span> </p></strong>
+        <p class="texto" style="color: rgb(255, 255, 255); margin-top: 10px; font-family: Century Gothic ;font-size: 24px;">  INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR <span style="font-size: 22px;"> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span> <span style="font-size: 22px;"> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span> <span style="font-size: 22px;"> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span> <span style="font-size: 22px;"> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span> </p></strong>
       </div>
 
     </div>
@@ -428,156 +425,151 @@
     
 
 
-<div  style="background-color: white;" >
-  <!-- Primera fila -->
+<div  style="background-color: #ffffff; width: 100vw;" >
 
-  <div class="container" style="background-color: #FFFFFF;">
+  <div class="container">
 
-    
+  <div class="row" style="background-color: #39c02700; margin-left: 0%; padding-top: 90px; padding-bottom: 20px; padding-left: 60px; padding-right: 60px;" >
 
-  <div class="row" style="background-color: white; margin-left: 50px;" >
-      <div class="col-md-6" style="background-color: transparent; margin-top: 90px;">
+
+      <div class="col-md-6" style=" border: 2px solid rgba(128, 0, 128, 0);">
         
-        
-        <div style="margin-left: 130px;">
-          <img src="assets/imagenes/bolas3/bolaclick.svg" alt="Bola" style="height: 85px; margin-top: -37px; margin-left: -265px; position: absolute; ">
+        <div style="margin-left: 140px; margin-top: 80px;">
+          <img src="assets/imagenes/bolas3/bolaclick.svg" alt="Bola" style="height: 85px; margin-top: -39px; margin-left: -290px; position: absolute; ">
                     
-          <p  class="texto2 animate-text" style="font-size: 34px; color: black; font-family: 'Century Gothic'; text-align: left; line-height:1; margin-left: -25px; margin-top: -15px;"> <strong>"Los insights</strong> reflejan
-             la trama de cada historia y los <strong>arquetipos</strong> son los personajes que le dan vida a esas historias".</p>
+          <p  class="texto2 animate-text" style="font-size: 34px; color: black; font-family: 'Century Gothic'; text-align: left; line-height:1; margin-left: -90px;">"<strong>Los insights</strong> reflejan
+             <br>la trama de cada<br>historia y los<br> <strong>arquetipos</strong> son los<br> personajes que le<br> dan vida a esas<br>historias".</p>
 
-             <button class="btn custom-button10" style="font-size: 22px; margin-left: -280px; margin-top: 5%; margin-bottom: 30px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic; cursor: pointer;"><strong>Hablemos</strong></button>
+             <button class="btn custom-button10" style="font-size: 22px; margin-left: -280px; margin-top: 25%; margin-bottom: 80px; padding-left: 50px; padding-right: 50px; font-family: Century Gothic; cursor: pointer;"><strong>Hablemos</strong></button>
       </div>
 
     </div>
 
 
-    <div class="col-md-6">
+    <div class="col-md-6" style="border: 2px solid #0c219700;">
         <div class="card custom-card border-0" style="background-color: transparent;"> <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta --> 
-          <p id="cabezota" style="position: absolute; width: 180%; margin-top: -360px; margin-left : -370px;"> </p>  
+          <p id="cabezota" style="width: 280%; position:absolute; left: -758px; top: -650px;"> </p>  
         </div>
     </div>
 
-
-</div>
-</div>
 </div>
 
+</div>
+</div> 
 
 
-      <div class="mapa-container10" style="background-image: url('/assets/imagenes/Puente/PugFinal.svg'); background-size: cover; height: 1480px; margin-top : -85px; " >
 
-          <div class="row">
-            <div class="col-md-2"></div>
-          <div class="col-md-8">
+<div class="mapa-container10" style="background-image: url('/assets/imagenes/Puente/PugFinal.svg'); background-color: #ffffff; background-size: cover; background-position: center; height: 1800px; padding-top: 140px; padding-bottom: -5000px; border: none; border-style:none;" >
 
-            <img src="assets/imagenes/bolas3/bolaclick.svg" class="animate-text" alt="Bola" style="height: 85px; margin-top: 420px; margin-left: -373px; position: absolute;">
+  <div class="row">
+    <div class="col-md-2"></div>
+  <div class="col-md-8">
 
-                 
-            <p  class="texto2 animate-text sombratexto" style="font-size: 36px; color: black; font-family:'Century Gothic'; margin-left: 15px; text-align: left; line-height:1; color: white; margin-top: 460px; text-align: center; display: none;" class="animate-text" #tituloPuente> <strong style="font-size: 40px;">CONSTRUIMOS PUENTES EFECTIVOS</strong> 
-              <br> que alinean el propósito personal o colectivo, con procesos que generan <strong>conciencia y permanencia</strong> en el tiempo.</p>
-    
-          </div>
-          <div class="col-md-2"></div>
-          </div>
-
-
-          <div class="row" style="margin-top: -210px; margin-left: 60px;">
-
-            <div class="col-md-4">
-
-              <p id="mancae1" class=" animate-text" style="position: absolute; width: 270%; margin-top: -195px; margin-left : -55px;"> </p>
- 
-              <p  class="texto2 animate-text" style="font-size: 25px; color: black; font-family: 'Century Gothic'; text-align: left; line-height:1; color: white; margin-top: 420px; text-align: left; margin-left : 100px;" > <strong style="font-size: 35px;">DESAFIAMOS LO CONVENCIONAL:</strong> <br>
-                <br> Estamos en constante <strong>cambio y movimiento</strong>, desarrollando metodologías poderosas que generan valor en toda la cadena.</p>
-      
-            </div>
-
-          </div>
-
-
-          <div class="row" style="margin-top: 50px; margin-left: -42.5px;">
-
-            <div class="col-md-2"></div>
-          
-
-          <div class="col-md-8">
-            <p style="font-family: 'Century Gothic'; font-size: 42px; color: white;"><strong>END TO END</strong></p>
-          </div>
-    
-
-          <div class="col-md-2"></div>
-   
-
-          </div>
-
-
-          <div class="container">
-                      <div class="row" style="margin-top: 30px; margin-left: -10px; margin-bottom : 30px;">
-
-            <div class="col-md-4" >
-              <img src="assets/imagenes/imaFichas/bd.svg"  alt="Bola" style=" width: 69%; margin-left: -15px;">
-            </div>
-            
-  
-            <div class="col-md-4">
-              <img src="assets/imagenes/imaFichas/bt.svg"  alt="Bola" style="width: 100%; margin-left: -35px; ">
-            </div>
-
-            <div class="col-md-4">
-              <img src="assets/imagenes/imaFichas/bc.svg"  alt="Bola" style="width: 65%; margin-left: -55px; margin-top: 1px; ">
-            </div>
-      
-            </div>
-
-          </div>
+    <img src="assets/imagenes/bolas3/bolaclick.svg" class="animate-text" alt="Bola" style="height: 90px; margin-top: 165px; margin-left: -363px; position: absolute;">
 
          
+    <p  class="texto2 animate-text sombratexto" style="font-size: 34px; color: black; font-family:'Century Gothic'; margin-left: 15px; text-align: left; line-height:1; color: white; margin-top: 210px; margin-right: 45px; text-align: center; display: none;" class="animate-text" #tituloPuente> <strong style="font-size: 35px;">CONSTRUIMOS PUENTES EFECTIVOS</strong> 
+      <br> que alinean el propósito personal o colectivo, con procesos que generan <strong>conciencia y permanencia</strong> en el tiempo.</p>
 
-      </div>
+  </div>
+  <div class="col-md-2"></div>
+  </div>
 
-   
 
+  <div class="row" style="margin-top: -2px; margin-left: 60px;">
+
+    <div class="col-md-4">
+
+      <p id="mancae1" class=" animate-text" style="position: absolute; width: 420%; margin-top: -875px; margin-left: -403px;"> </p>
+
+      <p  class="texto2 animate-text" style="font-size: 28px; color: black; font-family: 'Century Gothic'; text-align: left; line-height: 1.4; color: white; border: 2px solid rgba(255, 136, 0, 0); margin-top: 330px; margin-left: -75px; text-align: left; padding-left: 55px;"><strong style="font-size: 40px;"><span style="background-color: #00B4B2; border: 2px solid rgba(0, 0, 255, 0); padding-left: 65px; padding-right: 8px; margin-left: -65px;">DESAFIAMOS</span> LO CONVENCIONAL:</strong> <br>
+        <br> Estamos en constante <strong>cambio<br> y movimiento</strong>, desarrollando <br>metodologías poderosas que<br> generan valor en toda la <br> cadena.</p>
+
+    </div>
+
+  </div>
+
+
+  <div class="row" style="margin-top: 150px; margin-left: -42.5px;">
+
+    <div class="col-md-2"></div>
+  
+
+  <div class="col-md-8">
+    <p class="end" style="font-family: 'Century Gothic'; font-size: 42px; color: white; position: relative; z-index: 2;"><strong>END TO END</strong></p>
+
+  </div>
+
+
+  <div class="col-md-2"></div>
+
+
+  </div>
+
+
+  <div class="container">
+              <div class="row" style="margin-top: 40px; margin-left: -10px; margin-bottom : 70px;">
+
+    <div class="col-md-4" >
+      <img src="assets/imagenes/imaFichas/bd.svg"  alt="Bola" style=" width: 69%; margin-left: -280px;">
+    </div>
     
+
+    <div class="col-md-4">
+      <img src="assets/imagenes/imaFichas/bt.svg"  alt="Bola" style="width: 100%; margin-left: -35px;">
+    </div>
+
+    <div class="col-md-4">
+      <img src="assets/imagenes/imaFichas/bc.svg"  alt="Bola" style="width: 65%; margin-left: 150px; margin-top: 1px;">
+    </div>
+
+    </div>
+
+  </div>
+
+</div>
+  
 
 
     <!-- Div con Capabilities y eso-->
 
-    <div class="mapa-container" style="background-color: #FFFFFF; ">
+    <div class="mapa-container" style="background-color: #FFFFFF; padding-top: 20px; padding-bottom: 90px;">
 
     <div class="container" style="text-align: left;">
 
 
-      <div class="row" style="margin-bottom: -90px;">
-        <div class="col-md-8" style="margin-top: 70px; padding-left: 60px;">
-          <p style="font-family: 'Century Gothic'; font-size: 20px; margin-left: 100px; margin-top: -30px; color: black; display: none;" class="animate-text" #flechasAnal><strong><span style="font-size: 25px;">Creamos modelos</span> de trabajo diferentes</strong> y customizados a las necesidades de la organización,</p>
+      <div class="row" style="margin-bottom: -70px; border: 2px solid rgba(0, 0, 255, 0);">
+
+        <div class="col-md-8" style="margin-top: 30px; padding-left: 60px;">
+          <p style="font-family: 'Arial Nova', Arial, sans-serif; font-size: 26px; margin-left: -120px; color: rgb(0, 0, 0); display: none; line-height: 1.5;" class="animate-text" #flechasAnal><strong><span style="font-size: 35px;">Creamos modelos</span> de trabajo diferentes</strong> y<br> customizados a las necesidades de la organización,</p>
         </div>
         <div class="col-md-4"> 
 
-          <p id="bola1" style="position: absolute; width: 150%; margin-top: 0px; margin-left : -100px;"> </p> 
+          <p id="bola1" style="width: 190%; margin-top: -40px; margin-left : -90px;"> </p> 
 
-          <img style="width: 80%; margin-top: -60px; margin-left: 45px;" src="assets/imagenes/bolas3/flechas.svg" alt="Mi GIF">
+          <!-- <img style="width: 80%; margin-top: -60px; margin-left: 60px;" src="assets/imagenes/bolas3/flechas.svg" alt="Mi GIF"> -->
         </div>
       </div>
 
 
-      <div class="row" style="margin-bottom: -90px;">
+      <div class="row" style="margin-top: 90px;">
         <div class="col-md-4"> 
-          <img style="width: 62%; margin-top: -80px; margin-left: 75px;" src="assets/imagenes/bolas3/ojoanal.svg" alt="Mi GIF">
+          <img style="width: 65%; margin-top: -80px; margin-left: -100px;" src="assets/imagenes/bolas3/ojoanal.svg" alt="Mi GIF">
         </div>
         <div class="col-md-8" style="margin-top: 70px;">
-          <p style="font-family: 'Century Gothic'; font-size: 20px; margin-left: -10px; color : black; display: none;" class="animate-text" #ojoAnal>combinando la <strong><span style="font-size: 25px;">visión humana,</span></strong> las capacidades de análisis e integración de data,</p>
+          <p style="font-family: 'Arial Nova', Arial, sans-serif; font-size: 26px; margin-left: -100px; color : black; display: none; line-height: 1;" class="animate-text" #ojoAnal>combinando la <strong><span style="font-size: 35px;">visión humana,</span></strong> las <span style="font-size: 25px;">capacidades<br> de análisis e integración de data,</span></p>
         </div>
       </div>
       <br>
 
 
 
-      <div class="row">
-        <div class="col-md-8" style="margin-top: 70px; padding-left: 60px;">
-          <p style="font-family: 'Century Gothic'; font-size: 20px; margin-left: 100px; margin-top: 20px; color: black; display: none;" class="animate-text" #manoTuerca>con un pensamiento <strong>estrategico y profundo </strong> para <strong><span style="font-size: 25px;">evolucionar los negocios</span></strong> y fortalecer la sociedad en general.</p>
+      <div class="row" style="margin-top:-10px; border: 2px solid rgba(128, 0, 128, 0);">
+        <div class="col-md-8" style="margin-top: -15px; padding-left: 60px;">
+          <p style="font-family: 'Arial Nova', Arial, sans-serif; font-size: 20px; margin-left: 20px; margin-top: 70px; color: black; display: none; line-height: 1.2;" class="animate-text" #manoTuerca>con un pensamiento <strong>estrategico y profundo </strong> para <strong><span style="font-size: 25px;">evolucionar los negocios</span></strong> y fortalecer la<br> sociedad en general.</p>
         </div>
         <div class="col-md-4"> 
-          <img style="width: 62%; margin-top: -40px; margin-left: 55px;" src="assets/imagenes/bolas3/manotuerco.svg" alt="Mi GIF">
+          <img style="width: 70%; margin-top: -75px; margin-left: 0px;" src="assets/imagenes/bolas3/manotuerco.svg" alt="Mi GIF">
         </div>
       </div>
 
@@ -591,45 +583,45 @@
 
         <!-- Imagen del mapa-->
 
-      <img style="width: 32%; background-color: transparent; position: absolute; margin-left: -490px; margin-top: 160px;" src="assets/imagenes/bolas3/personasmapa.gif" alt="Mi GIF">
+      <img style="width: 20%; background-color: transparent; position: absolute; margin-left: -500px; border: 2px solid rgba(0, 0, 255, 0); margin-top: 400px;" src="assets/imagenes/bolas3/personasmapa.gif" alt="Mi GIF">
 
 
 
       <div class="container">
           <div class="row">
           <div class="col-md-12">
-          <img style="width: 880px; margin-left: 220px;"   src="assets/imagenes/mapa.svg" alt="Invisible" >
+          <img style="width: 900px; margin-left: 180px;" src="assets/imagenes/mapa.svg" alt="Invisible" >
           </div>
           </div>
       </div>
 
     
       <div class="texto-colombia">
-      <p style="margin-top: -6px; margin-left: 47px; width: 15%;" id="colombia"><span class="animate-text delay-2" #colombia style="display: none; font-size: 15px;">Colombia</span></p>
+      <p style="margin-top: -9px; margin-left: 165px; width: 15%;" id="colombia"><span class="animate-text delay-2" #colombia style="display: none; font-size: 15px">Colombia</span></p>
       </div>
 
   
 
       <div class="texto-salvador">
-      <p id="peru" style="margin-top: 450px; margin-left: 150px; width: 10%;"><span class="animate-text delay-2" style="display: none; font-size: 15px;" #peru>Peru</span></p>
+      <p id="peru" style="margin-top: 250px; margin-left: 258px; width: 10%;"><span class="animate-text delay-2 peru" style="display: none; font-size: 15px;" #peru>Perú</span></p>
       </div>
 
 
       <div class="texto-salvador">
-      <p id="ecuador" style="margin-top: 320px; margin-left: 120px; width: 10%;"><span class="animate-text delay-2" style="display: none; font-size: 15px;" #ecuador>Ecuador</span></p>
+      <p id="ecuador" style="margin-top: 150px; margin-left: 255.2px; width: 10%;"><span class="animate-text delay-2" style="display: none; font-size: 15px;" #ecuador>Ecuador</span></p>
       </div>
 
 
-      <div class="texto-salvador"> 
-      <p id="chile" style="margin-top: 900px; margin-left: 210px; width: 10%;"><span class="animate-text delay-2" style="display: none; font-size: 15px;" #chile>Chile</span></p>
+      <div class="texto-chile"> 
+      <p id="chile" style="margin-top: 340px; margin-left: 250px; width: 10%;"><span class="animate-text delay-2" style="display: none; font-size: 15px;" #chile>Chile</span></p>
       </div>
 
 
       <div class="texto-mexico">
-      <p id="mexico" style="margin-top: -5px; margin-left: -60px; width: 10%;"><span class="animate-text delay-2" style="display: none; font-size: 15px;" #mexico>Mexico</span></p>
+      <p id="mexico" style="margin-top: -50px; margin-left: -60px; width: 13%;"><span class="animate-text delay-2" style="display: none; font-size: 15px;" #mexico>Mexico</span></p>
       </div>
 
-      <div class="texto-mexico">
+      <div class="texto-panama">
        <p id="panama" style="margin-top: 350px; margin-left: 250px; width: 10%;"><span class="animate-text delay-2" style="display: none; font-size: 15px;" #panama>Panama</span></p>
       </div>
 
@@ -667,14 +659,14 @@
         <div class="col-md-5"></div>
       
         <div class="col-md-4">
-          <p  style="line-height: 1; font-size: 37px; color: rgb(63, 62, 62); text-align: left; margin-top: 210px; margin-left: 125px;" class="texto2"><strong>ESTAMOS DEJANDO</strong></p>
+          <p  style="line-height: 1; font-size: 39px; color: rgb(63, 62, 62); text-align: left; margin-top: 255px; margin-left: 170px;" class="texto2"><strong>ESTAMOS DEJANDO</strong></p>
           </div>
       </div>
 
       <div class="texto-superpuesto3 row">
       
       <div class="col-md-12">
-        <p  style="line-height: 1; font-size: 40px; color: rgb(63, 62, 62); text-align: left; margin-top: 340px; margin-left: 8px; background-color: #393F79; color: white; padding-top: 5px; padding-bottom: 5px; padding-right: 15px; padding-left: 180px;" class="texto2"><strong>HUELLA EN LATAM</strong></p>
+        <p  style="line-height: 1; letter-spacing: 2px; font-size: 40px; color: rgb(63, 62, 62); text-align: left; margin-top: 390px; margin-left: 220px; background-color: #393F79; color: white; padding-top: 5px; padding-bottom: 5px; padding-right: 19px; padding-left: 59px;" class="texto2"><strong>HUELLA EN LATAM</strong></p>
         </div>
     </div>
     
@@ -684,9 +676,9 @@
       <div class="texto-superpuesto3 row">
         <div class="col-md-4">
       </div>
-      <div class="col-md-5">
-        <p  style="line-height: 1; font-size: 21px; color: rgb(63, 62, 62); text-align: left; margin-top: 570px; margin-left: 52px;" class="texto2">Hemos impactado organizaciones, marcas a lo largo de nuestra región, alineando <strong>el talento y las habilidades </strong>de las personas a favor de los <strong>retos y metas </strong>de los negocios.</p>
-        <button class="btn custom-button10" style="position: absolute; font-size: 20px; margin-left: 50px; margin-top: 10px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic; cursor: pointer;"><strong>Hablemos</strong></button>
+      <div class="col-md-8">
+        <p  style="line-height: 1.4; font-size: 20px; color: rgb(63, 62, 62); text-align: left; margin-top: 600px; margin-left: 45px;" class="texto2">Hemos impactado organizaciones,<br> marcas a lo largo de nuestra región,<br> alineando <strong>el talento y las habilidades <br></strong>de las personas a favor de los <strong>retos y metas </strong>de los negocios.</p>
+        <button class="btn custom-button10" style="position: absolute; font-size: 20px; margin-left: 50px; margin-top: 10px; padding-left: 40px; padding-right: 40px; font-family: Century Gothic; cursor: pointer;"><strong>Hablemos</strong></button>
       </div>
 
       </div>
@@ -699,18 +691,7 @@
     <div class="container" style="background-color: #ffffff; margin-top: -3.5%;" >
 
 
-        <!-- Primera fila -->
-      <div class="row" style="background-color: #ffffff;">
-          <div class="col-md-12" style="background-color: #FFFFFF; text-transform: none;">
-              <div class="card custom-card border-0" style="background-color: #ffffff; text-align: center;"> <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta -->
-                <!-- ACA FONDO DE SOMOS-->
-                <!-- SOMOS ID-->
-              
-                    <!-- Aca va el titulo Somos reemplazando el ID de la imagen-->
-                <p id="somos" style="position: absolute; width: 70%; margin-top: -160px;  margin-left : 145px; background-color: transparent;"> </p>
-              </div>
-          </div>
-      </div>
+
 
 
       <div class="row" style="margin-top: -15px; background-color: #ffffff;">

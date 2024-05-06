@@ -3,6 +3,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+
+
 .alert .alert_inner span {
   margin: 0 auto;
   padding: 10px 2em;
@@ -167,12 +173,12 @@ header nav #navbarNav .nav-item a.sm {
   font-size: 14px;
   padding: 25px 12px 55px 12px;
 }
-header nav #navbarNav .nav-item a:hover {
+/* header nav #navbarNav .nav-item a:hover {
   background-color: #F2F2F2;
   border: 1px solid #F2F2F2;
-}
+} */
 header nav #navbarNav .nav-item a.activo {
-  background: #F39218;
+  /* background: #F39218; */
   color: #FFFFFF;
 }
 header .btn {
