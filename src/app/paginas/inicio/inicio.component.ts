@@ -463,7 +463,7 @@ export class InicioComponent implements OnInit {
     animation63.addEventListener('DOMLoaded', () => {
     });
 
-    animation63.setSpeed(0.9);
+    animation63.setSpeed(0.5);
 
     });
 
