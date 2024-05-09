@@ -1,4 +1,3 @@
-
 import { CarruselService } from './../../compartido/servicios/carrusel.service';
 import { ModalService } from './../../compartido/servicios/modal.service';
 import { FormBuilder } from '@angular/forms';
@@ -8,7 +7,7 @@ import { Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import lottie from 'lottie-web';
 import { ViewportScroller } from '@angular/common';
-import AOS from 'aos';
+
 
 
 @Component({
@@ -407,8 +406,236 @@ export class InicioComponent implements OnInit {
 
   ngOnInit(): void {
 
-    AOS.init();
-    window.addEventListener('load', AOS.refresh)
+
+    window.scrollTo(0, 0);
+
+    const animationContainer = document.getElementById('cerebro');
+
+    if (animationContainer) {
+      const animation1 = lottie.loadAnimation({ container: animationContainer, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/cerebrito.json' });
+      animation1.addEventListener('DOMLoaded', () => {
+      });
+    }
+
+    const animationContainerOnda = document.getElementById('ondaGris');
+
+    if (animationContainerOnda) {
+      const animation1 = lottie.loadAnimation({ container: animationContainerOnda, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/OndaColores.json' });
+      animation1.addEventListener('DOMLoaded', () => {
+      });
+    }
+
+    const animationContainer2 = document.getElementById('ojo');
+
+    if (animationContainer2) {
+      const animation2 = lottie.loadAnimation({ container: animationContainer2, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/ojos.json' });
+      animation2.addEventListener('DOMLoaded', () => {
+      });
+    }
+
+    const animationContainer3 = document.getElementById('flecha');
+
+    if (animationContainer3) {
+      const animation3 = lottie.loadAnimation({ container: animationContainer3, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/flecha.json' });
+      animation3.addEventListener('DOMLoaded', () => {
+      });
+    }
+
+    const animationContainer22 = document.getElementById('invisub');
+
+    if (animationContainer22) {
+      const animation22 = lottie.loadAnimation({ container: animationContainer22, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/invisub.json' });
+      animation22.addEventListener('DOMLoaded', () => {
+      });
+
+
+    animation22.setSpeed(0.8);
+    }
+
+    const animationContainer2222 = document.getElementById('tx');
+
+    if (animationContainer2222) {
+
+      timer(5400).subscribe(() => {
+
+      const animation63 = lottie.loadAnimation({ container: animationContainer2222, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/tx.json' });
+
+    animation63.addEventListener('DOMLoaded', () => {
+    });
+
+    animation63.setSpeed(0.9);
+
+    });
+
+
+
+
+
+    }
+
+
+
+    const animationContainer3000 = document.getElementById('creativos');
+
+    if (animationContainer3000) {
+      const animation300 = lottie.loadAnimation({ container: animationContainer3000, renderer: 'svg', loop: true, autoplay: true, path: 'assets/imagenes/imaFichas/Crea.svg' });
+      animation300.addEventListener('DOMLoaded', () => {
+      });
+
+      animation300.setSpeed(0.3);
+    }
+
+    const animationContainer111 = document.getElementById('perspicaces');
+
+    if (animationContainer111) {
+      const animation1 = lottie.loadAnimation({ container: animationContainer111, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/Medio/perpi.json' });
+      animation1.addEventListener('DOMLoaded', () => {
+      });
+
+      animation1.setSpeed(9);
+    }
+
+    const animationContainer222 = document.getElementById('posit');
+
+    if (animationContainer222) {
+      const animation2 = lottie.loadAnimation({ container: animationContainer222, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Iconosinicio/posit.json' });
+      animation2.addEventListener('DOMLoaded', () => {
+      });
+
+      animation2.setSpeed(0.3);
+    }
+
+    const animationArriesga = document.getElementById('arriesga');
+
+    if (animationArriesga) {
+      const animation3 = lottie.loadAnimation({ container: animationArriesga, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Medio/arriesgados.json' });
+      animation3.addEventListener('DOMLoaded', () => {
+      });
+
+      animation3.setSpeed(0.3);
+    }
+
+    const animationProvocadores = document.getElementById('provocador');
+
+    if (animationProvocadores) {
+      const animation3 = lottie.loadAnimation({ container: animationProvocadores, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Medio/provocadores.json' });
+      animation3.addEventListener('DOMLoaded', () => {
+      });
+
+      animation3.setSpeed(0.3);
+    }
+
+    const animationContainer333 = document.getElementById('perpis');
+
+    if (animationContainer333) {
+      const animation3 = lottie.loadAnimation({ container: animationContainer333, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/Medio/perpis.json' });
+      animation3.addEventListener('DOMLoaded', () => {
+      });
+
+      animation3.setSpeed(9);
+    }
+
+    const animationContainerActivacion = document.getElementById('activacion');
+
+    if (animationContainerActivacion) {
+      const animation3 = lottie.loadAnimation({ container: animationContainerActivacion, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Medio/medio2/activacion.json' });
+      animation3.addEventListener('DOMLoaded', () => {
+      });
+
+      animation3.setSpeed(0.3);
+    }
+
+    const animationContainerComprension = document.getElementById('comprension');
+
+    if (animationContainerComprension) {
+      const animation3 = lottie.loadAnimation({ container: animationContainerComprension, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Medio/medio2/comprension.json' });
+      animation3.addEventListener('DOMLoaded', () => {
+      });
+
+      animation3.setSpeed(0.3);
+    }
+
+    const animationContainerCreatividad = document.getElementById('creatividad');
+
+    if (animationContainerCreatividad) {
+      const animation3 = lottie.loadAnimation({ container: animationContainerCreatividad, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Medio/medio2/creatividad.json' });
+      animation3.addEventListener('DOMLoaded', () => {
+      });
+
+      animation3.setSpeed(0.3);
+    }
+
+    const animationContainerLogistica = document.getElementById('logistica');
+
+    if (animationContainerLogistica) {
+      const animation3 = lottie.loadAnimation({ container: animationContainerLogistica, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Medio/medio2/logistica.json' });
+      animation3.addEventListener('DOMLoaded', () => {
+      });
+
+      animation3.setSpeed(0.3);
+    }
+
+    const animationContainerSteam = document.getElementById('steam');
+
+    if (animationContainerSteam) {
+      const animation3 = lottie.loadAnimation({ container: animationContainerSteam, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Medio/medio2/steam.json' });
+      animation3.addEventListener('DOMLoaded', () => {
+      });
+
+      animation3.setSpeed(0.3);
+    }
+
+
+    const animationContainerDina = document.getElementById('dina');
+
+    if (animationContainerDina) {
+      const animation3 = lottie.loadAnimation({ container: animationContainerDina, renderer: 'svg', loop: false, autoplay: false, path: 'assets/json/Medio/dina.json' });
+      animation3.addEventListener('DOMLoaded', () => {
+      });
+
+      animation3.setSpeed(0.3);
+    }
+
+    const animationContainerCrea = document.getElementById('crea');
+
+    if (animationContainerCrea) {
+      const animation3 = lottie.loadAnimation({ container: animationContainerCrea, renderer: 'svg', loop: false, autoplay: false, path: 'assets/json/Medio/crea.json' });
+      animation3.addEventListener('DOMLoaded', () => {
+      });
+
+      // animation3.setSpeed(0.3);
+    }
+
+
+    const animationCerebro2 = document.getElementById('cerebro2');
+
+    if (animationCerebro2) {
+      const animation3 = lottie.loadAnimation({ container: animationCerebro2, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Iconosinicio/cerebro2.json' });
+      animation3.addEventListener('DOMLoaded', () => {
+      });
+
+      animation3.setSpeed(0.4);
+    }
+
+
+    const animationPluma = document.getElementById('pluma');
+
+    if (animationPluma) {
+      const animation3 = lottie.loadAnimation({ container: animationPluma, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Iconosinicio/pluma.json' });
+      animation3.addEventListener('DOMLoaded', () => {
+      });
+
+      animation3.setSpeed(0.4);
+    }
+
+
+    const animationComillas = document.getElementById('comillas2');
+
+    if (animationComillas) {
+      const animations = lottie.loadAnimation({ container: animationComillas, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/comillas2.json' });
+      animations.addEventListener('DOMLoaded', () => {
+      });
+    }
 
 
   }
@@ -433,21 +660,17 @@ export class InicioComponent implements OnInit {
         const scrollYPos = window.scrollY || window.pageYOffset;
 
         // console.log(scrollYPos)
-        
-        if (scrollYPos === 1189){
-        
 
+        if (scrollYPos < 1040){
+          if (this.banner) {
+            this.banner.nativeElement.style.display = 'none';
+          }
+
+        } else {
+          if (this.banner) {
+            this.banner.nativeElement.style.display = 'block';
+          }
         }
-        // if (scrollYPos < 1040){
-        //   if (this.banner) {
-        //     this.banner.nativeElement.style.display = 'none';
-        //   }
-
-        // } else {
-        //   if (this.banner) {
-        //     this.banner.nativeElement.style.display = 'block';
-        //   }
-        // }
 
 
         if(scrollYPos > 1050 && this.banderaLinea1 == true){
@@ -891,14 +1114,6 @@ export class InicioComponent implements OnInit {
 
     }
 
-
-
-
   }
-
-
-
-
-
 
 }
