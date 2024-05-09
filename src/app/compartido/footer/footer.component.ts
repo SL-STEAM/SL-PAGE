@@ -1,6 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
-import { Router } from '@angular/router';
-import { Directive, ElementRef, HostListener, Input } from '@angular/core';
+
 import lottie from 'lottie-web';
 
 @Component({

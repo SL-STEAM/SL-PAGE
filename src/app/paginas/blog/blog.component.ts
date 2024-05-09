@@ -1,7 +1,6 @@
 import { CarruselService } from '../../compartido/servicios/carrusel.service';
-import { ModalService } from '../../compartido/servicios/modal.service';
 import { FormBuilder } from '@angular/forms';
-import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { timer } from 'rxjs';
 
 import { Router } from '@angular/router';
@@ -73,7 +72,7 @@ export class BlogComponent implements OnInit {
   @ViewChild('panama') panama!: ElementRef;
   @ViewChild('honduras') honduras!: ElementRef;
 
-  constructor(private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder, private showmodal: ModalService){
+  constructor(private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder){
  
      
    

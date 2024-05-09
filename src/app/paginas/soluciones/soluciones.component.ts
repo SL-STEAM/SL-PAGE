@@ -1,5 +1,4 @@
 import { CarruselService } from '../../compartido/servicios/carrusel.service';
-import { ModalService } from '../../compartido/servicios/modal.service';
 import { FormBuilder } from '@angular/forms';
 import { Component, ElementRef, HostListener, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { timer } from 'rxjs';
@@ -85,7 +84,7 @@ export class SolucionesComponent implements OnInit {
   @ViewChild('panama') panama!: ElementRef;
   @ViewChild('honduras') honduras!: ElementRef;
 
-  constructor(private viewportScroller: ViewportScroller, private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder, private showmodal: ModalService){
+  constructor(private viewportScroller: ViewportScroller, private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder){
  
      
    

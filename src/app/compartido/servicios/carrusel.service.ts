@@ -11,6 +11,7 @@ export class CarruselService {
   get carruselIdAction$():number {
     return this.carruselId.getValue();
   }  
+  
   guardarCarruselId(id: number){
     this.carruselId.next(id);
   }

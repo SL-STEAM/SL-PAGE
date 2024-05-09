@@ -1,7 +1,6 @@
 import { CarruselService } from '../../compartido/servicios/carrusel.service';
-import { ModalService } from '../../compartido/servicios/modal.service';
 import { FormBuilder } from '@angular/forms';
-import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { timer } from 'rxjs';
 
 import { Router } from '@angular/router';
@@ -108,7 +107,7 @@ export class ModelosComponent implements OnInit {
   divStyleRastreo: any = {}; 
   divStyleRealidad: any = {}; 
 
-  constructor(private viewportScroller: ViewportScroller, private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder, private showmodal: ModalService){
+  constructor(private viewportScroller: ViewportScroller, private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder){
  
      
    

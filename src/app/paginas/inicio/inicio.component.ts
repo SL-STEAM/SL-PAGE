@@ -1,5 +1,5 @@
 import { CarruselService } from './../../compartido/servicios/carrusel.service';
-import { ModalService } from './../../compartido/servicios/modal.service';
+
 import { FormBuilder } from '@angular/forms';
 import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { timer } from 'rxjs';
@@ -131,7 +131,7 @@ export class InicioComponent implements OnInit {
 
 
 
-  constructor(private viewportScroller: ViewportScroller, private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder, private showmodal: ModalService){
+  constructor(private viewportScroller: ViewportScroller, private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder){
 
   }
 

@@ -1,7 +1,5 @@
-import { ModalService } from './../servicios/modal.service';
+
 import { Component, HostListener, Inject, ChangeDetectionStrategy } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
-import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -13,8 +11,7 @@ export class HeaderComponent {
   scrolled: boolean = true;
   lastScroll: number = 0;
   now: number = 0;
-  formEnviado$ = this.showmodal.formEnviado$;
-  btnclickclose$ = this.showmodal.btnclickclose$;
+
 
   ocultar = 0;
   mostarminibanner: boolean = false;
@@ -39,7 +36,6 @@ export class HeaderComponent {
     this.isUnderlinedSoluciones = false;
     this.isUnderlinedBlog = false;
   }
-  
 
   toggleUnderlineModel() {
     this.isUnderlinedModel = true;
@@ -62,24 +58,7 @@ export class HeaderComponent {
     this.isUnderlinedSoluciones = false;
   }
 
-  keepUnderline() {
-    // No necesitas esta función en este escenario, ya que cada función de toggle maneja el subrayado individualmente.
-  }
 
-  constructor(@Inject(DOCUMENT) private document: Document, private router: Router, private showmodal: ModalService) {
-    router.events.subscribe(s => {
-      // Aquí puedes agregar lógica adicional si es necesario
-    });
-  }
 
-  @HostListener("window:scroll", [])
-  onWindowScroll() {
-    this.now = window.scrollY;
-    if (this.now > this.lastScroll && this.scrolled) {
-      this.scrolled = false;
-    } else if (this.now < this.lastScroll && !this.scrolled) {
-      this.scrolled = true;
-    }
-    this.lastScroll = this.now;
-  }
+
 }
