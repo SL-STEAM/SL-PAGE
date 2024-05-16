@@ -1,9 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-// body {
-//   overflow-x: hidden;
-//   margin: 0;
-//   padding: 0;
-// }
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
 
 
 
@@ -615,9 +620,26 @@
 
 .texto2{
       font-size: 24px;
-      font-family: 'Century Gothic';
+      font-family: 'Arial Nova', Arial, sans-serif;
 }
 
+.backRed {
+    background-color: #F7003E; /* Fondo rojo */
+    color: white; /* Texto blanco para contrastar */
+    padding: 0 3px; /* Espacio adicional alrededor del texto */
+    font-weight: bold;
+}
+
+
+
+@keyframes revealText {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
 
 
     @media only screen and (max-width: 1480px) {
