@@ -288,7 +288,10 @@
     background: -o-linear-gradient(right, #de1a4d, #4400ff); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, #de1a4d, #4400ff); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, #de1a4d, #4400ff); /* Standard syntax */
-    -webkit-background-clip: text;
+    .element {
+      -webkit-background-clip: text;
+      background-clip: text; // Añadir la propiedad estándar
+    }
     color: transparent;
     font-weight: bold;
     

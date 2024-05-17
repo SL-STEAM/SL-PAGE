@@ -108,9 +108,7 @@ export class ModelosComponent implements OnInit {
   divStyleRealidad: any = {}; 
 
   constructor(private viewportScroller: ViewportScroller, private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder){
- 
-     
-   
+
   }
 
   scrollToSection(){

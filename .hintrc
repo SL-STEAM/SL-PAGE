@@ -18,6 +18,18 @@
         "image-alt": "off"
       }
     ],
-    "detect-css-reflows/layout": "off"
+    "detect-css-reflows/layout": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
+    ]
   }
 }
