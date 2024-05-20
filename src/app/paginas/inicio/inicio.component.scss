@@ -13,9 +13,8 @@ body {
 .hablemos {
   position: absolute; 
   font-size: 24px; 
-  border: 2px solid #ffffff00; 
-  left: 980px; 
-  top: 760px; 
+  left: 1050px; 
+  top: 690px; 
   padding-left: 55px; 
   padding-top: 5px; 
   padding-bottom: 5px; 
@@ -62,12 +61,11 @@ body {
 
 
 .mago {
-  width: 100%; 
-  height: auto; 
+  border: 2px solid red;
+  width: 75%; 
+  height: 100%; 
   background-color: transparent; 
-  margin-left: auto; 
-  margin-right: auto; 
-  margin-top: -2%;
+
 }
 
 
@@ -108,9 +106,8 @@ body {
   .hablemos {
     position: absolute; 
     font-size: 22px; 
-    border: 2px solid #ffffff00; 
-    left: 765px; 
-    top: 610px; 
+    left: 790px; 
+    top: 560px; 
     padding-left: 55px; 
     padding-top: 5px; 
     padding-bottom: 5px; 
@@ -137,20 +134,16 @@ body {
   }
 
   .row{
-    margin-top: -50px;
+    margin-top: 0px;
   }
 
   .mapa-container {
     background-color: #f9f9f9;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-bottom: 7%;
+    margin-top: 0;
   }
 
-  .mago {
-    margin-top: -15%;
-  }
   
   #ondaGris{
     position: absolute; 
@@ -173,9 +166,8 @@ body {
   .hablemos {
     position: absolute; 
     font-size: 20px; 
-    border: 2px solid #ffffff00; 
     left: 600px; 
-    top: 340px; 
+    top: 250px; 
     padding-left: 45px; 
     padding-top: 5px; 
     padding-bottom: 5px; 
@@ -577,7 +569,7 @@ body {
 
 .mapa-container {
   background-color: #f9f9f9;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 }
@@ -773,7 +765,7 @@ body {
 .custom-card {
   // margin-left: 15px;
   // margin-right: 15px;
-  margin-top: 60px;
+  // margin-top: 60px;
 }
 
 .custom-card .card-body {

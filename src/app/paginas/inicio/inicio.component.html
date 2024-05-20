@@ -1,270 +1,351 @@
 
-<div class="contenido" style="background-color: #000000; width: 100%;">    
+<div class="contenido" style="background-color: #000000; width: 100%;">
   <!-- Inicio  slider  -->
-    
+
   <div class="video-container">
 
-    <img style="width: 85%; height: auto; position: relative;" loading="lazy" src="assets/videos/animados.gif" alt="Mi GIF">
+    <img style="width: 85%; height: auto; position: relative;" loading="lazy"
+      src="assets/videos/animados.gif" alt="Mi GIF">
 
-      <div class="texto-superpuesto">
+    <div class="texto-superpuesto">
 
-        <span style="font-size: 45px; font-family: 'Century Gothic'; font-weight: bold;" class="animate-text delay-1">¡Hola!</span>
-        <p  class="texto2 animate-text delay-2" style="margin-top: -18px; margin-bottom: -16px;">Te damos la bienvenida a SL Consulting</p>
-        <span class="animate-text delay-3"  style="font-size: 45px; font-family: 'Century Gothic'; font-weight: bold;">HACEMOS VISIBLE</span>
-        <!-- con el margin top de -80px lo bajo o lo subo-->
-        <p id="invisub" class="texto-superpuestoTituloBanner animate-text delay-4" style="margin-top: -120px; width: 545px;"></p>
-        <!-- <p id="tx" class="texto-superpuestoTituloBanner2" style="margin-top: -370px; margin-left: -65px;"></p> -->
-        <p style="margin-left: 2px; margin-top: 65px; font-size: 24px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1.2;">Entendemos las <span class="backRed">realidades humanas</span> <br> que hay detrás de las marcas, los negocios <br> y su gente.</p>
-      </div>
-
-  </div>
-  <!-- Fin  slider  --> 
-
-    <div class="row" style="position: relative; width: auto;">
-   <!-- Onda animada-->
-   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-   <p id="ondaGris" style="position: absolute; width: 100%; margin-top: -250px;"> </p>
-   <p class="estamos">Estamos en una <strong >revolución de la consciencia</strong>, y nuestro <br> propósito es humanizar la forma en que las empresas, las <br> marcas y sus lideres impactan los contextos socilaes y <br> culturales de su gente y de su entorno.</p>
-  
-</div>
-  
-
-<div class="banner" #banner style="display: none;">
-  <ul class="redes-sociales">
-    
-    <li><a *ngIf="arquetipos" href="#" target="_blank" rel="noopener noreferrer" (mouseover)="cambiarA()"><img style="width: 50px;" src="assets/imagenes/iconos/arquetipos.svg" alt="Link"></a>
-      <a *ngIf="arquetiposColor" href="#" target="_blank" rel="noopener noreferrer" (mouseout)="cambiarABlanco()"><img style="width: 50px;" src="assets/imagenes/iconos/arquetiposColor.svg" alt="Link"></a>
-    </li>
-    <li style="margin-top: -2px;"><a *ngIf="email" href="#" (mouseover)="cambiarE()"><img style="width: 40px;" src="assets/imagenes/iconos/email.svg" alt="email"></a>
-      <a *ngIf="emailColor" href="#" target="_blank" rel="noopener noreferrer" (mouseout)="cambiarEBlanco()"><img style="width: 40px;" src="assets/imagenes/iconos/emailColor.svg" alt="email"></a>
-    </li>
-    <li><a *ngIf="facebook" href="#" (mouseover)="cambiarF()"><img style="width: 35px;" src="assets/imagenes/iconos/facebook.svg" alt="Facebook"></a>
-      <a *ngIf="facebookColor" href="#" target="_blank" rel="noopener noreferrer" (mouseout)="cambiarFBlanco()"><img style="width: 35px;" src="assets/imagenes/iconos/facebookColor.svg" alt="Facebook"></a>
-    </li>
-    <li><a *ngIf="instagram" href="#" target="_blank" rel="noopener noreferrer" (mouseover)="cambiarI()"><img style="width: 35px;" src="assets/imagenes/iconos/instagram.svg" alt="Instagram"></a>
-      <a *ngIf="instagramColor" href="#" target="_blank" rel="noopener noreferrer" (mouseout)="cambiarIBlanco()"><img style="width: 35px;" src="assets/imagenes/iconos/instagramColor.svg" alt="Instagram"></a>
-    </li>
-    <li><a *ngIf="link" href="#" target="_blank" (mouseover)="cambiarL()"><img style="width: 35px;" src="assets/imagenes/iconos/link.svg" alt="Link"></a>
-      <a *ngIf="linkColor" href="https://www.linkedin.com/company/sl-insights-arquetypos" target="_blank" rel="noopener noreferrer" (mouseout)="cambiarLBlanco()"><img style="width: 35px;" src="assets/imagenes/iconos/linkColor.svg" alt="Link"></a>
-    </li>
-    
-    <!-- Añade más iconos de redes sociales si lo deseas -->
-  </ul>
-</div>
-
-
-<div class="mapa-container">
-
-  <div class="col-md-1"></div>
-
-  <div class="col-md-10 subtitleMain" style="background-color: #F9F9F9; width: 100%;">
-    <div class="card custom-card border-0" style="background-color: #F9F9F9; width: 100%;"> <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta -->  
-      
-      <img loading="lazy" class="mago" src="assets/videos/myg3.gif" alt="Mi GIF"> 
-      <!-- boton Mago-->
-
-        <button class="btn custom-button10 hablemos" ><strong>Hablemos</strong></button>
-           
+      <span
+        style="font-size: 45px; font-family: 'Century Gothic'; font-weight: bold;"
+        class="animate-text delay-1">¡Hola!</span>
+      <p class="texto2 animate-text delay-2"
+        style="margin-top: -18px; margin-bottom: -16px;">Te damos la bienvenida
+        a SL Consulting</p>
+      <span class="animate-text delay-3"
+        style="font-size: 45px; font-family: 'Century Gothic'; font-weight: bold;">HACEMOS
+        VISIBLE</span>
+      <!-- con el margin top de -80px lo bajo o lo subo-->
+      <p id="invisub" class="texto-superpuestoTituloBanner animate-text delay-4"
+        style="margin-top: -120px; width: 545px;"></p>
+      <!-- <p id="tx" class="texto-superpuestoTituloBanner2" style="margin-top: -370px; margin-left: -65px;"></p> -->
+      <p
+        style="margin-left: 2px; margin-top: 65px; font-size: 24px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1.2;">Entendemos
+        las <span class="backRed">realidades humanas</span> <br> que hay detrás
+        de las marcas, los negocios <br> y su gente.</p>
     </div>
+
+  </div>
+  <!-- Fin  slider  -->
+
+  <div class="row" style="position: relative; width: auto;">
+    <!-- Onda animada-->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <p id="ondaGris"
+      style="position: absolute; width: 100%; margin-top: -250px;"> </p>
+    <p class="estamos">Estamos en una <strong>revolución de la
+        consciencia</strong>, y nuestro <br> propósito es humanizar la forma en
+      que las empresas, las <br> marcas y sus lideres impactan los contextos
+      socilaes y <br> culturales de su gente y de su entorno.</p>
+
   </div>
 
-  <div class="col-md-1"></div>
+  <div class="banner" #banner style="display: none;">
+    <ul class="redes-sociales">
 
-</div>
+      <li><a *ngIf="arquetipos" href="#" target="_blank"
+          rel="noopener noreferrer" (mouseover)="cambiarA()"><img
+            style="width: 50px;" src="assets/imagenes/iconos/arquetipos.svg"
+            alt="Link"></a>
+        <a *ngIf="arquetiposColor" href="#" target="_blank"
+          rel="noopener noreferrer" (mouseout)="cambiarABlanco()"><img
+            style="width: 50px;"
+            src="assets/imagenes/iconos/arquetiposColor.svg" alt="Link"></a>
+      </li>
+      <li style="margin-top: -2px;"><a *ngIf="email" href="#"
+          (mouseover)="cambiarE()"><img style="width: 40px;"
+            src="assets/imagenes/iconos/email.svg" alt="email"></a>
+        <a *ngIf="emailColor" href="#" target="_blank" rel="noopener noreferrer"
+          (mouseout)="cambiarEBlanco()"><img style="width: 40px;"
+            src="assets/imagenes/iconos/emailColor.svg" alt="email"></a>
+      </li>
+      <li><a *ngIf="facebook" href="https://www.facebook.com/SLInsightsyArquetypos" (mouseover)="cambiarF()"><img
+            style="width: 35px;" src="assets/imagenes/iconos/facebook.svg"
+            alt="Facebook"></a>
+        <a *ngIf="facebookColor" href="https://www.facebook.com/SLInsightsyArquetypos" target="_blank"
+          rel="noopener noreferrer" (mouseout)="cambiarFBlanco()"><img
+            style="width: 35px;" src="assets/imagenes/iconos/facebookColor.svg"
+            alt="Facebook"></a>
+      </li>
+      <li><a *ngIf="instagram" href="https://www.instagram.com/slconsulting_i_a/" target="_blank"
+          rel="noopener noreferrer" (mouseover)="cambiarI()"><img
+            style="width: 35px;" src="assets/imagenes/iconos/instagram.svg"
+            alt="Instagram"></a>
+        <a *ngIf="instagramColor" href="https://www.instagram.com/slconsulting_i_a/" target="_blank"
+          rel="noopener noreferrer" (mouseout)="cambiarIBlanco()"><img
+            style="width: 35px;" src="assets/imagenes/iconos/instagramColor.svg"
+            alt="Instagram"></a>
+      </li>
+      <li><a *ngIf="link" href="#" target="_blank" (mouseover)="cambiarL()"><img
+            style="width: 35px;" src="assets/imagenes/iconos/link.svg"
+            alt="Link"></a>
+        <a *ngIf="linkColor"
+          href="https://www.linkedin.com/company/sl-insights-arquetypos"
+          target="_blank" rel="noopener noreferrer"
+          (mouseout)="cambiarLBlanco()"><img style="width: 35px;"
+            src="assets/imagenes/iconos/linkColor.svg" alt="Link"></a>
+      </li>
 
+      <!-- Añade más iconos de redes sociales si lo deseas -->
+    </ul>
+  </div>
 
+  <div class="mapa-container">
 
+    <div class="col-md-1"></div>
 
-<div class="row" style="display: flex; justify-content: center; align-items: center; background-color: #ffffff; border: 2px solid black;">
+    <div class="col-md-12"
+      style="background-color: #F9F9F9; width: 100%;">
+      <div class="" style="background-color: #F9F9F9; display: flex; justify-content: center; align-items: center; width: 100%;">
+        <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta -->
 
-  <div class="container" style="background-color: #ffffff; border: 2px solid red;" >
+        <img loading="lazy" class="mago" src="assets/videos/myg3.gif" alt="Mi GIF">
+        <!-- boton Mago-->
+
+        <button
+          class="btn custom-button10 hablemos"><strong>Hablemos</strong></button>
+
+      </div>
+    </div>
+
+    <div class="col-md-1"></div>
+
+  </div>
+
+  <div class="row"
+    style="display: flex; justify-content: center; align-items: center; background-color: #ffffff;">
+
+    <div class="container"
+      style="background-color: #ffffff; border: 2px solid red;">
 
       <!-- Primera fila -->
-    <div class="row" style="background-color: #ffffff;">
-        <div class="col-md-12" style="background-color: #ffffff; text-transform: none;">
-            <div class="card custom-card border-0" style="background-color: #ffffff; text-align: center;"> <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta -->
-            
-                  <!-- Aca va el titulo Somos reemplazando el ID de la imagen-->
-              <p id="somos" style="position: absolute; width: 40%; margin-top: -75px;  margin-left: 330px; background-color: transparent; z-index: 3;"> </p>
-            </div>
+      <div class="row" style="background-color: #ffffff;">
+        <div class="col-md-12"
+          style="background-color: #ffffff; text-transform: none;">
+          <div class="card custom-card border-0"
+            style="background-color: #ffffff; text-align: center;">
+            <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta -->
+
+            <!-- Aca va el titulo Somos reemplazando el ID de la imagen-->
+            <p id="somos"
+              style="position: absolute; width: 40%; margin-top: -75px;  margin-left: 330px; background-color: transparent; z-index: 3;">
+            </p>
+          </div>
         </div>
-    </div>
+      </div>
 
-
-    <!-- Segunda fila ( Desde aca comienzan los divs de las cards ) -->
-      <div class="row justify-content-center align-content-center" style="margin-top: 0px; gap: 1%;">
+      <!-- Segunda fila ( Desde aca comienzan los divs de las cards ) -->
+      <div class="row justify-content-center align-content-center"
+        style="margin-top: 0px; gap: 1%;">
 
         <div class="col-md-3" style="padding-top: 5px; padding-bottom: 5px;">
-          <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;" id="card_plan_1">
+          <div class="card plan custom-card cartas text-center"
+            style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;"
+            id="card_plan_1">
 
-            <img src="assets/imagenes/imaFichas/perpis.svg" alt="Nueva Imagen" class="zoom-in" style=" object-fit: cover; position: absolute; margin-left: 0px; margin-top: -5px; height: 100%">
-            
+            <img src="assets/imagenes/imaFichas/perpis.svg" alt="Nueva Imagen"
+              class="zoom-in"
+              style=" object-fit: cover; position: absolute; margin-left: 0px; margin-top: -5px; height: 100%">
 
-              <div class="card-body plan-card-body" style="width: 600px; height: 230px;">
-                <span class="miparrafo"> </span>
-              </div>
-
-
-          </div>
-        </div>
-
-
-        <div class="col-md-3" style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
-          <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;" id="card_plan_1">
-
-            <div class="card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-
-              <p id="dina" style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;"> </p>
-
-           </div>
-
-
-              <div class="card-body plan-card-body" style="width: 600px; height: 30px;">
-                <span class="miparrafo"> </span>
-              </div>
-
+            <div class="card-body plan-card-body"
+              style="width: 600px; height: 230px;">
+              <span class="miparrafo"> </span>
+            </div>
 
           </div>
         </div>
 
+        <div class="col-md-3"
+          style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
+          <div class="card plan custom-card cartas text-center"
+            style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;"
+            id="card_plan_1">
 
-        <div class="col-md-3" style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
-          <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;" id="card_plan_1">
+            <div class="card-overlay"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
 
-            <p id="crea" style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;"> </p>
+              <p id="dina"
+                style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;">
+              </p>
 
-         
-              <div class="card-body plan-card-body" style=" padding-top: 250px;">
-                <span class="miparrafo"> </span> 
-              </div>
+            </div>
+
+            <div class="card-body plan-card-body"
+              style="width: 600px; height: 30px;">
+              <span class="miparrafo"> </span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-3"
+          style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
+          <div class="card plan custom-card cartas text-center"
+            style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;"
+            id="card_plan_1">
+
+            <p id="crea"
+              style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;">
+            </p>
+
+            <div class="card-body plan-card-body" style=" padding-top: 250px;">
+              <span class="miparrafo"> </span>
+            </div>
           </div>
         </div>
 
       </div>
 
-      
-      <div class="row justify-content-center align-content-center" style="margin-top: -30px; gap: 1%;">
-
-
-        <div class="col-md-3" style="text-align: center;">
-
-          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
-
-          <strong><span style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Perspicaces</span></strong>
-        
-          <img style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;" (click)="displayPerpis()" [src]="flechaCerrada" alt="">
-       </div>
-
+      <div class="row justify-content-center align-content-center"
+        style="margin-top: -30px; gap: 1%;">
 
         <div class="col-md-3" style="text-align: center;">
 
-          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
-          
-          <strong><span style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Dinámicos</span></strong>
+          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola"
+            style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
 
-          <img style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;" (click)="displayDina()" [src]="flechaCerradaDina" alt="">
-     
+          <strong><span
+              style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Perspicaces</span></strong>
+
+          <img
+            style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;"
+            (click)="displayPerpis()" [src]="flechaCerrada" alt>
         </div>
 
+        <div class="col-md-3" style="text-align: center;">
+
+          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola"
+            style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
+
+          <strong><span
+              style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Dinámicos</span></strong>
+
+          <img
+            style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;"
+            (click)="displayDina()" [src]="flechaCerradaDina" alt>
+
+        </div>
 
         <div class="col-md-3" style="text-align: center;">
-          
-          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
 
-          <strong><span style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Creativos</span></strong>
+          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola"
+            style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
 
-          <img style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;" (click)="displayCrea()" [src]="flechaCerradaCrea" alt="">
-     
+          <strong><span
+              style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Creativos</span></strong>
+
+          <img
+            style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;"
+            (click)="displayCrea()" [src]="flechaCerradaCrea" alt>
+
         </div>
 
       </div>
 
-      <div class="row justify-content-center align-content-center" style="margin-top: 5px;">
+      <div class="row justify-content-center align-content-center"
+        style="margin-top: 5px;">
 
-
-
-        <div class="col-md-3" style="text-align: center; padding-left: 25px; padding-right: 55px;">
+        <div class="col-md-3"
+          style="text-align: center; padding-left: 25px; padding-right: 55px;">
           <div class="perpis" #perpis style="display: none;">
-          <p style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
-            lo evidente!</strong> <br> <br> Percibimos los detalles y
-            las sutilezas que pasan
-            desapercibidos a los ojos
-            de muchos. Analizamos
-            para comprender
-            situaciones de manera
-            rápida y profunda. 
-          </p>
-        </div>
+            <p
+              style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong
+                style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
+                lo evidente!</strong> <br> <br> Percibimos los detalles y
+              las sutilezas que pasan
+              desapercibidos a los ojos
+              de muchos. Analizamos
+              para comprender
+              situaciones de manera
+              rápida y profunda.
+            </p>
+          </div>
         </div>
 
-
-        <div class="col-md-3" style="text-align: center; padding-left: 45px; padding-right: 33px;">
+        <div class="col-md-3"
+          style="text-align: center; padding-left: 45px; padding-right: 33px;">
           <div #dina style="display: none;">
-          <p style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
-            lo evidente!</strong> <br> <br> Percibimos los detalles y
-            las sutilezas que pasan
-            desapercibidos a los ojos
-            de muchos. Analizamos
-            para comprender
-            situaciones de manera
-            rápida y profunda. 
-          </p>
-        </div>
+            <p
+              style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong
+                style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
+                lo evidente!</strong> <br> <br> Percibimos los detalles y
+              las sutilezas que pasan
+              desapercibidos a los ojos
+              de muchos. Analizamos
+              para comprender
+              situaciones de manera
+              rápida y profunda.
+            </p>
+          </div>
         </div>
 
-
-        <div class="col-md-3" style="text-align: center; padding-left: 62px; padding-right: 20px;">
+        <div class="col-md-3"
+          style="text-align: center; padding-left: 62px; padding-right: 20px;">
           <div #crea style="display: none;">
-          <p style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
-            lo evidente!</strong> <br> <br> Percibimos los detalles y
-            las sutilezas que pasan
-            desapercibidos a los ojos
-            de muchos. Analizamos
-            para comprender
-            situaciones de manera
-            rápida y profunda. 
-          </p>
-        </div>
-        </div>
-
-      </div>
-
-        <div class="row justify-content-center align-content-center" style="margin-top: 0px; gap: 1%;">
-
-          <div class="col-md-2"></div>
-
-        <div class="col-md-3" style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
-          <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;" id="card_plan_1">
-
-            <div class="card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-
-              
-              <p id="arriesga" style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;"> </p>
-
-           </div>
-
-
-              <div class="card-body plan-card-body" style=" padding-top: 250px;">
-                <span class="miparrafo"> </span> 
-              </div>
+            <p
+              style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong
+                style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
+                lo evidente!</strong> <br> <br> Percibimos los detalles y
+              las sutilezas que pasan
+              desapercibidos a los ojos
+              de muchos. Analizamos
+              para comprender
+              situaciones de manera
+              rápida y profunda.
+            </p>
           </div>
         </div>
 
-        <div class="col-md-3" style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
-          <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;" id="card_plan_1">
+      </div>
 
-            <div class="card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+      <div class="row justify-content-center align-content-center"
+        style="margin-top: 0px; gap: 1%;">
 
-              <p id="provocador" style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;"> </p>
+        <div class="col-md-2"></div>
 
-      
-           </div>
+        <div class="col-md-3"
+          style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
+          <div class="card plan custom-card cartas text-center"
+            style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;"
+            id="card_plan_1">
 
+            <div class="card-overlay"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
 
-              <div class="card-body plan-card-body" style=" padding-top: 250px;">
-                <span class="miparrafo"> </span>
-              </div>
+              <p id="arriesga"
+                style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;">
+              </p>
+
+            </div>
+
+            <div class="card-body plan-card-body" style=" padding-top: 250px;">
+              <span class="miparrafo"> </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3"
+          style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
+          <div class="card plan custom-card cartas text-center"
+            style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;"
+            id="card_plan_1">
+
+            <div class="card-overlay"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+
+              <p id="provocador"
+                style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;">
+              </p>
+
+            </div>
+
+            <div class="card-body plan-card-body" style=" padding-top: 250px;">
+              <span class="miparrafo"> </span>
+            </div>
           </div>
         </div>
 
@@ -272,28 +353,35 @@
 
       </div>
 
-      <div class="row justify-content-center align-content-center" style="margin-top: -30px; gap: 1%;">
+      <div class="row justify-content-center align-content-center"
+        style="margin-top: -30px; gap: 1%;">
 
         <div class="col-md-2"></div>
-      
+
         <div class="col-md-3" style="text-align: center;">
-          
-          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
 
-          <strong><span style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Arriesgados</span></strong>
+          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola"
+            style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
 
-          <img style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;" (click)="displayArriesga()" [src]="flechaCerradaArriesga" alt="">
-     
+          <strong><span
+              style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Arriesgados</span></strong>
+
+          <img
+            style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;"
+            (click)="displayArriesga()" [src]="flechaCerradaArriesga" alt>
 
         </div>
 
         <div class="col-md-3" style="text-align: center;">
 
-          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
-        
-          <strong><span style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Provocadores</span></strong>
-          <img style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;" (click)="displayProvo()" [src]="flechaCerradaProvo" alt="">
-     
+          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola"
+            style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
+
+          <strong><span
+              style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Provocadores</span></strong>
+          <img
+            style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;"
+            (click)="displayProvo()" [src]="flechaCerradaProvo" alt>
 
         </div>
 
@@ -301,55 +389,142 @@
 
       </div>
 
-      
-      <div class="row justify-content-center align-content-center" style="margin-top: 5px; gap: 1%;">
+      <div class="row justify-content-center align-content-center"
+        style="margin-top: 5px; gap: 1%;">
 
         <div class="col-md-2"></div>
-      
-        <div class="col-md-3" style="text-align: center; padding-left: 40px; padding-right: 25px;">
+
+        <div class="col-md-3"
+          style="text-align: center; padding-left: 40px; padding-right: 25px;">
           <div #arriesga style="display: none;">
-          <p style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
-            lo evidente!</strong> <br> <br> Percibimos los detalles y
-            las sutilezas que pasan
-            desapercibidos a los ojos
-            de muchos. Analizamos
-            para comprender
-            situaciones de manera
-            rápida y profunda. 
-          </p>
-        </div>
+            <p
+              style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong
+                style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
+                lo evidente!</strong> <br> <br> Percibimos los detalles y
+              las sutilezas que pasan
+              desapercibidos a los ojos
+              de muchos. Analizamos
+              para comprender
+              situaciones de manera
+              rápida y profunda.
+            </p>
+          </div>
         </div>
 
-        <div class="col-md-3" style="text-align: center; padding-left: 30px; padding-right: 30px;">
+        <div class="col-md-3"
+          style="text-align: center; padding-left: 30px; padding-right: 30px;">
           <div #provo style="display: none;">
-          <p style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
-            lo evidente!</strong> <br> <br> Percibimos los detalles y
-            las sutilezas que pasan
-            desapercibidos a los ojos
-            de muchos. Analizamos
-            para comprender
-            situaciones de manera
-            rápida y profunda. 
-          </p>
-        </div>
+            <p
+              style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong
+                style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
+                lo evidente!</strong> <br> <br> Percibimos los detalles y
+              las sutilezas que pasan
+              desapercibidos a los ojos
+              de muchos. Analizamos
+              para comprender
+              situaciones de manera
+              rápida y profunda.
+            </p>
+          </div>
         </div>
 
         <div class="col-md-2"></div>
 
       </div>
 
-
       <br>
 
       <br>
+
+    </div>
+  </div>
+
+
+
+
+<!-- ESTE SERA EL CONTAINER FINAL ANYTES DE PASAR A MODELOS DEL LAND PAGE-->
+<div class="mapa-container" style="margin-top: 0px;">
+
+  <div class="row" style="margin-bottom: 0px;">
+
+    <div class="container-fluid" style="background-color: transparent;" >
+      <!-- Primera fila -->
+      <div class="row">
+        <!-- Este div no modificar el color-->
+          <div class="justify-content-center" style="background-color: transparent;">
+             
+                <img loading="lazy" style="width: 100%; background-color: transparent;" src="assets/videos/nb.gif" alt="Mi GIF"> 
+                
+            </div>
+          </div>
+
+    </div>
+  </div>
+
+  <!-- TITULO ANIMADO  <div class="texto-superpuesto2 subtitleMain">
+    <p id="titulomapa"></p>
+  </div> -->
+
+  
+
+  <!-- Carrusel-->
+  <div class="row" style="background-color: #4DB2B0; height: 60px; margin-top: 0px; width: 100%;">
+
+    <div class="container"><strong>
+      <p class="texto" style="color: rgb(255, 255, 255); margin-top: 10px; font-family: Century Gothic ;font-size: 24px;">  INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR <span style="font-size: 22px;"> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span> <span style="font-size: 22px;"> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span> <span style="font-size: 22px;"> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span> <span style="font-size: 22px;"> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span> </p></strong>
+    </div>
 
   </div>
-</div>
+
+  <style>
+    /* Aca es el SCSS para que se mueva el banner */
+    .texto {
+      animation: mover 25s linear infinite;
+      /* Aumenta el ancho del texto para evitar cortes */
+      width: 100%; /* Ajusta el ancho según el tamaño de tu banner */
+      white-space: nowrap; /* Evita saltos de línea */
+    }
+  
+    @keyframes mover {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
 
 
 
+  <div  style="background-color: #ffffff; width: 100vw;" >
+
+    <div class="col-md-12">
+    
+    <div class="row" style="background-color: #39c02700; margin-left: 0; padding-top: 90px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px; border: 2px solid blue;" >
+    
+    
+        <div class="col-md-4" style=" border: 2px solid rgba(128, 0, 128, 0);">
+          
+          <div style="margin-left: 140px; margin-top: 80px;">
+            <img loading="lazy" src="assets/imagenes/bolas3/bolaclick.svg" alt="Bola" style="height: 85px; margin-top: -39px; margin-left: -290px; position: absolute; ">
+                      
+            <p  class="texto2 animate-text" style="font-size: 34px; color: black; font-family: 'Century Gothic'; text-align: left; line-height:1; margin-left: -90px;">"<strong>Los insights</strong> reflejan
+               <br>la trama de cada<br>historia y los<br> <strong>arquetipos</strong> son los<br> personajes que le<br> dan vida a esas<br>historias".</p>
+    
+               <button class="btn custom-button10" style="font-size: 22px; margin-left: -280px; margin-top: 25%; margin-bottom: 80px; padding-left: 50px; padding-right: 50px; font-family: Century Gothic; cursor: pointer;"><strong>Hablemos</strong></button>
+        </div>
+    
+      </div>
 
 
-
-
-
+      <div class="col-md-4" style="border: 2px solid #26db20;">
+        <div class="custom-card border-0" style="background-color: transparent;"> <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta --> 
+          <p id="cabezota" style="width: 100%; height: auto;"> </p>  
+        </div>
+    </div>
+  
+  </div>
+  
+  </div>
+  </div> 
