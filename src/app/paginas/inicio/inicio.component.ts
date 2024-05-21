@@ -36,6 +36,9 @@ export class InicioComponent implements OnInit {
   instagram: boolean = true;
   instagramColor: boolean = false;
 
+  whatsapp: boolean = true;
+  whatsappColor: boolean = false;
+
   arquetipos: boolean = true;
   arquetiposColor: boolean = false;
 
@@ -227,6 +230,15 @@ export class InicioComponent implements OnInit {
     }
   }
 
+  cambiarW(){
+    this.whatsapp = false;
+    this.whatsappColor = true;
+  }
+
+  cambiarWBlanco(){
+    this.whatsapp = true;
+    this.whatsappColor = false;
+  }
 
   cambiarF(){
     this.facebook = false;
