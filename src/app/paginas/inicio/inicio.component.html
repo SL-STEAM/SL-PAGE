@@ -5,7 +5,7 @@
   <div class="video-container">
 
     <img style="width: 85%; height: auto; position: relative;" loading="lazy"
-      src="assets/videos/animados.gif" alt="Mi GIF">
+      src="assets\videos\animados.gif" alt="Mi GIF">
 
     <div class="texto-superpuesto">
 
@@ -35,12 +35,11 @@
   <!-- Onda animada-->
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-   <p id="ondaGris" style="position: absolute; width: 100%; margin-top: -250px;"> </p>
-   <p class="estamos">Estamos en una <strong >revolución de la consciencia</strong>, y nuestro <br> propósito es humanizar la forma en que las empresas, las <br> marcas y sus lideres impactan los contextos socilaes y <br> culturales de su gente y de su entorno.</p>
+  <p id="ondaGris" style="position: absolute; width: 100%; margin-top: -250px;"> </p>
+  <p class="estamos">Estamos en una <strong >revolución de la consciencia</strong>, y nuestro <br> propósito es humanizar la forma en que las empresas, las <br> marcas y sus lideres impactan los contextos socilaes y <br> culturales de su gente y de su entorno.</p>
   
 </div>
   
-
   <div class="banner" #banner style="display: none;">
     <ul class="redes-sociales">
 
@@ -60,6 +59,15 @@
           (mouseout)="cambiarEBlanco()"><img style="width: 40px;"
             src="assets/imagenes/iconos/emailColor.svg" alt="email"></a>
       </li>
+
+      <li style="margin-top: -2px;"><a *ngIf="whatsapp" href="https://web.whatsapp.com/"
+        (mouseover)="cambiarW()"><img style="width: 35px;"
+          src="assets/imagenes/iconos/whatsapp.svg" alt="whatsapp"></a>
+      <a *ngIf="whatsappColor" href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"
+        (mouseout)="cambiarWBlanco()"><img style="width: 35px;"
+          src="assets/imagenes/iconos/whatsappColor.svg" alt=""></a>
+    </li>
+
       <li><a *ngIf="facebook" href="https://www.facebook.com/SLInsightsyArquetypos" (mouseover)="cambiarF()"><img
             style="width: 35px;" src="assets/imagenes/iconos/facebook.svg"
             alt="Facebook"></a>
@@ -104,7 +112,7 @@
         <!-- boton Mago-->
 
         <button class="btn custom-button10 hablemos" ><strong>Hablemos</strong></button>
-           
+          
     </div>
   </div>
 
@@ -166,7 +174,7 @@
 
               <!-- <p id="dina" style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;"> </p> -->
 
-           </div>
+          </div>
 
             <div class="card-body plan-card-body"
               style="width: 600px; height: 30px;">
@@ -184,7 +192,7 @@
 
             <!-- <p id="crea" style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;"> </p> -->
 
-         
+        
               <div class="card-body plan-card-body" style=" padding-top: 250px;">
                 <span class="miparrafo"> </span> 
               </div>
@@ -204,7 +212,7 @@
           <strong><span style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Perspicaces</span></strong>
         
           <img style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;" (click)="displayPerpis()" [src]="flechaCerrada" alt="">
-       </div>
+      </div>
 
 
         <div class="col-md-3" style="text-align: center;">
@@ -216,7 +224,7 @@
               style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Dinámicos</span></strong>
 
           <img style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;" (click)="displayDina()" [src]="flechaCerradaDina" alt="">
-     
+    
         </div>
 
         <div class="col-md-3" style="text-align: center;">
@@ -228,7 +236,7 @@
               style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Creativos</span></strong>
 
           <img style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;" (click)="displayCrea()" [src]="flechaCerradaCrea" alt="">
-     
+    
         </div>
 
       </div>
@@ -483,31 +491,30 @@
   </style>
 
 
-
-  <div  style="background-color: #ffffff; width: 100vw;" >
+  <div  style="background-color:  #ffffff; width: 100vw;" >
 
     <div class="col-md-12">
     
-    <div class="row" style="background-color: #39c02700; margin-left: 0; padding-top: 90px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px; border: 2px solid blue;" >
+    <div class="row" style="background-color: #39c02700; margin-left: 0; padding-top: 0px; padding-bottom: 0px; padding-left: 150px; padding-right: 0px; border-0 ;" >
     
     
-        <div class="col-md-4" style=" border: 2px solid rgba(128, 0, 128, 0);">
+        <div class="col-md-5" style=" border: 2px solid rgba(128, 0, 128, 0);">
           
           <div style="margin-left: 140px; margin-top: 80px;">
-            <img loading="lazy" src="assets/imagenes/bolas3/bolaclick.svg" alt="Bola" style="height: 85px; margin-top: -39px; margin-left: -290px; position: absolute; ">
+            <img loading="lazy" src="assets/imagenes/bolas3/bolaclick.svg" alt="Bola" style="height: 85px; margin-top: -39px; margin-left: -140px; position: absolute; ">
                       
             <p  class="texto2 animate-text" style="font-size: 34px; color: black; font-family: 'Century Gothic'; text-align: left; line-height:1; margin-left: -90px;">"<strong>Los insights</strong> reflejan
-               <br>la trama de cada<br>historia y los<br> <strong>arquetipos</strong> son los<br> personajes que le<br> dan vida a esas<br>historias".</p>
+              <br>la trama de cada<br>historia y los<br> <strong>arquetipos</strong> son los<br> personajes que le<br> dan vida a esas<br>historias".</p>
     
-               <button class="btn custom-button10" style="font-size: 22px; margin-left: -280px; margin-top: 25%; margin-bottom: 80px; padding-left: 50px; padding-right: 50px; font-family: Century Gothic; cursor: pointer;"><strong>Hablemos</strong></button>
+              <button class="btn custom-button10" style="font-size: 22px; margin-left: -90px; margin-top: 25%; margin-bottom: 80px; padding-left: 50px; padding-right: 50px; font-family: Century Gothic; cursor: pointer;"><strong>Hablemos</strong></button>
         </div>
     
       </div>
 
 
-      <div class="col-md-4" style="border: 2px solid #26db20;">
-        <div class="custom-card border-0" style="background-color: transparent;"> <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta --> 
-          <p id="cabezota" style="width: 100%; height: auto;"> </p>  
+      <div class="col-md-6" style="border: 0;">
+        <img style="width: 100%; height: auto; position: auto;" loading="lazy"
+        src="assets\videos\cere.gif" alt="Mi GIF">
         </div>
     </div>
   
