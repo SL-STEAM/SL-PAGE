@@ -158,6 +158,8 @@ export class InicioComponent implements OnInit {
   displayDina(){
 
     this.indiceFlechaDina = (this.indiceFlechaDina + 1) % this.flechasDina.length;
+    console.log(this.flechasDina.length);
+    
     this.flechaCerradaDina = this.flechasDina[this.indiceFlechaDina];
 
     if (this.dina) {
@@ -586,16 +588,6 @@ export class InicioComponent implements OnInit {
     }
 
 
-    const animationContainerDina = document.getElementById('dina');
-
-    if (animationContainerDina) {
-      const animation3 = lottie.loadAnimation({ container: animationContainerDina, renderer: 'svg', loop: false, autoplay: false, path: 'assets/json/Medio/dina.json' });
-      animation3.addEventListener('DOMLoaded', () => {
-      });
-
-      animation3.setSpeed(0.3);
-    }
-
     const animationContainerCrea = document.getElementById('crea');
 
     if (animationContainerCrea) {
@@ -643,7 +635,6 @@ export class InicioComponent implements OnInit {
 
   banderaLinea1 = true;
 
-
   banderaLinea2 = true;
 
   banderaLinea3 = true;
@@ -657,9 +648,8 @@ export class InicioComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: Event) {
         // Obtener la posición actual del scroll en el eje Y
-        const scrollYPos = window.scrollY || window.pageYOffset;
-
-        // console.log(scrollYPos)
+        const scrollYPos = window.scrollY
+        console.log(scrollYPos)
 
         if (scrollYPos < 1040){
           if (this.banner) {
@@ -743,14 +733,7 @@ export class InicioComponent implements OnInit {
             this.tituloPuente.nativeElement.style.display = 'block';
           }
 
-
-
-
-
         }
-
-        //3027
-
 
 
         if(scrollYPos > 4220){
@@ -772,7 +755,7 @@ export class InicioComponent implements OnInit {
           const animationcabezota = document.getElementById('cabezota');
 
           if (animationcabezota) {
-            const animation5 = lottie.loadAnimation({ container: animationcabezota, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/cabezota2.json' });
+            const animation5 = lottie.loadAnimation({ container: animationcabezota, renderer: 'svg', loop: false, autoplay: false, path: 'assets/json/cabezota2.json' });
             animation5.addEventListener('DOMLoaded', () => {
             });
 
@@ -840,277 +823,7 @@ export class InicioComponent implements OnInit {
 
     }
 
-    const animationContainer23 = document.getElementById('titulomapa');
 
-    if (animationContainer23) {
-
-      timer(0.1).subscribe(() => {
-
-      const animation23 = lottie.loadAnimation({ container: animationContainer23, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/titulomapa.json' });
-
-    animation23.addEventListener('DOMLoaded', () => {
-    });
-
-    animation23.setSpeed(0.27777);
-
-  });
-
-
-
-    }
-
-    const animationContainer63 = document.getElementById('titulomapa2');
-
-    if (animationContainer63) {
-
-      timer(0.1).subscribe(() => {
-
-      const animation63 = lottie.loadAnimation({ container: animationContainer63, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/titulomapa2.json' });
-
-    animation63.addEventListener('DOMLoaded', () => {
-    });
-
-    animation63.setSpeed(0.27777);
-
-  });
-
-
-
-    }
-
-
-
-    const animationContainer10 = document.getElementById('colombia');
-
-    if (animationContainer10) {
-
-      timer(1000).subscribe(() => {
-
-      const animation10 = lottie.loadAnimation({ container: animationContainer10, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/colombia.json' });
-      animation10.addEventListener('DOMLoaded', () => {
-      });
-
-      animation10.setSpeed(0.2);
-
-      if (this.colombia) {
-        this.colombia.nativeElement.style.display = 'block';
-      }
-
-    });
-
-    }
-
-
-
-    const animationContainer12 = document.getElementById('mexico');
-
-    if (animationContainer12) {
-
-      timer(1500).subscribe(() => {
-
-      const animation12 = lottie.loadAnimation({ container: animationContainer12, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/azuleichon.json' });
-      animation12.addEventListener('DOMLoaded', () => {
-      });
-
-      animation12.setSpeed(0.2);
-
-      if (this.mexico) {
-        this.mexico.nativeElement.style.display = 'block';
-      }
-
-    });
-
-    }
-
-
-
-
-
-    const animationContainer13 = document.getElementById('salvador');
-
-    if (animationContainer13) {
-
-
-      timer(3000).subscribe(() => {
-
-      const animation13 = lottie.loadAnimation({ container: animationContainer13, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/azuleichon.json' });
-      animation13.addEventListener('DOMLoaded', () => {
-      });
-
-      animation13.setSpeed(0.2);
-
-      if (this.salvador) {
-        this.salvador.nativeElement.style.display = 'block';
-      }
-
-    });
-
-    }
-
-    const animationContainer14 = document.getElementById('peru');
-
-    if (animationContainer14) {
-
-
-      timer(5500).subscribe(() => {
-
-      const animation14 = lottie.loadAnimation({ container: animationContainer14, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/azuleichon.json' });
-      animation14.addEventListener('DOMLoaded', () => {
-      });
-
-      animation14.setSpeed(0.2);
-
-      if (this.peru) {
-        this.peru.nativeElement.style.display = 'block';
-      }
-
-    });
-
-    }
-
-    const animationContainer15 = document.getElementById('argentina');
-
-    if (animationContainer15) {
-
-      timer(6500).subscribe(() => {
-
-      const animation15 = lottie.loadAnimation({ container: animationContainer15, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/azuleichon.json' });
-      animation15.addEventListener('DOMLoaded', () => {
-      });
-
-      animation15.setSpeed(0.2);
-
-      if (this.argentina) {
-        this.argentina.nativeElement.style.display = 'block';
-      }
-
-    });
-
-    }
-
-    const animationContainer16 = document.getElementById('panama');
-
-    if (animationContainer16) {
-
-      timer(4000).subscribe(() => {
-
-      const animation16 = lottie.loadAnimation({ container: animationContainer16, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/azuleichon.json' });
-      animation16.addEventListener('DOMLoaded', () => {
-      });
-
-      animation16.setSpeed(0.2);
-
-      if (this.panama) {
-        this.panama.nativeElement.style.display = 'block';
-      }
-
-    });
-
-    }
-
-
-    const animationContainer17 = document.getElementById('guatemala');
-
-    if (animationContainer17) {
-
-      timer(2000).subscribe(() => {
-
-      const animation17 = lottie.loadAnimation({ container: animationContainer17, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/azuleichon.json' });
-      animation17.addEventListener('DOMLoaded', () => {
-      });
-
-      animation17.setSpeed(0.2);
-
-      if (this.guatemala) {
-        this.guatemala.nativeElement.style.display = 'block';
-      }
-
-    });
-
-    }
-
-
-
-    const animationContainer18 = document.getElementById('dominicana');
-
-    if (animationContainer18) {
-
-      timer(2000).subscribe(() => {
-
-      const animation18 = lottie.loadAnimation({ container: animationContainer18, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/azuleichon.json' });
-      animation18.addEventListener('DOMLoaded', () => {
-      });
-
-      animation18.setSpeed(0.2);
-
-      if (this.dominicana) {
-        this.dominicana.nativeElement.style.display = 'block';
-      }
-
-    });
-
-    }
-
-    const animationContainer19 = document.getElementById('ecuador');
-
-    if (animationContainer19) {
-
-      timer(5000).subscribe(() => {
-
-      const animation19 = lottie.loadAnimation({ container: animationContainer19, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/azuleichon.json' });
-      animation19.addEventListener('DOMLoaded', () => {
-      });
-
-      animation19.setSpeed(0.2);
-
-      if (this.ecuador) {
-        this.ecuador.nativeElement.style.display = 'block';
-      }
-
-    });
-
-    }
-
-    const animationContainer20 = document.getElementById('chile');
-
-    if (animationContainer20) {
-
-      timer(6000).subscribe(() => {
-
-      const animation20 = lottie.loadAnimation({ container: animationContainer20, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/azuleichon.json' });
-      animation20.addEventListener('DOMLoaded', () => {
-      });
-
-      animation20.setSpeed(0.2);
-
-      if (this.chile) {
-        this.chile.nativeElement.style.display = 'block';
-      }
-
-    });
-
-    }
-
-
-    const animationContainer21 = document.getElementById('honduras');
-
-    if (animationContainer21) {
-
-      timer(3500).subscribe(() => {
-
-      const animation21 = lottie.loadAnimation({ container: animationContainer21, renderer: 'svg', loop: false, autoplay: true, path: 'assets/json/azuleichon.json' });
-      animation21.addEventListener('DOMLoaded', () => {
-      });
-
-      animation21.setSpeed(0.2);
-
-      if (this.honduras) {
-        this.honduras.nativeElement.style.display = 'block';
-      }
-
-    });
-
-    }
 
     }
 

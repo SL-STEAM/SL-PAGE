@@ -15,12 +15,9 @@
       <p class="texto2 animate-text delay-2"
         style="margin-top: -18px; margin-bottom: -16px;">Te damos la bienvenida
         a SL Consulting</p>
-      <span class="animate-text delay-3"
-        style="font-size: 45px; font-family: 'Century Gothic'; font-weight: bold;">HACEMOS
-        VISIBLE</span>
+      <span class="animate-text delay-3" style="font-size: 45px; font-family: 'Century Gothic'; font-weight: bold;">HACEMOS VISIBLE</span>
       <!-- con el margin top de -80px lo bajo o lo subo-->
-      <p id="invisub" class="texto-superpuestoTituloBanner animate-text delay-4"
-        style="margin-top: -120px; width: 545px;"></p>
+      <p id="invisub" class="texto-superpuestoTituloBanner animate-text delay-4" style="margin-top: -140px; width: 545px; margin-right: 5px;"></p>
       <!-- <p id="tx" class="texto-superpuestoTituloBanner2" style="margin-top: -370px; margin-left: -65px;"></p> -->
       <p
         style="margin-left: 2px; margin-top: 65px; font-size: 24px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1.2;">Entendemos
@@ -100,7 +97,7 @@
       <div class="" style="background-color: #F9F9F9; display: flex; justify-content: center; align-items: center; width: 100%;">
         <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta -->
 
-        <img loading="lazy" class="mago" src="assets/videos/myg3.gif" alt="Mi GIF">
+        <img loading="lazy" class="mago" src="assets/videos/myg3.gif" id="gifMago" alt="Mi GIF">
         <!-- boton Mago-->
 
         <button class="btn custom-button10 hablemos" ><strong>Hablemos</strong></button>
@@ -112,94 +109,62 @@
 
   </div>
 
-  <div class="row"
-    style="display: flex; justify-content: center; align-items: center; background-color: #ffffff;">
+  <div class="row" style="display: flex; justify-content: center; align-content: center; background-color: #ffffff;">
 
-    <div class="container"
-      style="background-color: #ffffff; border: 2px solid red;">
-
+    <div class="container" style="background-color: #ffffff; border: 2px solid red;">
+      
+      <br>
+      <br>
       <!-- Primera fila -->
-      <div class="row" style="background-color: #ffffff;">
-        <div class="col-md-12"
-          style="background-color: #ffffff; text-transform: none;">
-          <div class="card custom-card border-0"
-            style="background-color: #ffffff; text-align: center;">
-            <!-- Utilizamos la clase 'border-0' para eliminar el borde y el fondo de la tarjeta -->
-
+      <div class="row justify-content-center align-content-center" style="background-color: #ffffff;">
+          <div class="card custom-card border-0" style="background-color: #76b41300; text-align: center;">
             <!-- Aca va el titulo Somos reemplazando el ID de la imagen-->
-            <p id="somos"
-              style="position: absolute; width: 40%; margin-top: -75px;  margin-left: 330px; background-color: transparent; z-index: 3;">
-            </p>
+            <p style="font-size: 32px; color: black; font-family: Century Gothic; font-weight: bold; line-height: 1;">SOMOS</p>
           </div>
-        </div>
       </div>
+      <br>
+      <br>
 
       <!-- Segunda fila ( Desde aca comienzan los divs de las cards ) -->
-      <div class="row justify-content-center align-content-center"
-        style="margin-top: 0px; gap: 1%;">
+      <div class="row justify-content-center align-content-center" style="margin-top: 0px; gap: 1%;">
 
-        <div class="col-md-3" style="padding-top: 5px; padding-bottom: 5px;">
-          <div class="card plan custom-card cartas text-center"
-            style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;"
-            id="card_plan_1">
+        <div class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; border: 2px solid green; display: flex; justify-content: center; align-content: center;">
+          <div class="custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 265px; width: 85%;" id="card_plan_1">
 
-            <img src="assets/imagenes/imaFichas/perpis.svg" alt="Nueva Imagen"
-              class="zoom-in"
-              style=" object-fit: cover; position: absolute; margin-left: 0px; margin-top: -5px; height: 100%">
-
-            <div class="card-body plan-card-body"
-              style="width: 600px; height: 230px;">
-              <span class="miparrafo"> </span>
-            </div>
-
+            <img src="assets/imagenes/imaFichas/perpis.svg" alt="Nueva Imagen" class="zoom-in" style=" object-fit: cover; height: 100%">
+          
           </div>
         </div>
 
-        <div class="col-md-3"
-          style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
-          <div class="card plan custom-card cartas text-center"
-            style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;"
-            id="card_plan_1">
+        <div class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; border: 2px solid green; display: flex; justify-content: center; align-content: center;">
+          
+          <div class="custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 265px; width: 85%;" id="card_plan_1">
+            <div class="card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
 
-            <div class="card-overlay"
-              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-
-              <!-- <p id="dina" style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;"> </p> -->
+            <img src="assets/imagenes/imaFichas/dina.svg" alt="Nueva Imagen" class="zoom-in" style=" object-fit: cover; height: 100%">
 
            </div>
 
-            <div class="card-body plan-card-body"
-              style="width: 600px; height: 30px;">
-              <span class="miparrafo"> </span>
-            </div>
-
           </div>
         </div>
 
-        <div class="col-md-3"
-          style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
-          <div class="card plan custom-card cartas text-center"
-            style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;"
-            id="card_plan_1">
+        <div class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; border: 2px solid green; display: flex; justify-content: center; align-content: center;">
+          <div class="custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 265px; width: 85%;" id="card_plan_1">
 
-            <!-- <p id="crea" style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;"> </p> -->
+            <img src="assets/imagenes/imaFichas/creaa.svg" alt="Nueva Imagen" class="zoom-in" style=" object-fit: cover; height: 100%">
 
-         
-              <div class="card-body plan-card-body" style=" padding-top: 250px;">
-                <span class="miparrafo"> </span> 
-              </div>
           </div>
-        </div>
 
+        </div>
       </div>
 
-      <div class="row justify-content-center align-content-center"
-        style="margin-top: -30px; gap: 1%;">
+      <br><br>
+
+      <div class="row justify-content-center align-content-center" style="margin-top: -30px; gap: 1%;">
 
         <div class="col-md-3" style="text-align: center;">
 
-          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola"
-            style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
+          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
 
           <strong><span style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Perspicaces</span></strong>
         
@@ -209,8 +174,7 @@
 
         <div class="col-md-3" style="text-align: center;">
 
-          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola"
-            style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
+          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
 
           <strong><span
               style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Dinámicos</span></strong>
@@ -271,7 +235,7 @@
         </div>
 
         <div class="col-md-3"
-          style="text-align: center; padding-left: 62px; padding-right: 20px;">
+          style="text-align: center; padding-left: 60px; padding-right: 18px;">
           <div #crea style="display: none;">
             <p
               style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong
@@ -289,49 +253,32 @@
 
       </div>
 
+      <br><br>
+
       <div class="row justify-content-center align-content-center"
         style="margin-top: 0px; gap: 1%;">
 
         <div class="col-md-2"></div>
 
-        <div class="col-md-3"
-          style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
-          <div class="card plan custom-card cartas text-center"
-            style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;"
-            id="card_plan_1">
+        <div class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; border: 2px solid green; display: flex; justify-content: center; align-content: center;">
+          <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 270px; width: 85%;" id="card_plan_1">
 
-            <div class="card-overlay"
-              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+            <div class="card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
 
-              <p id="arriesga"
-                style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;">
-              </p>
-
+              <img src="assets/imagenes/imaFichas/arri.svg" alt="Nueva Imagen" class="zoom-in" style=" object-fit: cover; height: 100%">
+            
             </div>
 
-            <div class="card-body plan-card-body" style=" padding-top: 250px;">
-              <span class="miparrafo"> </span>
-            </div>
           </div>
         </div>
 
-        <div class="col-md-3"
-          style="padding-top: 5px; padding-bottom: 5px; padding-left: 15px; padding-right: 15px;">
-          <div class="card plan custom-card cartas text-center"
-            style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 70%; width: 100%;"
-            id="card_plan_1">
+        <div class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; border: 2px solid green; display: flex; justify-content: center; align-content: center;">
+          <div class="custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 270px; width: 85%;" id="card_plan_1">
 
-            <div class="card-overlay"
-              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+            <div class="card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
 
-              <p id="provocador"
-                style="position: absolute; width: 650px; margin-top: -233px; margin-left : -200px;">
-              </p>
+              <img src="assets/imagenes/imaFichas/provo.svg" alt="Nueva Imagen" class="zoom-in" style=" object-fit: cover; height: 100%">
 
-            </div>
-
-            <div class="card-body plan-card-body" style=" padding-top: 250px;">
-              <span class="miparrafo"> </span>
             </div>
           </div>
         </div>
@@ -353,22 +300,16 @@
           <strong><span
               style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Arriesgados</span></strong>
 
-          <img
-            style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;"
-            (click)="displayArriesga()" [src]="flechaCerradaArriesga" alt>
+          <img style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;" (click)="displayArriesga()" [src]="flechaCerradaArriesga" alt="">
 
         </div>
 
         <div class="col-md-3" style="text-align: center;">
 
-          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola"
-            style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
+          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
 
-          <strong><span
-              style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Provocadores</span></strong>
-          <img
-            style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;"
-            (click)="displayProvo()" [src]="flechaCerradaProvo" alt>
+          <strong><span style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Provocadores</span></strong>
+          <img style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;" (click)="displayProvo()" [src]="flechaCerradaProvo" alt="">
 
         </div>
 
@@ -381,13 +322,11 @@
 
         <div class="col-md-2"></div>
 
-        <div class="col-md-3"
-          style="text-align: center; padding-left: 40px; padding-right: 25px;">
+        <div class="col-md-3" style="text-align: center; padding-left: 40px; padding-right: 25px;">
           <div #arriesga style="display: none;">
-            <p
-              style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong
-                style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
-                lo evidente!</strong> <br> <br> Percibimos los detalles y
+            <p style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;">
+              <strong style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
+                lo evidente!</strong><br><br> Percibimos los detalles y
               las sutilezas que pasan
               desapercibidos a los ojos
               de muchos. Analizamos
@@ -419,9 +358,7 @@
 
       </div>
 
-      <br>
-
-      <br>
+      <br><br>
 
     </div>
   </div>
@@ -448,43 +385,82 @@
     </div>
   </div>
 
-  <!-- TITULO ANIMADO  <div class="texto-superpuesto2 subtitleMain">
-    <p id="titulomapa"></p>
-  </div> -->
 
-  
-
-  <!-- Carrusel-->
-  <div class="row" style="background-color: #4DB2B0; height: 60px; margin-top: 0px; width: 100%;">
-
-    <div class="container"><strong>
-      <p class="texto" style="color: rgb(255, 255, 255); margin-top: 10px; font-family: Century Gothic ;font-size: 24px;">  INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR <span style="font-size: 22px;"> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span> <span style="font-size: 22px;"> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span> <span style="font-size: 22px;"> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span> <span style="font-size: 22px;"> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span> </p></strong>
-    </div>
-
+<!-- Carrusel -->
+<div class="row carrusel-container">
+  <div class="container">
+    <strong>
+      <div class="texto-wrapper">
+        <p class="texto">
+          <span> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span> 
+          <span> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span>
+          <span> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span>
+          <span> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span>
+          <span> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span>
+        </p>
+        <p class="texto">
+          <span>INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span>
+          <span> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span>
+          <span> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span>
+          <span> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span>
+          <span> INSIGHTS Y ARQUETIPOS SON UNA DUPLA DE ALTO VALOR </span>
+        </p>
+      </div>
+    </strong>
   </div>
+</div>
 
-  <style>
-    /* Aca es el SCSS para que se mueva el banner */
-    .texto {
-      animation: mover 25s linear infinite;
-      /* Aumenta el ancho del texto para evitar cortes */
-      width: 100%; /* Ajusta el ancho según el tamaño de tu banner */
-      white-space: nowrap; /* Evita saltos de línea */
-    }
+<style>
+  .carrusel-container {
+    background-color: #4DB2B0;
+    height: 60px;
+    margin-top: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+  }
   
-    @keyframes mover {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
+  .containerCarru {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+  }
+  
+  .texto-wrapper {
+    display: flex;
+    width: 200%; /* Asegúrate de que sea el doble del ancho para acomodar el texto duplicado */
+    animation: mover 25s linear infinite;
+    align-items: center; /* Asegura que los elementos internos estén centrados verticalmente */
+  }
+  
+  .texto {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin: 0;
+    font-family: Century Gothic, sans-serif;
+    font-size: 24px;
+    white-space: nowrap;
+    padding-right: 100%; /* Espacio para el segundo bloque de texto */
+  }
+  
+  .texto span {
+    font-size: 22px;
+    margin-left: 17px; /* Añade espacio entre los spans */
+  }
+  
+  @keyframes mover {
+    0% {
+      transform: translateX(0);
     }
-  </style>
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>
 
-
-
-  <div  style="background-color: #ffffff; width: 100vw;" >
+  <div  style="background-color: #ffffff; width: 100%;" >
 
     <div class="col-md-12">
     
@@ -515,3 +491,9 @@
   
   </div>
   </div> 
+
+
+
+
+
+  
