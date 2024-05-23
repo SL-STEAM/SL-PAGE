@@ -8,32 +8,17 @@ import { Component, HostListener, Inject, ChangeDetectionStrategy } from '@angul
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent {
-  scrolled: boolean = true;
-  lastScroll: number = 0;
-  now: number = 0;
-
-
-  ocultar = 0;
-  mostarminibanner: boolean = false;
-
-  isUnderlined: boolean = false;
+  isUnderlined: boolean = true;
   isUnderlinedModel: boolean = false;
   isUnderlinedSoluciones: boolean = false;
   isUnderlinedBlog: boolean = false;
+  isUnderlinedContact: boolean = false;
 
   toggleUnderline() {
     this.isUnderlined = true;
     this.isUnderlinedModel = false;
     this.isUnderlinedSoluciones = false;
-    this.isUnderlinedBlog = false;
-  }
-
-  toggleUnderlineOff() {
-    if (!this.isUnderlinedModel && !this.isUnderlinedSoluciones && !this.isUnderlinedBlog) {
-      this.isUnderlined = false;
-    }
-    this.isUnderlinedModel = false;
-    this.isUnderlinedSoluciones = false;
+    this.isUnderlinedContact = false;
     this.isUnderlinedBlog = false;
   }
 
@@ -41,6 +26,7 @@ export class HeaderComponent {
     this.isUnderlinedModel = true;
     this.isUnderlined = false;
     this.isUnderlinedSoluciones = false;
+    this.isUnderlinedContact = false;
     this.isUnderlinedBlog = false;
   }
 
@@ -48,6 +34,7 @@ export class HeaderComponent {
     this.isUnderlinedSoluciones = true;
     this.isUnderlined = false;
     this.isUnderlinedModel = false;
+    this.isUnderlinedContact = false;
     this.isUnderlinedBlog = false;
   }
 
@@ -55,10 +42,16 @@ export class HeaderComponent {
     this.isUnderlinedBlog = true;
     this.isUnderlined = false;
     this.isUnderlinedModel = false;
+    this.isUnderlinedContact = false;
     this.isUnderlinedSoluciones = false;
   }
-
-
-
+  
+  toggleUnderlineContact() {
+    this.isUnderlinedContact = true;
+    this.isUnderlinedBlog = false;
+    this.isUnderlined = false;
+    this.isUnderlinedModel = false;
+    this.isUnderlinedSoluciones = false;
+  }
 
 }

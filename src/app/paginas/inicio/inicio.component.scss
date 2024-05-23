@@ -727,7 +727,7 @@ body {
 .cartas {
   border: none; /* Borde */
   border-radius: 32px; /* Bordes redondeados */
-  padding: 10px; /* Espaciado interno */
+  // padding: 10px; /* Espaciado interno */
   // -webkit-box-shadow: 0px 0px 9px 1px rgb(16, 15, 15);
   // -moz-box-shadow: 0px 0px 9px 1px rgb(7, 7, 7);
   // box-shadow: 0px 0px 9px 1px rgb(22, 22, 22);
@@ -758,12 +758,19 @@ body {
   margin-left: -50px;
 }
 
-
-
-.custom-card .card-body {
-  padding: 5px; /* Espacio interno en las tarjetas */
-  font-size: 14px; /* Tamaño de fuente más pequeño */
+.card-overlay .follow-Image {
+  visibility: visible;
 }
+
+.card-overlay:hover .follow-Image {
+  visibility: visible;
+}
+
+
+// .custom-card .card-body {
+//   padding: 5px; /* Espacio interno en las tarjetas */
+//   font-size: 14px; /* Tamaño de fuente más pequeño */
+// }
 
 .texto2 {
   font-size: 24px;
