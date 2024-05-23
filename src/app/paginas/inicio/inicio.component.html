@@ -19,8 +19,7 @@
       <!-- con el margin top de -80px lo bajo o lo subo-->
       <p id="invisub" class="texto-superpuestoTituloBanner animate-text delay-4" style="margin-top: -140px; width: 545px; margin-right: 5px;"></p>
       <!-- <p id="tx" class="texto-superpuestoTituloBanner2" style="margin-top: -370px; margin-left: -65px;"></p> -->
-      <p
-        style="margin-left: 2px; margin-top: 65px; font-size: 24px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1.2;">Entendemos
+      <p  style="margin-left: 2px; margin-top: 65px; font-size: 24px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1.2;">Entendemos
         las <span class="backRed">realidades humanas</span> <br> que hay detrás
         de las marcas, los negocios <br> y su gente.</p>
     </div>
@@ -108,7 +107,7 @@
         <img loading="lazy" class="mago" src="assets/videos/myg3.gif" id="gifMago" alt="Mi GIF">
         <!-- boton Mago-->
 
-        <button class="btn custom-button10 hablemos" ><strong>Hablemos</strong></button>
+        <button data-aos="zoom-in-up" class="btn custom-button10 hablemos" ><strong>Hablemos</strong></button>
           
     </div>
   </div>
@@ -124,25 +123,25 @@
       <br>
       <br>
       <!-- Primera fila -->
-      <div class="row justify-content-center align-content-center" style="background-color: #ffffff; gap: 5%;">
+      <div data-aos="fade-up" class="row justify-content-center align-content-center" style="background-color: #ffffff; gap: 5%;">
           <div class="card custom-card border-0" style="background-color: #76b41300; text-align: center;">
             <!-- Aca va el titulo Somos reemplazando el ID de la imagen-->
-            <p style="font-size: 32px; color: black; font-family: Century Gothic; font-weight: bold; line-height: 1;">SOMOS</p>
+            <p  style="font-size: 32px; color: black; font-family: Century Gothic; font-weight: bold; line-height: 1;">SOMOS</p>
           </div>
       </div>
       <br>
       <br>
 
       <!-- Segunda fila ( Desde aca comienzan los divs de las cards ) -->
-      <div class="row justify-content-center align-content-center" style="margin-top: 0px; gap: 5%;">
+      <div  class="row justify-content-center align-content-center" style="margin-top: 0px; gap: 5%;">
 
-        <div class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; border: 2px solid rgba(0, 128, 0, 0); display: flex; justify-content: center; align-content: center;">
+        <div data-aos="fade-up" class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; border: 2px solid rgba(0, 128, 0, 0); display: flex; justify-content: center; align-content: center;">
           
-          <div class="custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 265px; width: 85%; overflow: hidden;" id="card_plan_1">
+          <div class="custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 265px; width: 85%; overflow: hidden; transition: all 1s ease;" id="card_plan_1" [ngClass]="{'oval-shape': isOval}">
           
             <div class="container card-overlay" (mousemove)="onMouseMovePerpis($event)" (mouseleave)="resetImagePositionPerpis()" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
 
-              <img #followImagePerpis src="assets/imagenes/imaFichas/perpis.svg" alt="Nueva Imagen" style="position: relative; object-fit: cover; height: 100%; width: 100%;">
+              <img data-aos="zoom-out" data-aos-duration="3000" #followImagePerpis src="assets/imagenes/imaFichas/perpis.svg" alt="Nueva Imagen" style="position: relative; object-fit: cover; height: 100%; width: 100%;">
             
             </div>
           </div>
@@ -151,11 +150,11 @@
 
         </div>
 
-        <div class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; border: 2px solid rgba(0, 128, 0, 0); display: flex; justify-content: center; align-content: center;">
+        <div data-aos="fade-up" class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; border: 2px solid rgba(0, 128, 0, 0); display: flex; justify-content: center; align-content: center;">
           <div class="custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 265px; width: 85%; overflow: hidden;" id="card_plan_1">
             
             <div class="container card-overlay" (mousemove)="onMouseMoveDina($event)" (mouseleave)="resetImagePositionDina()" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-              <img #followImageDina src="assets/imagenes/imaFichas/dina.svg" alt="Nueva Imagen" style="position: relative; object-fit: cover; width: 130%; height: 100%;">
+              <img data-aos="zoom-out" data-aos-duration="3000" #followImageDina src="assets/imagenes/imaFichas/dina.svg" alt="Nueva Imagen" style="position: relative; object-fit: cover; width: 130%; height: 100%;">
             </div>
             
           </div>
@@ -163,13 +162,13 @@
         
 
 
-        <div class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; border: 2px solid rgba(0, 128, 0, 0); display: flex; justify-content: center; align-content: center;">
+        <div data-aos="fade-up" class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; border: 2px solid rgba(0, 128, 0, 0); display: flex; justify-content: center; align-content: center;">
           <div class="custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 265px; width: 85%; overflow: hidden;" id="card_plan_1">
 
 
             <div class="container card-overlay" (mousemove)="onMouseMoveCrea($event)" (mouseleave)="resetImagePositionCrea()" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
             
-              <img #followImageCrea src="assets/imagenes/imaFichas/creaa.svg" alt="Nueva Imagen" style="position: relative; object-fit: cover; margin-top: 8px; width: 100%; height: 100%">
+              <img data-aos="zoom-out" data-aos-duration="3000" #followImageCrea src="assets/imagenes/imaFichas/creaa.svg" alt="Nueva Imagen" style="position: relative; object-fit: cover; margin-top: 8px; width: 100%; height: 100%">
             
             </div>
 
@@ -274,7 +273,7 @@
 
       <br><br>
 
-      <div class="row justify-content-center align-content-center" style="margin-top: 0px; gap: 5%;">
+      <div data-aos="fade-up" class="row justify-content-center align-content-center" style="margin-top: 0px; gap: 5%;">
 
         <div class="col-md-2"></div>
 
@@ -282,18 +281,18 @@
           <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 265px; width: 85%; overflow: hidden;" id="card_plan_1">
 
             <div class="container card-overlay" (mousemove)="onMouseMoveArri($event)" (mouseleave)="resetImagePositionArri()" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-              <img #followImageArri src="assets/imagenes/imaFichas/arri.svg" alt="Nueva Imagen" style="position: relative; object-fit: cover; width: 100%; height: 100%;">
+              <img data-aos="zoom-out" data-aos-duration="3000" #followImageArri src="assets/imagenes/imaFichas/arri.svg" alt="Nueva Imagen" style="position: relative; object-fit: cover; width: 100%; height: 100%;">
             </div>
 
           </div>
         </div>
 
         
-        <div class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; border: 2px solid rgba(0, 128, 0, 0); display: flex; justify-content: center; align-content: center;">
+        <div data-aos="fade-up" class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; border: 2px solid rgba(0, 128, 0, 0); display: flex; justify-content: center; align-content: center;">
           <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fd.png'); background-size: cover; height: 265px; width: 85%; overflow: hidden;" id="card_plan_1">
             
             <div class="container card-overlay" (mousemove)="onMouseMoveProvo($event)" (mouseleave)="resetImagePositionProvo()" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-              <img #followImageProvo src="assets/imagenes/imaFichas/provo.svg" alt="Nueva Imagen" style="position: relative; object-fit: cover; width: 100%; height: 100%; ">
+              <img data-aos="zoom-out" data-aos-duration="3000" #followImageProvo src="assets/imagenes/imaFichas/provo.svg" alt="Nueva Imagen" style="position: relative; object-fit: cover; width: 100%; height: 100%; ">
             </div>
           </div>
         </div>

@@ -724,6 +724,10 @@ body {
   color: #ffffff;
 }
 
+
+
+
+
 .cartas {
   border: none; /* Borde */
   border-radius: 32px; /* Bordes redondeados */
@@ -758,19 +762,10 @@ body {
   margin-left: -50px;
 }
 
-.card-overlay .follow-Image {
-  visibility: visible;
+// forma ovalor css
+.oval-shape {
+  border-radius: 50%;
 }
-
-.card-overlay:hover .follow-Image {
-  visibility: visible;
-}
-
-
-// .custom-card .card-body {
-//   padding: 5px; /* Espacio interno en las tarjetas */
-//   font-size: 14px; /* Tamaño de fuente más pequeño */
-// }
 
 .texto2 {
   font-size: 24px;

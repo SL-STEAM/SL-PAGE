@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import lottie from 'lottie-web';
 import { ViewportScroller } from '@angular/common';
+import Aos from 'aos';
 
 @Component({
   selector: 'app-inicio',
@@ -28,10 +29,14 @@ export class InicioComponent implements OnInit {
   @ViewChild('followImageCrea', { static: false }) followImageCrea?: ElementRef;
 
 
-
-
   defaultPositionX = 0;
   defaultPositionY = 0;
+
+
+  isOval: boolean = false;
+
+
+
 
   onMouseMoveArri(event: MouseEvent) {
     if (this.followImageArri) {
@@ -697,7 +702,8 @@ export class InicioComponent implements OnInit {
   ngOnInit(): void {
 
 
-    
+    Aos.init()
+    window.addEventListener('load', Aos.refresh)
 
     window.scrollTo(0, 0);
 
@@ -936,10 +942,10 @@ export class InicioComponent implements OnInit {
   banderaLineaInitC= true;
 
   @HostListener('window:scroll', ['$event'])
-  onWindowScroll(event: Event) {
+  onWindowScrolls(event: Event) {
         // Obtener la posición actual del scroll en el eje Y
         const scrollYPos = window.scrollY
-        console.log(scrollYPos)
+        // console.log(scrollYPos)
 
         if (scrollYPos < 1040){
           if (this.banner) {
