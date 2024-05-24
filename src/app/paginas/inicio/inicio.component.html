@@ -179,52 +179,49 @@
 
    
 
-      <div class="row justify-content-center align-content-center" style="margin-top: -30px; gap: 5%;">
+      <div class="row justify-content-center align-content-center" style="margin-top: -25px; gap: 5%;">
 
         <div class="col-md-3" style="text-align: center;">
 
           <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
 
-          <strong><span style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Perspicaces</span></strong>
+          <strong><span style=" font-size: 25px; font-family: Century Gothic; top: 5px; margin-left: 35px; position: relative;">Perspicaces</span></strong>
         
-          <img style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;" (click)="displayPerpis()" [src]="flechaCerrada" alt="">
+          <img style="width: 20px; margin-left: 10px; cursor: pointer;" (click)="displayPerpis()" [src]="flechaCerrada" alt="">
       </div>
 
 
         <div class="col-md-3" style="text-align: center;">
 
-          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
+          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 5px;  margin-left: 5px; position: absolute;">
 
-          <strong><span
-              style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Dinámicos</span></strong>
+          <strong><span style="font-size: 25px; font-family: Century Gothic; top: 5px; margin-left: 35px; position: relative;">Dinámicos</span></strong>
 
-          <img style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;" (click)="displayDina()" [src]="flechaCerradaDina" alt="">
+          <img style="width: 20px; margin-left: 10px; cursor: pointer;" (click)="displayDina()" [src]="flechaCerradaDina" alt="">
     
         </div>
 
         <div class="col-md-3" style="text-align: center;">
 
-          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola"
-            style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
+          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 5px; margin-left: 5px; position: absolute;">
 
-          <strong><span
-              style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Creativos</span></strong>
+          <strong><span style="font-size: 25px; font-family: Century Gothic; top: 5px; margin-left: 30px; position: relative;">Creativos</span></strong>
 
-          <img style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;" (click)="displayCrea()" [src]="flechaCerradaCrea" alt="">
+          <img style="width: 20px; margin-left: 10px; cursor: pointer;" (click)="displayCrea()" [src]="flechaCerradaCrea" alt="">
     
         </div>
 
       </div>
+
+      <br>
 
       <div class="row justify-content-center align-content-center" style="margin-top: 5px; gap: 5%;">
 
-        <div class="col-md-3"
-          style="text-align: center; padding-left: 25px; padding-right: 55px;">
+        <div class="col-md-3" style="text-align: center; padding-left: 50px; padding-right: 8.5px;">
           <div class="perpis" #perpis style="display: none;">
             <p
-              style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong
-                style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
-                lo evidente!</strong> <br> <br> Percibimos los detalles y
+              style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1.2; text-align: left;"><strong style="font-size: 22px; font-weight: bold;">¡Vemos más allá de lo evidente!</strong><br><br> 
+              Percibimos los detalles y
               las sutilezas que pasan
               desapercibidos a los ojos
               de muchos. Analizamos
@@ -236,35 +233,22 @@
         </div>
 
         <div class="col-md-3"
-          style="text-align: center; padding-left: 45px; padding-right: 33px;">
+          style="text-align: center; padding-left: 55px; padding-right: 30px;">
           <div #dina style="display: none;">
-            <p
-              style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong
-                style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
-                lo evidente!</strong> <br> <br> Percibimos los detalles y
-              las sutilezas que pasan
-              desapercibidos a los ojos
-              de muchos. Analizamos
-              para comprender
-              situaciones de manera
-              rápida y profunda.
+            <p style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1.2; text-align: left;"><strong style="font-size: 22px; font-weight: bold;">¡No nos quedamos quietos!</strong><br><br> 
+              Las herramientas que componen nuestro modelo están
+              en un constante proceso de evolución y adaptación.
             </p>
           </div>
         </div>
 
         <div class="col-md-3"
-          style="text-align: center; padding-left: 60px; padding-right: 18px;">
+          style="text-align: center; padding-left: 65px; padding-right: 10px;">
           <div #crea style="display: none;">
             <p
-              style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong
-                style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
-                lo evidente!</strong> <br> <br> Percibimos los detalles y
-              las sutilezas que pasan
-              desapercibidos a los ojos
-              de muchos. Analizamos
-              para comprender
-              situaciones de manera
-              rápida y profunda.
+              style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1.2; text-align: left;"><strong style="font-size: 22px; font-weight: bold;">¡Somos Originales!</strong><br><br> 
+              Vamos más allá del status quo
+              y construimos desde la diferencia.
             </p>
           </div>
         </div>
@@ -304,19 +288,18 @@
 
       </div>
 
-      <div class="row justify-content-center align-content-center" style="margin-top: -30px; gap: 5%;">
+      <div class="row justify-content-center align-content-center" style="margin-top: -30px; gap: 5%;"> 
 
         <div class="col-md-2"></div>
 
         <div class="col-md-3" style="text-align: center;">
 
-          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola"
-            style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
+          <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
 
           <strong><span
-              style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Arriesgados</span></strong>
+              style=" font-size: 25px; font-family: Century Gothic; top: 5px; margin-left: 35px; position: relative;">Arriesgados</span></strong>
 
-          <img style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;" (click)="displayArriesga()" [src]="flechaCerradaArriesga" alt="">
+          <img style="width: 20px; margin-left: 10px; cursor: pointer;" (click)="displayArriesga()" [src]="flechaCerradaArriesga" alt="">
 
         </div>
 
@@ -324,8 +307,8 @@
 
           <img src="assets/imagenes/imaFichas/bola.svg" alt="Bola" style="height: 45px; margin-top: 3px; margin-left: 5px; position: absolute;">
 
-          <strong><span style=" font-size: 25px; font-family: Century Gothic; margin-left: 35px; position: relative;">Provocadores</span></strong>
-          <img style="width: 20px; margin: 10px; margin-bottom: 30px; cursor: pointer;" (click)="displayProvo()" [src]="flechaCerradaProvo" alt="">
+          <strong><span style=" font-size: 25px; font-family: Century Gothic; top: 5px; margin-left: 35px; position: relative;">Provocadores</span></strong>
+          <img style="width: 20px; margin-left: 10px; cursor: pointer;" (click)="displayProvo()" [src]="flechaCerradaProvo" alt="">
 
         </div>
 
@@ -333,38 +316,28 @@
 
       </div>
 
+      <br>
+
       <div class="row justify-content-center align-content-center" style="margin-top: 5px; gap: 5%;">
 
         <div class="col-md-2"></div>
 
-        <div class="col-md-3" style="text-align: center; padding-left: 40px; padding-right: 25px;">
+        <div class="col-md-3" style="text-align: center; padding-left: 55px; padding-right: 25px;">
           <div #arriesga style="display: none;">
-            <p style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;">
-              <strong style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
-                lo evidente!</strong><br><br> Percibimos los detalles y
-              las sutilezas que pasan
-              desapercibidos a los ojos
-              de muchos. Analizamos
-              para comprender
-              situaciones de manera
-              rápida y profunda.
+            <p style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1.2; text-align: left;"><strong style="font-size: 22px; font-weight: bold;">¡Somos Valientes!</strong><br><br> 
+              Exploramos caminos desconocidos para entregarles
+              a nuestros clientes soluciones eficaces que responden
+              a las cambiantes demandas del mercado.
             </p>
           </div>
         </div>
 
-        <div class="col-md-3"
-          style="text-align: center; padding-left: 30px; padding-right: 30px;">
+        <div class="col-md-3" style="text-align: center; padding-left: 33px; padding-right: 15px;">
           <div #provo style="display: none;">
-            <p
-              style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1; text-align: left;"><strong
-                style="font-size: 20px; font-weight: bold;">¡Vemos más allá de
-                lo evidente!</strong> <br> <br> Percibimos los detalles y
-              las sutilezas que pasan
-              desapercibidos a los ojos
-              de muchos. Analizamos
-              para comprender
-              situaciones de manera
-              rápida y profunda.
+            <p style="font-size: 18px; font-family: 'Arial Nova', Arial, sans-serif; line-height: 1.2; text-align: left;"><strong style="font-size: 22px; font-weight: bold;">¡Rompemos las barreras!</strong><br><br>
+              Estimulamos el pensamiento crítico y si es necesario detonamos
+              coversaciones incomodas para fomentar el cambio, construyendo
+              ambientes de trabajo más dinámicos e influyentes.
             </p>
           </div>
         </div>
@@ -514,7 +487,7 @@
   <div class="col-md-2"></div>
 <div class="col-md-8">
 
-  <img loading="lazy" src="assets/imagenes/bolas3/bolaclick.svg" class="animate-text" alt="Bola" style="height: 90px; margin-top: 165px; margin-left: -363px; position: absolute;">
+  <img loading="lazy" src="assets/imagenes/bolas3/bolaclick.svg" class="animate-text" alt="Bola" style="height: 90px;  position: absolute;">
 
        
   <p  class="texto2 animate-text sombratexto" style="font-size: 34px; color: black; font-family:'Century Gothic'; margin-left: 15px; text-align: left; line-height:1; color: white; margin-top: 210px; margin-right: 45px; text-align: center; display: none;" class="animate-text" #tituloPuente> <strong style="font-size: 35px;">CONSTRUIMOS PUENTES EFECTIVOS</strong> 
@@ -532,7 +505,7 @@
     <p id="mancae1" class=" animate-text" style="position: absolute; width: 420%; margin-top: -875px; margin-left: -403px;"> </p>
 
     <p  class="texto2 animate-text" style="font-size: 28px; color: black; font-family: 'Century Gothic'; text-align: left; line-height: 1.4; color: white; border: 2px solid rgba(255, 136, 0, 0); margin-top: 330px; margin-left: -75px; text-align: left; padding-left: 55px;"><strong style="font-size: 40px;"><span style="background-color: #00B4B2; border: 2px solid rgba(0, 0, 255, 0); padding-left: 65px; padding-right: 8px; margin-left: -65px;">DESAFIAMOS</span> LO CONVENCIONAL:</strong> <br>
-      <br> Estamos en constante <strong>cambio<br> y movimiento</strong>, desarrollando <br>metodologías poderosas que<br> generan valor en toda la <br> cadena.</p>
+      <br> Estamos en constante <strong>cambio<br> y movimiento</strong>, desarrollando <br>metodologías poderosas que<br> generan valor en toda la <br> cadena de negocio.</p>
 
   </div>
 
