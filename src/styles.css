@@ -282,92 +282,8 @@ header .nav-nav {
   text-align: left;
 }
 
-.carouselIKE .linea_azul {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  padding: 0;
-  z-index: 11;
-}
-.carouselIKE .linea_azul img {
-  width: 100%;
-  height: 80px;
-}
-.carouselIKE .front {
-  position: absolute;
-  top: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  z-index: 10;
-}
-.carouselIKE .front img {
-  height: 100%;
-}
-.carouselIKE .slide {
-  width: 100%;
-  height: 380px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.carouselIKE .carousel-item.active {
-  display: flex;
-}
-.carouselIKE .front_l {
-  left: 0;
-}
-.carouselIKE .front_r {
-  right: 0;
-}
-.carouselIKE .carousel-caption {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.carouselIKE .carousel-caption h2 {
-  text-shadow: 2px 2px #979797;
-}
-.carouselIKE .carousel-caption .carousel-caption-inner {
-  text-align: left;
-}
-.carouselIKE .carousel-caption .btn {
-  margin-top: 10px;
-}
-.carouselIKE .carousel-indicators {
-  bottom: 20px;
-}
-.carouselIKE .carousel-indicators li {
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 2px solid #FFFFFF;
-}
-.carouselIKE .carousel-indicators li.active {
-  border: 2px solid ;
-}
-.carouselIKE .carousel-control-prev {
-  z-index: 15;
-}
-.carouselIKE .carousel-control-prev span {
-  height: 50px;
-}
-.carouselIKE .carousel-control-next {
-  z-index: 15;
-}
-.carouselIKE .carousel-control-next span {
-  height: 50px;
-}
-.carousel-small {
-  margin-top: 2em;
-}
-.carousel-small .carousel-caption {
-  top: auto;
-  bottom: 0;
-  transform: none;
-}
+
+
 
 #beneficios {
   margin-top: 2em;
@@ -1347,16 +1263,7 @@ footer .l_oscura h3 {
   footer .menu2 p, footer .menu2 li {
     text-align: center !important;
   }
-  .carouselIKE .carousel-caption {
-    transform: initial;
-    top: auto;
-  }
-  .carouselIKE .linea_azul img {
-    height: 40px;
-  }
-  .carouselIKE .carousel-indicators {
-    bottom: 0;
-  }
+
   .servicios_ad_grid .modal-body .subservicio, .servicios_ad_grid .modal-body .informacion {
     text-align: center;
   }
@@ -1421,32 +1328,7 @@ footer .l_oscura h3 {
     font-size: 1.2em;
     text-align: center;
   }
-  .carouselIKE .carousel-caption {
-    transform: initial;
-    width: 90%;
-    right: 5%;
-    left: 5%;
-    bottom: 58px;
-    text-align: center;
-  }
-  .carouselIKE .carousel-caption .carousel-caption-inner {
-    text-align: center;
-  }
-  .carouselIKE .carousel-caption h2 {
-    text-align: center;
-    text-shadow: none;
-  }
-  .carouselIKE .carousel-caption .btn {
-    padding: 3px 1em 5px 1em;
-    font-size: 18px;
-    margin-top: 2px;
-  }
-  .carouselIKE .front_l {
-    left: -77px;
-  }
-  .carouselIKE .front_r {
-    width: 140px;
-  }
+
   header nav .compra {
     max-width: 200px !important;
   }

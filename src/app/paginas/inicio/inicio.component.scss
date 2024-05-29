@@ -11,30 +11,29 @@ body {
 }
 
 .form-control {
-  width: 75% ;
-  height: 18%;
-  padding: 18px;
+  width: 65% ;
+  height: 16%;
+  padding: 16px;
   margin-bottom: 15px; 
   border-radius: 8px;
 }
 
 .text-area {
-  width: 75%;
+  width: 65%;
   resize: none;
   border: 1.5px solid silver;
   border-radius: 8px;
-  height: 85%;
+  height: 65%;
   padding: 15px;
-
 
 }
 
 .form-check-input {
   padding: 4px;
   border-radius: 100%;
-  margin-top: 5px;
+  margin-top: 6px;
   width: 20px; /* Ajusta el ancho del checkbox */
-  height: 20px; /* Ajusta la altura del checkbox */
+  height: 16px; /* Ajusta la altura del checkbox */
 }
 
 .form-check-label {
@@ -61,6 +60,14 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 80px;
+}
+
+.mapa-container-c {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 
@@ -334,48 +341,7 @@ body {
   }
 }
 
-.carousel-indicators {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
 
-.carousel-indicators li {
-  box-sizing: content-box;
-  flex: 0 1 auto;
-  width: 10px;
-  height: 10px;
-  margin-right: 3px;
-  margin-left: 3px;
-  margin-bottom: 10px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: rgb(255, 255, 255);
-  background-clip: padding-box;
-  border: 0;
-  border-radius: 0%;
-}
-
-.carousel-indicators .active {
-  background-color: rgb(255, 255, 255);
-}
-
-//  .video-container {
-//             text-align: center;
-//             background-color: rgb(228, 89, 89);
-//             position: relative;
-//         }
-
-//         video {
-//           width: 40px;
-//           display: inline-block;
-//           border: none; /* Estilo para eliminar el borde */
-//       }
 
 .texto-superpuestoPuente {
   position: absolute;
@@ -1091,18 +1057,57 @@ body {
 .js-scroll.scrolled {
   opacity: 1;
 }
-.scrolled.slide-left {
-  animation: slide-in-left 1s ease-in-out both;
+
+/* logo-carousel.component.css */
+
+
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item.active {
+  position: relative;
+  opacity: 1;
+  animation: slide-in-left 0.3s forwards;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item .row {
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 130px;
+  height: 50px;
+  display: block;
+  margin: auto;
+}
+
+.carousel-item .col-md-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes slide-in-left {
   0% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
+    transform: translateX(-100%);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
   }
