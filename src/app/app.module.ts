@@ -8,16 +8,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FooterComponent } from './compartido/footer/footer.component';
-
 import { AppComponent } from './app.component';
-
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
+    FooterComponent
   
   ],
   imports: [

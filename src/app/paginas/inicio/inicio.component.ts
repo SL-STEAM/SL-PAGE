@@ -1,13 +1,14 @@
 import { CarruselService } from './../../compartido/servicios/carrusel.service';
 
 import { FormBuilder } from '@angular/forms';
-import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { timer } from 'rxjs';
 import { Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import lottie from 'lottie-web';
 import { ViewportScroller } from '@angular/common';
 import Aos from 'aos';
+
 
 @Component({
   selector: 'app-inicio',
@@ -303,7 +304,6 @@ export class InicioComponent implements OnInit {
       imageElement.style.top = (containerRect.height / 2 - imgHeight / 2) + 'px';
     }
   }
-
 
 
   botonEmpresasBlanco: boolean = true;
@@ -846,11 +846,11 @@ export class InicioComponent implements OnInit {
     const animationContainerComprension = document.getElementById('comprension');
 
     if (animationContainerComprension) {
-      const animation3 = lottie.loadAnimation({ container: animationContainerComprension, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/Medio/medio2/comprension.json' });
-      animation3.addEventListener('DOMLoaded', () => {
-      });
+      const animation3 = lottie.loadAnimation({ container: animationContainerComprension, renderer: 'svg', loop: false, autoplay: false, path: 'assets/json/Medio/medio2/comprension.json' });
+      // animation3.addEventListener('DOMLoaded', () => {
+      // });
 
-      animation3.setSpeed(0.3);
+      // animation3.setSpeed(0.3);
     }
 
     const animationContainerCreatividad = document.getElementById('creatividad');
@@ -995,20 +995,14 @@ export class InicioComponent implements OnInit {
           const animationContainerChico = document.getElementById('mancae1');
 
           if (animationContainerChico) {
-
-
-
             timer(0).subscribe(() => {
 
             const animation16 = lottie.loadAnimation({ container: animationContainerChico, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/mancae1.json' });
             animation16.addEventListener('DOMLoaded', () => {
             });
 
-            animation16.setSpeed(0.1);
+            animation16.setSpeed(0.7);
 
-            if (this.panama) {
-              this.panama.nativeElement.style.display = 'block';
-            }
 
           });
 
