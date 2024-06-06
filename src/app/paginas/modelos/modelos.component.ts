@@ -34,6 +34,8 @@ export class ModelosComponent implements OnInit {
   mostrarRecurso40Info: boolean = false;
   mostrarRecurso41Info: boolean = false;
 
+  muted: boolean = true; // el video inicie silenciado
+
   mostrarRecurso21Info: boolean = false;
   mostrarRecurso22Info: boolean = false;
   mostrarRecurso23Info: boolean = false;
@@ -61,6 +63,9 @@ export class ModelosComponent implements OnInit {
 
   facebook: boolean = true;
   facebookColor: boolean = false;
+
+  whatsapp: boolean = true;
+  whatsappColor: boolean = false;
 
   link: boolean = true;
   linkColor: boolean = false;
@@ -107,35 +112,14 @@ export class ModelosComponent implements OnInit {
   divStyleRastreo: any = {}; 
   divStyleRealidad: any = {}; 
 
-  constructor(private viewportScroller: ViewportScroller, private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder){
+  constructor(private elRef: ElementRef, private viewportScroller: ViewportScroller, private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder){
 
   }
 
-  scrollToSection(){
-    const sectionToScrollTo = document.getElementById('contacts');
 
-    if (sectionToScrollTo) {
-      const offset = sectionToScrollTo.getBoundingClientRect().top; // Calcula la posición del elemento respecto a la parte superior de la ventana
-      const duration = 300; // Duración del desplazamiento en milisegundos
-      const start = this.viewportScroller.getScrollPosition(); // Posición de inicio
-  
-      let startTime: number;
-  
-      // Función de animación para realizar el desplazamiento suave
-      const animateScroll = (timestamp: number) => {
-        startTime = startTime || timestamp;
-        const progress = timestamp - startTime;
-        const easeInOutQuad = (t: number) => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-  
-        this.viewportScroller.scrollToPosition([start[0], easeInOutQuad(progress / duration) * offset + start[1]]);
-  
-        if (progress < duration) {
-          requestAnimationFrame(animateScroll);
-        }
-      };
-  
-      requestAnimationFrame(animateScroll);
-    }
+  scrollToForm(){
+    const formulario = this.elRef.nativeElement.querySelector('#formulario');
+    formulario.scrollIntoView({ behavior: 'smooth' });
   }
 
   cambiarA(){
@@ -143,11 +127,14 @@ export class ModelosComponent implements OnInit {
     this.arquetiposColor = true;
   }
 
+  toggleMute() {
+    this.muted = !this.muted;
+  }
+
   cambiarABlanco(){
     this.arquetipos = true;
     this.arquetiposColor = false;
   }
-
 
   cambiarE(){
     this.email = false;
@@ -163,6 +150,17 @@ export class ModelosComponent implements OnInit {
     this.facebook = false;
     this.facebookColor = true;
   }
+
+  cambiarW(){
+    this.whatsapp = false;
+    this.whatsappColor = true;
+  }
+
+  cambiarWBlanco(){
+    this.whatsapp = true;
+    this.whatsappColor = false;
+  }
+
 
   cambiarFBlanco(){
     this.facebook = true;

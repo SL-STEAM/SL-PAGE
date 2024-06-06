@@ -8,7 +8,7 @@ import { Component, HostListener, Inject, ChangeDetectionStrategy } from '@angul
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent {
-  isUnderlined: boolean = true;
+  isUnderlined: boolean = false;
   isUnderlinedModel: boolean = false;
   isUnderlinedSoluciones: boolean = false;
   isUnderlinedBlog: boolean = false;
