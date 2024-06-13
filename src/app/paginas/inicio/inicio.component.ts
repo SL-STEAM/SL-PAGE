@@ -28,7 +28,12 @@ export class InicioComponent implements OnInit {
   @ViewChild('followImageDina', { static: false }) followImageDina?: ElementRef;
   @ViewChild('followImagePerpis', { static: false }) followImagePerpis?: ElementRef;
   @ViewChild('followImageCrea', { static: false }) followImageCrea?: ElementRef;
-
+  
+  @ViewChild('followImageCompre', { static: false }) followImageCompre?: ElementRef;
+  @ViewChild('followImageDis', { static: false }) followImageDis?: ElementRef;
+  @ViewChild('followImageAct', { static: false }) followImageAct?: ElementRef;
+  @ViewChild('followImageLog', { static: false }) followImageLog?: ElementRef;
+  @ViewChild('followImageStem', { static: false }) followImageStem?: ElementRef;
 
   defaultPositionX = 0;
   defaultPositionY = 0;
@@ -224,6 +229,263 @@ export class InicioComponent implements OnInit {
         this.defaultPositionX = 0;
         this.defaultPositionY = 0;
       }
+    }
+  }
+
+  onMouseMoveCompre(event: MouseEvent) {
+    if (this.followImageCompre) {
+      const imageElement = this.followImageCompre.nativeElement;
+      const containerElement = this.followImageCompre.nativeElement.parentElement;
+
+      const containerRect = containerElement.getBoundingClientRect();
+      const imgWidth = imageElement.width;
+      const imgHeight = imageElement.height;
+
+      const x = event.clientX - containerRect.left;
+      const y = event.clientY - containerRect.top;
+
+      const sensitivityX = 0.4; // Sensibilidad horizontal
+      const sensitivityY = 0.4; // Sensibilidad vertical
+
+      const offsetX = (x - containerRect.width / 2) * sensitivityX;
+      const offsetY = (y - containerRect.height / 2) * sensitivityY;
+
+      const newX = containerRect.width / 2 - imgWidth / 2 + offsetX;
+      const newY = containerRect.height / 2 - imgHeight / 2 + offsetY;
+
+      // Centrar la imagen debajo del cursor
+      imageElement.style.left = Math.min(Math.max(newX, -imgWidth / 2), containerRect.width - imgWidth / 2) + 'px';
+      imageElement.style.top = Math.min(Math.max(newY, -imgHeight / 2), containerRect.height - imgHeight / 2) + 'px';
+
+      // Aumentar la altura de la imagen al pasar el mouse sobre ella
+      const newHeight = 300; // Nueva altura deseada
+      imageElement.style.height = newHeight + 'px';
+      
+      // Guarda la posición por defecto si no se ha guardado aún
+      if (this.defaultPositionX === 0 && this.defaultPositionY === 0) {
+        this.defaultPositionX = 0;
+        this.defaultPositionY = 0;
+      }
+    }
+  }
+
+  onMouseMoveDis(event: MouseEvent) {
+    if (this.followImageDis) {
+      const imageElement = this.followImageDis.nativeElement;
+      const containerElement = this.followImageDis.nativeElement.parentElement;
+
+      const containerRect = containerElement.getBoundingClientRect();
+      const imgWidth = imageElement.width;
+      const imgHeight = imageElement.height;
+
+      const x = event.clientX - containerRect.left;
+      const y = event.clientY - containerRect.top;
+
+      const sensitivityX = 0.4; // Sensibilidad horizontal
+      const sensitivityY = 0.4; // Sensibilidad vertical
+
+      const offsetX = (x - containerRect.width / 2) * sensitivityX;
+      const offsetY = (y - containerRect.height / 2) * sensitivityY;
+
+      const newX = containerRect.width / 2 - imgWidth / 2 + offsetX;
+      const newY = containerRect.height / 2 - imgHeight / 2 + offsetY;
+
+      // Centrar la imagen debajo del cursor
+      imageElement.style.left = Math.min(Math.max(newX, -imgWidth / 2), containerRect.width - imgWidth / 2) + 'px';
+      imageElement.style.top = Math.min(Math.max(newY, -imgHeight / 2), containerRect.height - imgHeight / 2) + 'px';
+
+      // Aumentar la altura de la imagen al pasar el mouse sobre ella
+      const newHeight = 135; // Nueva altura deseada
+      const newWidth = 125;
+      
+      imageElement.style.height = newHeight + '%';
+      imageElement.style.width = newWidth + '%';
+
+      // Guarda la posición por defecto si no se ha guardado aún
+      if (this.defaultPositionX === 0 && this.defaultPositionY === 0) {
+        this.defaultPositionX = 0;
+        this.defaultPositionY = 0;
+      }
+    }
+  }
+
+  onMouseMoveAct(event: MouseEvent) {
+    if (this.followImageAct) {
+      const imageElement = this.followImageAct.nativeElement;
+      const containerElement = this.followImageAct.nativeElement.parentElement;
+
+      const containerRect = containerElement.getBoundingClientRect();
+      const imgWidth = imageElement.width;
+      const imgHeight = imageElement.height;
+
+      const x = event.clientX - containerRect.left;
+      const y = event.clientY - containerRect.top;
+
+      const sensitivityX = 0.4; // Sensibilidad horizontal
+      const sensitivityY = 0.4; // Sensibilidad vertical
+
+      const offsetX = (x - containerRect.width / 2) * sensitivityX;
+      const offsetY = (y - containerRect.height / 2) * sensitivityY;
+
+      const newX = containerRect.width / 2 - imgWidth / 2 + offsetX;
+      const newY = containerRect.height / 2 - imgHeight / 2 + offsetY;
+
+      // Centrar la imagen debajo del cursor
+      imageElement.style.left = Math.min(Math.max(newX, -imgWidth / 2), containerRect.width - imgWidth / 2) + 'px';
+      imageElement.style.top = Math.min(Math.max(newY, -imgHeight / 2), containerRect.height - imgHeight / 2) + 'px';
+
+      // Aumentar la altura de la imagen al pasar el mouse sobre ella
+      const newHeight = 150; // Nueva altura deseada
+      const newWidth = 155;
+
+      imageElement.style.height = newHeight + '%';
+      imageElement.style.width = newWidth + '%';
+      
+      // Guarda la posición por defecto si no se ha guardado aún
+      if (this.defaultPositionX === 0 && this.defaultPositionY === 0) {
+        this.defaultPositionX = 0;
+        this.defaultPositionY = 0;
+      }
+    }
+  }
+
+  onMouseMoveLog(event: MouseEvent) {
+    if (this.followImageLog) {
+      const imageElement = this.followImageLog.nativeElement;
+      const containerElement = this.followImageLog.nativeElement.parentElement;
+
+      const containerRect = containerElement.getBoundingClientRect();
+      const imgWidth = imageElement.width;
+      const imgHeight = imageElement.height;
+
+      const x = event.clientX - containerRect.left;
+      const y = event.clientY - containerRect.top;
+
+      const sensitivityX = 0.4; // Sensibilidad horizontal
+      const sensitivityY = 0.4; // Sensibilidad vertical
+
+      const offsetX = (x - containerRect.width / 2) * sensitivityX;
+      const offsetY = (y - containerRect.height / 2) * sensitivityY;
+
+      const newX = containerRect.width / 2 - imgWidth / 2 + offsetX;
+      const newY = containerRect.height / 2 - imgHeight / 2 + offsetY;
+
+      // Centrar la imagen debajo del cursor
+      imageElement.style.left = Math.min(Math.max(newX, -imgWidth / 2), containerRect.width - imgWidth / 2) + 'px';
+      imageElement.style.top = Math.min(Math.max(newY, -imgHeight / 2), containerRect.height - imgHeight / 2) + 'px';
+
+      // Aumentar la altura de la imagen al pasar el mouse sobre ella
+      const newHeight = 145; // Nueva altura deseada
+      const newWidth = 135; 
+
+      imageElement.style.height = newHeight + '%';
+      imageElement.style.width = newWidth + '%';
+
+      // Guarda la posición por defecto si no se ha guardado aún
+      if (this.defaultPositionX === 0 && this.defaultPositionY === 0) {
+        this.defaultPositionX = 0;
+        this.defaultPositionY = 0;
+      }
+    }
+  }
+
+  onMouseMoveStem(event: MouseEvent) {
+    if (this.followImageStem) {
+      const imageElement = this.followImageStem.nativeElement;
+      const containerElement = this.followImageStem.nativeElement.parentElement;
+
+      const containerRect = containerElement.getBoundingClientRect();
+      const imgWidth = imageElement.width;
+      const imgHeight = imageElement.height;
+
+      const x = event.clientX - containerRect.left;
+      const y = event.clientY - containerRect.top;
+
+      const sensitivityX = 0.4; // Sensibilidad horizontal
+      const sensitivityY = 0.4; // Sensibilidad vertical
+
+      const offsetX = (x - containerRect.width / 2) * sensitivityX;
+      const offsetY = (y - containerRect.height / 2) * sensitivityY;
+
+      const newX = containerRect.width / 2 - imgWidth / 2 + offsetX;
+      const newY = containerRect.height / 2 - imgHeight / 2 + offsetY;
+
+      // Centrar la imagen debajo del cursor
+      imageElement.style.left = Math.min(Math.max(newX, -imgWidth / 2), containerRect.width - imgWidth / 2) + 'px';
+      imageElement.style.top = Math.min(Math.max(newY, -imgHeight / 2), containerRect.height - imgHeight / 2) + 'px';
+
+      // Aumentar la altura de la imagen al pasar el mouse sobre ella
+      const newHeight = 147; // Nueva altura deseada
+      const newWidth = 145; 
+
+      imageElement.style.height = newHeight + '%';
+      imageElement.style.width = newWidth + '%';
+
+      // Guarda la posición por defecto si no se ha guardado aún
+      if (this.defaultPositionX === 0 && this.defaultPositionY === 0) {
+        this.defaultPositionX = 0;
+        this.defaultPositionY = 0;
+      }
+    }
+  }
+
+  resetImagePositionStem() {
+    if (this.followImageStem) {
+      const imageElement = this.followImageStem.nativeElement;
+      // Reinicia la posición de la imagen a la posición por defecto
+      imageElement.style.left = "-25px"
+      imageElement.style.height = "115%"
+      imageElement.style.width = "115%"
+      imageElement.style.top = "0"
+      imageElement.style.bottom = "25px"
+    }
+  }
+
+  resetImagePositionLog() {
+    if (this.followImageLog) {
+      const imageElement = this.followImageLog.nativeElement;
+      // Reinicia la posición de la imagen a la posición por defecto
+      imageElement.style.left = "-37px"
+      imageElement.style.height = "115%"
+      imageElement.style.width = "115%"
+      imageElement.style.top = "0"
+      imageElement.style.bottom = "1.5px"
+    }
+  }
+  
+  resetImagePositionAct() {
+    if (this.followImageAct) {
+      const imageElement = this.followImageAct.nativeElement;
+      // Reinicia la posición de la imagen a la posición por defecto
+      imageElement.style.left = "-4px"
+      imageElement.style.height = "140%"
+      imageElement.style.width = "135%"
+      imageElement.style.top = "0"
+      imageElement.style.bottom = "-2px"
+    }
+  }
+
+  resetImagePositionDis() {
+    if (this.followImageDis) {
+      const imageElement = this.followImageDis.nativeElement;
+      // Reinicia la posición de la imagen a la posición por defecto
+      imageElement.style.left = "-30px"
+      imageElement.style.height = "105%"
+      imageElement.style.width = "105%"
+      imageElement.style.top = "0"
+      imageElement.style.bottom = "-3px"
+    }
+  }
+
+  resetImagePositionCompre() {
+    if (this.followImageCompre) {
+      const imageElement = this.followImageCompre.nativeElement;
+      // Reinicia la posición de la imagen a la posición por defecto
+      imageElement.style.left = "-20px"
+      imageElement.style.height = "105%"
+      imageElement.style.width = "105%"
+      imageElement.style.top = "0"
+      imageElement.style.bottom = "-9px"
     }
   }
 

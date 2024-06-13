@@ -692,10 +692,10 @@
           <div data-aos="fade-up" class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; display: flex; justify-content: center; align-content: center;">
             <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fondoCardsDos.svg'); background-size: cover; height: 265px; width: 85%; overflow: hidden;" id="card_plan_1">
   
-              <div class="container card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">    
+              <div class="container card-overlay" (mousemove)="onMouseMoveCompre($event)" (mouseleave)="resetImagePositionCompre()" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">    
                 <!-- <p id="activacion" style="position: absolute; width: 575px; margin-top: 0px; margin-left : -192.5px;"> </p> -->
                 
-                <img data-aos="zoom-out" data-aos-duration="3000" src="assets/imagenes/cards/COMPRENSION-HUMANA-8.png" style="position: relative; object-fit: cover; height: 105%; width: 105%; bottom: -9px; left: -20px;" alt="Nueva Imagen">
+                <img data-aos="zoom-out" data-aos-duration="3000" #followImageCompre src="assets/imagenes/cards/COMPRENSION-HUMANA-8.png" style="position: relative; object-fit: cover; height: 105%; width: 105%; bottom: -9px; left: -20px;" alt="Nueva Imagen">
               </div>
   
             </div>
@@ -705,11 +705,11 @@
           <div data-aos="fade-up" class="col-md-3"  style="padding-top: 15px; padding-bottom: 50px; display: flex; justify-content: center; align-content: center;">
             <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fondoCardsDos.svg'); background-size: cover; height: 265px; width: 85%; overflow: hidden;" id="card_plan_1">
   
-              <div class="container card-overlay" style="position: relative; object-fit: cover; width: 100%; height: 100%;">
+              <div class="container card-overlay" (mousemove)="onMouseMoveDis($event)" (mouseleave)="resetImagePositionDis()" style="position: relative; object-fit: cover; width: 100%; height: 100%;">
   
                 <!-- <p id="comprension" style="border: 2px solid rgb(102, 255, 0); position: relative; width: 100%; height: 100%;"> </p> -->
   
-                <img data-aos="zoom-out" data-aos-duration="3000" src="assets/imagenes/cards/CREATIVIDAD-8.png" style="position: relative; object-fit: cover; height: 105%; width: 105%; left: -30px; bottom: -3px;" alt="Nueva Imagen">
+                <img data-aos="zoom-out" data-aos-duration="3000" #followImageDis src="assets/imagenes/cards/CREATIVIDAD-8.png" style="position: relative; object-fit: cover; height: 105%; width: 105%; left: -30px; bottom: -3px;" alt="Nueva Imagen">
              </div>
   
             </div>
@@ -719,10 +719,10 @@
           <div data-aos="fade-up" class="col-md-3"  style="padding-top: 15px; padding-bottom: 50px; display: flex; justify-content: center; align-content: center;">
             <div class="custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fondoCardsDos.svg'); background-size: cover; height: 265px; width: 85%; overflow: hidden;" id="card_plan_1">
   
-              <div class="container card-overlay" (mousemove)="onMouseMoveDina($event)" (mouseleave)="resetImagePositionDina()" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">            
+              <div class="container card-overlay" (mousemove)="onMouseMoveAct($event)" (mouseleave)="resetImagePositionAct()" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">            
                 <!-- <p id="creatividad" style="position: absolute; width: 455px; margin-top: -150px; margin-left : -150px;"> </p> -->
                 
-                <img data-aos="zoom-out" data-aos-duration="3000" src="assets/imagenes/cards/ACTIVACION-8.png" style="position: relative; object-fit: cover; height: 140%; width: 135%; left: -4px; bottom: -2px;" alt="Nueva Imagen">
+                <img data-aos="zoom-out" data-aos-duration="3000" #followImageAct src="assets/imagenes/cards/ACTIVACION-8.png" style="position: relative; object-fit: cover; height: 140%; width: 135%; left: -4px; bottom: -2px;" alt="Nueva Imagen">
               </div>
 
             </div>
@@ -768,22 +768,22 @@
           <div class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; display: flex; justify-content: center; align-content: center;">
             <div class="card plan custom-card cartas text-center" style="padding: auto; background-image: url('/assets/imagenes/imaFichas/fondoCardsDos.svg'); background-size: cover; height: 265px; width: 85%; overflow: hidden;" id="card_plan_1">
   
-              <div class="container card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+              <div class="container card-overlay" (mousemove)="onMouseMoveLog($event)" (mouseleave)="resetImagePositionLog()" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
                 <!-- <p id="logistica" style="position: absolute; width: 455px; margin-top: -150px; margin-left : -150px;"> </p> -->
                 
-                <img data-aos="zoom-out" data-aos-duration="3000" src="assets/imagenes/cards/LOGISTICA-8.png" style="position: relative; object-fit: cover; height: 115%; width: 115%; left: -37px; bottom: 1.5px;" alt="Nueva Imagen">
+                <img data-aos="zoom-out" data-aos-duration="3000" #followImageLog src="assets/imagenes/cards/LOGISTICA-8.png" style="position: relative; object-fit: cover; height: 115%; width: 115%; left: -37px; bottom: 1.5px;" alt="Nueva Imagen">
               </div>
   
             </div>
           </div>
   
-          <div class="col-md-3"  style="padding-top: 15px; padding-bottom: 50px; display: flex; justify-content: center; align-content: center;">
+          <div class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; display: flex; justify-content: center; align-content: center;">
             <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fondoCardsDos.svg'); background-size: cover; height: 265px; width: 85%; overflow: hidden;" id="card_plan_1">
   
-              <div class="container card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+              <div class="container card-overlay" (mousemove)="onMouseMoveStem($event)" (mouseleave)="resetImagePositionStem()" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
                 <!-- <p id="steam" style="position: absolute; width: 455px; margin-top: -150px; margin-left : -150px;"> </p> -->
                 
-                <img data-aos="zoom-out" data-aos-duration="3000" src="assets/imagenes/cards/STEM-8.png" style="position: relative; object-fit: cover; height: 115%; width: 115%; left: -25px; bottom: 25px;" alt="Nueva Imagen">
+                <img data-aos="zoom-out" data-aos-duration="3000" #followImageStem src="assets/imagenes/cards/STEM-8.png" style="position: relative; object-fit: cover; height: 115%; width: 115%; left: -25px; bottom: 25px;" alt="Nueva Imagen">
               </div>
   
             </div>
