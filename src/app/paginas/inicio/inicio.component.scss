@@ -30,9 +30,21 @@ body {
 .form-control:focus .text-area:focus {
   outline: none;
   box-shadow: none;
-  border-color: transparent; /* Si aún ves algún borde de color, también intenta con esto */
+  border-color: transparent; 
 }
 
+// Modales de pop-up
+
+// .modal-activacion {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: beige;
+//   position: relative;
+//   height: 100%;
+//   width: 100vw;
+//   z-index: 8;
+// }
 
 .form-check-input {
   padding: 4px;
