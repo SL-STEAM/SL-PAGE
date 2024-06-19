@@ -8,6 +8,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import lottie from 'lottie-web';
 import { ViewportScroller } from '@angular/common';
 import Aos from 'aos';
+import { ModalContentService } from 'src/app/compartido/servicios/modal-content.service';
 
 
 @Component({
@@ -673,8 +674,40 @@ export class InicioComponent implements OnInit {
 
   // animationContainerComillas: HTMLElement | null = null;
 
-  constructor(private viewportScroller: ViewportScroller, private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder){
+  constructor(private viewportScroller: ViewportScroller, private modalContentService: ModalContentService, private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder){
 
+  }
+
+
+  abrirModal1() {
+    const contenido = `
+      <h1 class="title">NOMBRE DEL ÁREA</h1>
+      <div class="containerDir">
+      </div>
+
+      <div class="containerDir">
+      </div>
+
+      <div class="containerDir">
+      </div>
+    `;
+    this.modalContentService.setContent(contenido); // Ajusta la llamada a setContent según la nueva implementación
+  }
+
+  abrirModal2() {
+    const contenido = `
+      <h1>Contenido del Modal 2</h1>
+      <p>Este es el contenido del segundo modal.</p>
+    `;
+    this.modalContentService.setContent(contenido); // Ajusta la llamada a setContent según la nueva implementación
+  }
+
+  abrirModal3() {
+    const contenido = `
+      <h1>Contenido del Modal 3</h1>
+      <p>Este es el contenido del tercer modal.</p>
+    `;
+    this.modalContentService.setContent(contenido); // Ajusta la llamada a setContent según la nueva implementación
   }
 
   displayPerpis(){

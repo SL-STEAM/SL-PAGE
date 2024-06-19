@@ -746,20 +746,21 @@
         </div>
   
         
-        <!-- 3 botones de conócelos -->
-        <div  class="row justify-content-center align-content-center" style="margin-top: 20px; gap: 8%;">
-          <div class="col-md-3" style="text-align: center;">
-            <button class="btn custom-button10" style="font-size: 22px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic; cursor: pointer;">Conócelos</button>
+        <div class="container">
+          <div class="row justify-content-center align-content-center" style="margin-top: 20px; gap: 8%;">
+              <div class="col-md-3" style="text-align: center;">
+                  <button type="button" class="btn custom-button10" style="font-size: 22px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic; cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" (click)="abrirModal1()">Conócelos</button>
+              </div>
+              <div class="col-md-3" style="text-align: center;">
+                  <button type="button" class="btn custom-button10" style="font-size: 22px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic; cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" (click)="abrirModal2()">Conócelos</button>
+              </div>
+              <div class="col-md-3" style="text-align: center;">
+                  <button type="button" class="btn custom-button10" style="font-size: 22px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic; cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" (click)="abrirModal3()">Conócelos</button>
+              </div>
           </div>
-  
-          <div class="col-md-3" style="text-align: center;">
-            <button class="btn custom-button10" style="font-size: 22px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic; cursor: pointer;">Conócelos</button>
-          </div>
-  
-          <div class="col-md-3" style="text-align: center;">
-            <button class="btn custom-button10" style="font-size: 22px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic; cursor: pointer;">Conócelos</button>
-          </div>
-        </div>
+      
+          <app-modal></app-modal>
+      </div>
   
         <div data-aos="fade-up" class="row justify-content-center align-content-center" style="margin-top: 60px; gap: 8%;">
   
