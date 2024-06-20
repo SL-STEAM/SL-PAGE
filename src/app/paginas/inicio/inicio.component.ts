@@ -682,14 +682,171 @@ export class InicioComponent implements OnInit {
   abrirModal1() {
     const contenido = `
       <h1 class="title">NOMBRE DEL ÁREA</h1>
-      <div class="containerDir">
+    
+      <div class="lineaAzul"></div>
+
+      <div class="containerCir">
+        <div class="containerCard">
+
+          <div class="containerImg">
+              <img class="bolaPop" src="assets/imagenes/circuloPopUp.svg" alt="Nueva Imagen">
+          </div>
+
+        </div>
+
+        <div class="containerDir">
+          <div class="containerImgDir">
+              <img class="director" src="assets/imagenes/fotos/DAVID_ZULETA.png" alt="Nueva Imagen">
+          </div>
+
+          <div class="infoDesc">
+            <h2>Título</h2>
+            <hr>
+            <p>Descripción/historia</p>
+          </div>
+          
+        </div>
       </div>
 
-      <div class="containerDir">
+      <div class="containerInf">
+        <h2>David Zuleta</h2>
+        <p>Director Discovery</p>
+        
+        <div class="containerEmail">
+            <div class="containerEmailDa">
+              <img class="email" src="assets/imagenes/fotos/mailLog.svg" alt="Nueva Imagen">
+            </div>
+              <p>d.zuleta@slig.co</p>
+        </div>
+
+        <div class="containerEmail">
+            <div class="containerEmailDa">
+              <img class="email" src="assets/imagenes/fotos/mailLog.svg" alt="Nueva Imagen">
+            </div>
+              <p>320 2680777</p>
+        </div>
+      </div>
+        <br>
+      <div class="cardsPopUp">
+        <div class="cardPop">
+            <img class="imgCard" src="assets/imagenes/fotos/ISA.png" alt="Cards">
+
+            <div class="cardPop">
+              <h2>Isabel Isaza</h2>
+              <p>Coordinador Cualitativo</p>
+            </div>
+        </div>
+
+        <div class="cardPop">
+            <img class="imgCard" src="assets/imagenes/fotos/MARIAPAU.png" alt="Cards">
+
+            <div class="cardPop">
+              <h2>María Paula Ávila</h2>
+              <p>Analista Junior</p>
+            </div>
+        </div>
+
+        <div class="cardPop">
+            <img class="imgCard" src="assets/imagenes/fotos/CAMILO.png" alt="Cards">
+
+            <div class="cardPop">
+              <h2>Camilo Cano</h2>
+              <p>Anlista Junior</p>
+            </div>
+        </div>
+
+        <div class="cardPop">
+            <img class="imgCard" src="assets/imagenes/fotos/MARI.png" alt="Cards">
+
+            <div class="cardPop">
+              <h2>María Paula López</h2>
+              <p>Analista Junior</p>
+            </div>
+        </div>
+
+        <div class="cardPop">
+            <img class="imgCard" src="assets/imagenes/fotos/OSCAR.png" alt="Cards">
+
+            <div class="cardPop">
+              <h2>Oscar Garzón</h2>
+              <p>Coordinador STEM</p>
+            </div>
+        </div>
+
+        <div class="cardPop">
+            <img class="imgCard" src="assets/imagenes/fotos/JOHAN.png" alt="Cards">
+
+            <div class="cardPop">
+              <h2>Johan Peñaloza</h2>
+              <p>Coordinador de <br> análisis de Datos</p>
+            </div>
+        </div>
+
+        <div class="cardPop">
+            <img class="imgCard" src="assets/imagenes/fotos/DANIEL_ARIAS.png" alt="Cards">
+
+            <div class="cardPop">
+              <h2>Daniel Arias</h2>
+              <p>Analista Cualitativo</p>
+            </div>
+        </div>
+
+        <div class="cardPop">
+            <img class="imgCard" src="assets/imagenes/fotos/ANDRES.png" alt="Cards">
+
+            <div class="cardPop">
+              <h2>Andrés Castiblanco</h2>
+              <p>Desarrollador STEM</p>
+            </div>
+        </div>
+
+        <div class="cardPop">
+            <img class="imgCard" src="assets/imagenes/fotos/JACKSON.png" alt="Cards">
+
+            <div class="cardPop">
+              <h2>Jackson Londoño</h2>
+              <p>Practicante Desarrollador</p>
+            </div>
+        </div>
+
+        <div class="cardPop">
+            <img class="imgCard" src="assets/imagenes/fotos/DAVID_2.png" alt="Cards">
+
+            <div class="cardPop">
+              <h2>David Pabón</h2>
+              <p>Analista Lingüista</p>
+            </div>
+        </div>
+
+        <div class="cardPop">
+            <img class="imgCard" src="assets/imagenes/fotos/JUAN_DAVID.png" alt="Cards">
+
+            <div class="cardPop">
+              <h2>Juan Hernández</h2>
+              <p>Analista STEM</p>
+            </div>
+        </div>
+
+        <div class="cardPop">
+            <img class="imgCard" src="assets/imagenes/fotos/OLGA_ULLOA.png" alt="Cards">
+
+            <div class="cardPop">
+              <h2>Olga Ulloa</h2>
+              <p>Administrador de <br> Bases Junior</p>
+            </div>
+        </div>
+
+        <div class="cardPop">
+            <img class="imgCard" src="assets/imagenes/fotos/NATALIA.png" alt="Cards">
+
+            <div class="cardPop">
+              <h2>Natalia Parra</h2>
+              <p>Administrador de <br> Bases Junior</p>
+            </div>
+        </div>
+
       </div>
 
-      <div class="containerDir">
-      </div>
     `;
     this.modalContentService.setContent(contenido); // Ajusta la llamada a setContent según la nueva implementación
   }
@@ -710,8 +867,24 @@ export class InicioComponent implements OnInit {
     this.modalContentService.setContent(contenido); // Ajusta la llamada a setContent según la nueva implementación
   }
 
-  displayPerpis(){
+  abrirModal4() {
+    const contenido = `
+      <h1>Contenido del Modal 4</h1>
+      <p>Este es el contenido del cuarto modal.</p>
+    `;
+    this.modalContentService.setContent(contenido); // Ajusta la llamada a setContent según la nueva implementación
+  }
 
+  abrirModal5() {
+    const contenido = `
+      <h1>Contenido del Modal 5</h1>
+      <p>Este es el contenido del quinto modal.</p>
+    `;
+    this.modalContentService.setContent(contenido); // Ajusta la llamada a setContent según la nueva implementación
+  }
+  
+
+  displayPerpis(){
     this.indiceFlecha = (this.indiceFlecha + 1) % this.flechas.length;
     this.flechaCerrada = this.flechas[this.indiceFlecha];
 

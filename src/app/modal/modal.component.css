@@ -1,11 +1,11 @@
 .modal-custom-width {
     height: 100%;
-    width: 80% !important; /* Asegura que el ancho se aplique */
+    width: 55% !important; /* Asegura que el ancho se aplique */
     max-width: none; /* Desactiva el ancho máximo de Bootstrap */
     margin: 0;
     padding: 0;
   }
-  
+
   .modal-dialog {
     margin: 0 auto; /* Centra el modal horizontalmente */
     display: flex;
@@ -20,15 +20,24 @@
   .modal-content {
     height: 100%;
     border-radius: 40px;
+    padding-right: 15px;
     border: none;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
 
   }
 
+  /*  */
+
   .modal-body {
-    border: 2px solid blue;
+    display: block;
+    justify-content: center;
+    align-content: flex-start;
+    border: 2px solid transparent;
     text-align: center;
     overflow-y: scroll;
+    /* background-image: url(../../assets/imagenes/lineasPopUp.svg);
+    background-size: cover; */
+    /* border: 2px solid green; */
   }
 
   .modal-body::-webkit-scrollbar {
@@ -42,9 +51,7 @@
   .modal-body::-webkit-scrollbar-thumb {
     background: #00000028;
     border-radius: 10px;
-    
   }
-
 
 
 /* Aplica un pseudo-elemento con desenfoque al fondo de la modal */
