@@ -21,7 +21,7 @@
               "lottie-web",
               "aos"
             ],
-            "outputPath": "dist/paginasl",
+            "outputPath": "dist/cloudflare",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
