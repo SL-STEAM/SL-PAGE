@@ -1,16 +1,22 @@
+/* Fuente para todos los enlaces de navegación */
+.nav-link {
+  font-family: 'Arial Nova', Arial, sans-serif;
+  font-weight: bold; /* Asegura que la fuente sea negrita */
+  color: #ffffff; /* Color de los enlaces por defecto */
+  font-size: 19px; /* Ajusta el tamaño de la fuente */
+  transition: none; /* Elimina cualquier transición para que el cambio de estilo sea inmediato */
+}
+
 /* Estilo para el enlace activo */
 .activo {
   text-decoration: underline;
-  text-decoration-thickness: 3px; /* Ajusta el grosor de la línea */
+  text-decoration-thickness: 3.5px; /* Ajusta el grosor de la línea */
   text-underline-offset: 3px; /* Ajusta la distancia del subrayado al texto */
   color: #ffffff; /* Color blanco del texto */
+  font-family: 'Arial Nova', Arial, sans-serif;
+  font-weight: bold; /* Asegura que la fuente sea negrita */
+  font-size: 19px; /* Ajusta el tamaño de la fuente */
   transition: none; /* Elimina cualquier transición para que el subrayado aparezca inmediatamente */
-}
-
-/* Estilo para los enlaces por defecto */
-.nav-link {
-  color: #ffffff; /* Color de los enlaces por defecto */
-  transition: none; /* Elimina cualquier transición para que el cambio de estilo sea inmediato */
 }
 
 /* Estilo para los enlaces al pasar el mouse (sin subrayado) */
