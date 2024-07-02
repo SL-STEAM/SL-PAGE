@@ -872,7 +872,7 @@
       style="width: 30%; background-color: transparent; position: absolute; margin-left: -15px; border: 2px solid rgba(0, 0, 255, 0); margin-top: 350px;"
       src="assets/imagenes/bolas3/personasmapa.gif" alt="Mi GIF">
 
-    <div class="container">
+    <div class="container ocultc">
       <div class="row">
         <div class="col-md-12">
           <img loading="lazy" style="width: 900px; margin-left: 250px;"
@@ -881,7 +881,12 @@
       </div>
     </div>
 
-    <div class="texto-superpuesto3 row">
+    <div class="container visble">
+      <img loading="lazy" style="width: 900px; margin-left: 250px;"
+      class="mapaImg" src="assets/imagenes/mapa.svg" alt="Invisible">
+    </div>
+
+    <div class="texto-superpuesto3 row two">
 
       <div class="col-md-5"></div>
 
@@ -901,7 +906,8 @@
         </div>
       </div>
     </div>
-    <div class="texto-superpuesto3 row">
+    
+    <div class="texto-superpuesto3 row divHuella">
 
       <div class="col-md-12">
         <div data-aos="fade-right" data-aos-offset="400"
@@ -916,14 +922,14 @@
     <div class="texto-superpuesto3 row">
       <div class="col-md-4">
       </div>
-      <div class="col-md-8">
+      <div class="col-md-8 divBtnMapa">
         <div data-aos="zoom-in"> <p
             style="line-height: 1.4; font-family: Century Gothic; font-size: 23px; color: rgb(63, 62, 62); text-align: left; margin-top: -270px; margin-left: -400px;"
             class="texto2 hemosImp">Hemos impactado organizaciones,<br> marcas a lo largo
             de nuestra región,<br>alineando <strong>el talento y las
               habilidades</strong><br> de las personas a favor de los
             <strong>retos y<br> metas </strong>de los negocios.</p> </div>
-        <button class="btn custom-button10"
+        <button class="btn custom-button10 btnMapa"
           style="position: absolute; font-size: 20px; margin-left: -380px; margin-top: 15px; padding-top: 5px; padding-bottom: 5px; padding-left: 40px; padding-right: 40px; font-family: Century Gothic; cursor: pointer;"
           data-aos="zoom-in-up"><strong>Hablemos</strong></button>
       </div>
@@ -931,30 +937,26 @@
   </div>
 
   <!-- Seccion quienes lo hacen posible -->
-  <div class="row"
-    style="display: flex; justify-content: center; align-content: center; background-color: #ffffff; padding-top: 85px;">
+  <div class="row contQuienes" style="display: flex; justify-content: center; align-content: center; background-color: #ffffff; padding-top: 85px;">
 
     <div class="container" style="background-color: #ffffff;">
 
       <div data-aos="fade-up" class="row"
         style="margin-top: 0px; margin-top: 35px; background-color: #ffffff;">
-        <div class="col-md-12"
-          style="display: flex; justify-content: center; align-items: center; text-align: center; background-color: #ffffff;">
-          <p
-            style="font-size: 35px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic;"><strong>QUIENES
-              LO HACEN POSIBLE</strong></p>
+        <div class="col-md-12" style="display: flex; justify-content: center; align-items: center; text-align: center; background-color: #ffffff;">
+            <p class="titleQuienes" style="font-size: 35px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic;">
+              <strong>QUIENES LO HACEN POSIBLE</strong>
+            </p>
           <br>
         </div>
       </div>
 
       <div data-aos="fade-up" class="row" style="background-color: #ffffff;">
         <div class="col-md-12" style="text-align: center; padding: 20px;">
-          <p
-            style="font-size: 24px; font-family: Century Gothic; line-height: 1.2; font-family: 'Arial Nova', Arial, sans-serif;;">Ante
-            todo personas que comparten un mismo propósito,<strong
-              style="font-size: 25px;"> arriesgadas, <br> creativas, profundas y
+          <p class="pQuienes" style="font-size: 24px; font-family: Century Gothic; line-height: 1.2; font-family: 'Arial Nova', Arial, sans-serif;;">Ante
+            todo personas que comparten un mismo propósito,<strong class="pQuienes" style="font-size: 25px;"> arriesgadas, <br> creativas, profundas y
               soñadoras.
-            </strong> Lo bueno de <strong style="font-size: 25px;">SL Consulting
+            </strong> Lo bueno de <strong class="pQuienes" style="font-size: 25px;">SL Consulting
             </strong>es<br> su gente, quienes impregnan pasión y dedicación en
             cada proyecto.</p>
         </div>
