@@ -8,7 +8,9 @@
       {
         "ignore": [
           "backdrop-filter",
-          "user-select"
+          "user-select",
+          "text-decoration-thickness",
+          "text-underline-offset"
         ]
       }
     ],
