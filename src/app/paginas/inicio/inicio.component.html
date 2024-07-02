@@ -936,6 +936,7 @@
     </div>
   </div>
 
+<div class="normalQuienes">
   <!-- Seccion quienes lo hacen posible -->
   <div class="row contQuienes" style="display: flex; justify-content: center; align-content: center; background-color: #ffffff; padding-top: 85px;">
 
@@ -1166,29 +1167,248 @@
               (click)="abrirModal4()">Conócelos</button>
           </div>
 
-          <div class="col-md-3" style="text-align: center;">
-            <button type="button" class="btn custom-button10"
-              style="font-size: 22px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic; cursor: pointer;"
-              data-toggle="modal" data-target="#exampleModalCenter"
-              (click)="abrirModal5()">Conócelos</button>
+            <div class="col-md-3" style="text-align: center;">
+              <button type="button" class="btn custom-button10"
+                style="font-size: 22px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic; cursor: pointer;"
+                data-toggle="modal" data-target="#exampleModalCenter"
+                (click)="abrirModal5()">Conócelos</button>
+            </div>
+
+            <div class="col-md-1"></div>
           </div>
-
-          <div class="col-md-1"></div>
         </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div data-aos="fade-up"
+          style="margin-left: auto; margin-right: auto; width: 180px; height: 8px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; background-color: #353F79;">
+
+        </div>
+
       </div>
-
-      <br>
-      <br>
-      <br>
-
-      <div data-aos="fade-up"
-        style="margin-left: auto; margin-right: auto; width: 180px; height: 8px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; background-color: #353F79;">
-
-      </div>
-
     </div>
   </div>
 
+
+<!-- RESPONSIVE -->
+  <div class="responQuienes">
+    <!-- Seccion quienes lo hacen posible -->
+    <div class="row camb"  style="display: flex; justify-content: center; border : 2px solid blue ; align-content: center; background-color: #ffffff; padding-top: 85px;">
+
+      <div class="container" style="background-color: #ffffff;">
+
+        <div data-aos="fade-up" class="row" style="margin-top: 0px; margin-top: 35px; background-color: #ffffff;">
+          <div class="col-md-12" style="display: flex; justify-content: center; align-items: center; text-align: center; background-color: #ffffff;">
+              <p class="titleQuienes" style="font-size: 35px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic;">
+                <strong>QUIENES LO HACEN POSIBLE</strong>
+              </p>
+            <br>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="row" style="background-color: #ffffff;">
+          <div class="col-md-12" style="text-align: center; padding: 20px;">
+            <p class="pQuienes" style="font-size: 24px; font-family: Century Gothic; line-height: 1.2; font-family: 'Arial Nova', Arial, sans-serif;;">Ante
+              todo personas que comparten un mismo propósito,<strong class="pQuienes" style="font-size: 25px;"> arriesgadas, <br> creativas, profundas y
+                soñadoras.
+              </strong> Lo bueno de <strong class="pQuienes" style="font-size: 25px;">SL Consulting
+              </strong>es<br> su gente, quienes impregnan pasión y dedicación en
+              cada proyecto.</p>
+          </div>
+        </div>
+
+        <!-- Segunda fila ( Desde aca comienzan los divs de las cards ) -->
+
+         <!-- 1 -->
+        <div class="row justify-content-center align-content-center"  style="margin-top: 0px; gap: 8%;">
+
+          <div data-aos="fade-up" class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; display: flex; justify-content: center; align-content: center;">
+            <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fondoCardsDos.svg'); background-size: cover; height: 265px; width: 85%; overflow: hidden;"mid="card_plan_1">
+
+              <div class="container card-overlay" (mousemove)="onMouseMoveCompre($event)" (mouseleave)="resetImagePositionCompre()" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                <img data-aos="zoom-out" data-aos-duration="3000" #followImageCompre src="assets/imagenes/cards/COMPRENSION-HUMANA-8.png" style="position: relative; object-fit: cover; height: 105%; width: 105%; bottom: -9px; left: -20px;" alt="Nueva Imagen">
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row justify-content-center align-content-center" style="margin-top: -25px; gap: 8%; line-height: 1;">
+            <div class="col-md-3" style="text-align: center;">
+              <p style="font-size: 22px; font-family: Century Gothic; font-weight: bold;">Expertos en<br> comprensión humana</p>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center align-content-center" style="margin-top: 20px; gap: 8%;">
+  
+              <div class="col-md-3" style="text-align: center;">
+                <button type="button" class="btn custom-button10" style="font-size: 22px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic; cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" (click)="abrirModal1()">Conócelos</button>
+              </div>
+  
+            </div>
+  
+            <app-modal></app-modal>
+          </div>
+
+        </div>
+
+        <br>
+
+        <!-- 2 -->
+        <div class="row justify-content-center align-content-center"  style="margin-top: 0px; gap: 8%;">
+          <div data-aos="fade-up" class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; display: flex; justify-content: center; align-content: center;">
+            <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fondoCardsDos.svg'); background-size: cover; height: 265px; width: 85%; overflow: hidden;" id="card_plan_1">
+  
+              <div class="container card-overlay" (mousemove)="onMouseMoveDis($event)" (mouseleave)="resetImagePositionDis()" style="position: relative; object-fit: cover; width: 100%; height: 100%;">
+                <img data-aos="zoom-out" data-aos-duration="3000" #followImageDis src="assets/imagenes/cards/CREATIVIDAD-8.png" style="position: relative; object-fit: cover; height: 105%; width: 105%; left: -30px; bottom: -3px;" alt="Nueva Imagen">
+              </div>
+  
+            </div>
+          </div>
+
+          <div class="row justify-content-center align-content-center" style="margin-top: -25px; gap: 8%; line-height: 1;">
+            <div class="col-md-3" style="text-align: center;">
+              <p style="font-size: 22px; font-family: Century Gothic; font-weight: bold;">Expertos en creatividad,<br> diseño y desarrollo</p>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center align-content-center" style="margin-top: 20px; gap: 8%;">
+  
+              <div class="col-md-3" style="text-align: center;">
+                <button type="button" class="btn custom-button10" style="font-size: 22px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic; cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" (click)="abrirModal2()">Conócelos</button>
+              </div>
+  
+            </div>
+  
+            <app-modal></app-modal>
+          </div>
+
+        </div>
+
+        <br>
+        <!-- 3 -->
+        <div class="row justify-content-center align-content-center"  style="margin-top: 0px; gap: 8%;">
+          <div data-aos="fade-up" class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; display: flex; justify-content: center; align-content: center;">
+            <div class="custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fondoCardsDos.svg'); background-size: cover; height: 265px; width: 85%; overflow: hidden;" id="card_plan_1">
+  
+              <div class="container card-overlay" (mousemove)="onMouseMoveAct($event)" (mouseleave)="resetImagePositionAct()" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                <img data-aos="zoom-out" data-aos-duration="3000" #followImageAct src="assets/imagenes/cards/ACTIVACION-8.png" style="position: relative; object-fit: cover; height: 140%; width: 135%; left: -4px; bottom: -2px;" alt="Nueva Imagen">
+              </div>
+  
+            </div>
+          </div>
+
+          <div class="row justify-content-center align-content-center" style="margin-top: -25px; gap: 8%; line-height: 1;">
+            <div class="col-md-3" style="text-align: center;">
+              <p style="font-size: 22px; font-family: Century Gothic; font-weight: bold;">Expertos en activación<br> estratégica</p>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center align-content-center" style="margin-top: 20px; gap: 8%;">
+  
+              <div class="col-md-3" style="text-align: center;">
+                <button type="button" class="btn custom-button10" style="font-size: 22px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic; cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" (click)="abrirModal3()">Conócelos</button>
+              </div>
+  
+            </div>
+  
+            <app-modal></app-modal>
+          </div>
+
+        </div>
+       
+
+        <div data-aos="fade-up" class="row justify-content-center align-content-center" style="margin-top: 40px; gap: 8%;">
+
+          <div class="col-md-1"></div>
+
+          <!-- 4 -->
+          <div class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; display: flex; justify-content: center; align-content: center;">
+            <div class="card plan custom-card cartas text-center" style="padding: auto; background-image: url('/assets/imagenes/imaFichas/fondoCardsDos.svg'); background-size: cover; height: 265px; width: 85%; overflow: hidden;" id="card_plan_1">
+
+              <div class="container card-overlay" (mousemove)="onMouseMoveLog($event)" (mouseleave)="resetImagePositionLog()" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                <img data-aos="zoom-out" data-aos-duration="3000" #followImageLog src="assets/imagenes/cards/LOGISTICA-8.png" style="position: relative; object-fit: cover; height: 115%; width: 115%; left: -37px; bottom: 1.5px;" alt="Nueva Imagen">
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row justify-content-center align-content-center" style="margin-top: -25px; gap: 8%; line-height: 1;">
+            <div class="col-md-3" style="text-align: center;">
+              <p style="font-size: 22px; font-family: Century Gothic; font-weight: bold;">Expertos en <br> logística y gestión <br> de proyectos</p>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center align-content-center" style="margin-top: 20px; gap: 8%;">
+  
+              <div class="col-md-1"></div>
+  
+              <div class="col-md-3" style="text-align: center;">
+                <button type="button" class="btn custom-button10" style="font-size: 22px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic; cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" (click)="abrirModal4()">Conócelos</button>
+              </div>
+  
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+
+          <br>
+          
+          <!-- 5 -->
+          <div class="col-md-3" style="padding-top: 15px; padding-bottom: 50px; display: flex; justify-content: center; align-content: center;">
+            <div class="card plan custom-card cartas text-center" style="background-image: url('/assets/imagenes/imaFichas/fondoCardsDos.svg'); background-size: cover; height: 265px; width: 85%; overflow: hidden;" id="card_plan_1">
+
+              <div class="container card-overlay" (mousemove)="onMouseMoveStem($event)" (mouseleave)="resetImagePositionStem()" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                <img data-aos="zoom-out" data-aos-duration="3000" #followImageStem src="assets/imagenes/cards/STEM-8.png" style="position: relative; object-fit: cover; height: 115%; width: 115%; left: -25px; bottom: 25px;" alt="Nueva Imagen">
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row justify-content-center align-content-center" style="margin-top: -25px; gap: 8%; line-height: 1;">
+            <div class="col-md-3" style="text-align: center;">
+              <p style="font-size: 22px; font-family: Century Gothic; font-weight: bold;">Expertos STEM<br> (Science, Technology,<br> Engineering and Mathematics)</p>
+            </div>
+          </div>
+
+
+          <div class="col-md-1"></div>
+
+        </div>
+
+        <!-- 2 botones de  conocelos-->
+
+        <div class="container">
+          <div class="row justify-content-center align-content-center" style="margin-top: 20px; gap: 8%;">
+
+            <div class="col-md-1"></div>
+            
+            <div class="col-md-3" style="text-align: center;">
+              <button type="button" class="btn custom-button10" style="font-size: 22px; padding-left: 30px; padding-right: 30px; font-family: Century Gothic; cursor: pointer;" data-toggle="modal" data-target="#exampleModalCenter" (click)="abrirModal5()">Conócelos</button>
+            </div>
+
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+
+        <div data-aos="fade-up"
+          style="margin-left: auto; margin-right: auto; width: 180px; height: 8px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; background-color: #353F79;">
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
   <!-- Carrusel en negro -->
 
   <div class="row"
@@ -1196,9 +1416,7 @@
 
     <div data-aos="zoom-in-up" data-aos-duration="2500" class="container-fluid"
       style="border: 2px solid #5eff0000; width: 100%; margin-bottom: 25px; margin-left: auto; margin-right: auto;">
-      <p
-        style="font-family: Century Gothic; font-size: 30px; font-weight: bold; text-align: center;">NUESTROS
-        ALIADOS</p>
+      <p style="font-family: Century Gothic; font-size: 30px; font-weight: bold; text-align: center;">NUESTROS ALIADOS</p>
     </div>
     <br>
     <br>

@@ -1099,6 +1099,15 @@ body {
   display: none;
 }
 
+
+.normalQuienes {
+  display: block;
+}
+
+.responQuienes {
+  display: none;
+}
+
 @keyframes mover {
   0% {
     transform: translateX(0);
@@ -1369,7 +1378,7 @@ body {
     display: none;
   }
   .contConvenc2 {
-    display: none;
+    display: flex;
     margin-left: auto !important;
     margin-right: auto !important;
     // border: 2px solid blue;
@@ -1393,8 +1402,15 @@ body {
     font-size: 26px !important;
     margin-left: 0 !important;
   }
-  .contConvenc2 {
+  .normalQuienes {
+    display: none;
+  }
+
+  .responQuienes {
     display: flex;
+  }
+  .camb {
+    padding-top: 0px !important;
   }
   .tituloEndToEnd {
     margin-top: 25px !important;
