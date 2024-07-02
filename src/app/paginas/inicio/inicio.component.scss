@@ -1046,6 +1046,13 @@ body {
   }
 }
 
+.ocultc {
+  display: flex;
+}
+
+.visble {
+  display: none;
+}
 
 
 // Carrusel azul
@@ -1103,6 +1110,14 @@ body {
 
 // Dispositivos Móviles Pequeños (menos de 600px)
 @media (min-width: 320px) and (max-width: 599px) {
+
+
+  .texto-wrapper {
+    display: flex;
+    width: 200%; /* Asegúrate de que sea el doble del ancho para acomodar el texto duplicado */
+    animation: mover 20s linear infinite !important;
+    align-items: center; /* Asegura que los elementos internos estén centrados verticalmente */
+  }
 
   // Seccion del gif
   .video-container {
@@ -1164,7 +1179,9 @@ body {
     margin: 0 !important;
   }
   .ondaGris {
-    display: none;
+    display: flex;
+    margin-top: 10px !important;
+    width: 120% !important;
   }
   .estamos {
     // border: 2px solid orange;
@@ -1222,50 +1239,34 @@ body {
   .textSomos {
     font-size: 28px !important;
   }
-
   .normal {
     display: none !important;
     visibility: hidden;
   }
-
   .responsive {
     display: block !important;
     visibility: visible;
   }
-
   .basamos {
     display: block;
     height: auto;
     // border: 2px solid blue;
     margin-bottom: -120px;
   }
-
   .nosBasa {
     // border: 2px solid orange;
     height: 120% !important;
     width: 100% !important;
   }
-  // .texto2  {
-  //   display: none;
-  // }
   .texto span {
     font-family: Century Gothic, sans-serif;
     font-size: 18px !important; 
     white-space: nowrap;
     padding-right: 100%; /* Espacio para el segundo bloque de texto */
   }
-
   .carrusel-container {
     height: 45px;
   }
-
-  // .secCabeza {    
-  //   border: 2px solid green;
-  // }
-  // Seccion de cabeza
-  // .contLosIns {
-  //   border: 2px solid chocolate;
-  // }
 
   .colm {
     display: block;
@@ -1367,7 +1368,6 @@ body {
   .contConvenc {
     display: none;
   }
-
   .contConvenc2 {
     display: none;
     margin-left: auto !important;
@@ -1412,14 +1412,13 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-
   .end::after {
     content: "";
     display: block;
     position: absolute;
     width: 44%; /* Ancho de la línea */
     height: 14px; /* Grosor de la línea */
-    background-color: #00b4b2; /* Color de la línea */
+    // background-color: #00b4b2; 
     margin: 0 auto; /* Centrar la línea horizontalmente */
     left: 28%;
     bottom: 10%;
@@ -1476,7 +1475,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #2ca4f5;
+    // border: 2px solid #2ca4f5;
     padding-top: 5px !important;
   }
   .capabilities {
@@ -1484,7 +1483,7 @@ body {
   }
   // 1
   .creamos {
-    border: 2px solid black;
+    // border: 2px solid black;
     width: 80%;
     font-size: 22px !important;
     text-align: center !important;
@@ -1493,7 +1492,7 @@ body {
   }
   .bolCreamos {
     display: flex;
-    border: 2px solid blue;
+    // border: 2px solid blue;
     width: 80% !important; 
     margin-left: auto !important; 
     margin-right: auto !important;
@@ -1501,7 +1500,7 @@ body {
   }
   // 2
   .combinando {
-    border: 2px solid black;
+    // border: 2px solid black;
     width: 70%;
     font-size: 22px !important;
     text-align: center !important;
@@ -1518,7 +1517,7 @@ body {
   }
   // 3
   .estrategico {
-    border: 2px solid black;
+    // border: 2px solid black;
     width: 70%;
     font-size: 22px !important;
     text-align: center !important;
@@ -1528,7 +1527,7 @@ body {
   }
   .bolaEstrategico {
     display: flex;
-    border: 2px solid rgb(40, 218, 135);
+    // border: 2px solid rgb(40, 218, 135);
     width: 59% !important; 
     margin-left: 66px !important; 
     margin-right: -1px !important;
@@ -1540,21 +1539,28 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid rgb(218, 16, 245);
-    height: auto;
+    // border: 2px solid rgb(218, 16, 245);
+    height: 1295px !important;
+    padding-bottom: 50px;
   
   }
   .hemosImp {
-    margin-top: 0 !important;
+    margin-top: -250px !important;
     margin-left: auto !important;
     margin-right: auto !important;
-  }  
+    text-align: center !important;
+  } 
+  .two {
+    margin-top: -540px !important;
+    margin-bottom: 0px !important;
+    // border: 2px solid purple;
+  }
   .est {
     line-height: 1; 
     font-size: 39px; 
     color: rgb(63, 62, 62); 
     text-align: center !important; 
-    margin-top: -415px; 
+    margin-top: 0px; 
     margin-left: 0px !important;
   }
   .dej {
@@ -1566,15 +1572,82 @@ body {
     margin-left: 0px !important;
   }
   .huella {
-    margin-top: 0px; 
+    margin-top: -350px !important; 
     text-align: center !important;
-    margin-left: 0px !important;
+    margin-left: 0 !important;
     padding-left: 0 !important;
     padding-right: 0px !important;
+    padding-bottom: 0 !important;
   }
-  // .personasMapa {
+  .personasMapa {
+    width: 80% !important;
+    margin-left: 0 !important;
+    margin-top: 985px !important;
+  }
+  .ocultc {
+    display: none;
+  }
+  .visble {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 450px;
+    margin-top: -150px !important;
+    align-items: center;
+    // border: 2px solid yellowgreen;
+  }
 
+  .mapaImg {
+    width: 100% !important;
+    // border: 2px solid red;
+    height: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .texto-superpuesto3 {
+    position: relative;
+    left: 0 !important;
+    transform: unset !important;
+    background: rgba(0, 0, 0, 0.5);
+    color: black;
+    padding: 5px;
+    margin-left: auto !important; /* Utilizamos un porcentaje para el padding */
+    margin-right: auto !important; /* Utilizamos un porcentaje para el padding */
+    font-size: 40px; /* Utilizamos un porcentaje para el tamaño de fuente */
+    background-color: transparent;
+    text-align: left;
+  }
+  // .divHuella {
+  //   border: 2px solid rgb(67, 207, 85);
   // }
+  .btnMapa {
+    position: relative !important;
+    font-size: 18px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .divBtnMapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  // Sección cartas- quienes lo hacen posible
+  .contQuienes {
+    border: 2px solid red;
+    padding-top: 20px !important;
+  }
+  .titleQuienes {
+    font-size: 24px !important;
+  }
+
+  .pQuienes {
+    font-size: 20px !important;
+  }
 }
 
 // Dispositivos Móviles Grandes (600px a 767px)
