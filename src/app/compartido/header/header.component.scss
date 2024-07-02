@@ -1,24 +1,24 @@
 /* Fuente para todos los enlaces de navegación */
 .nav-link {
   font-family: 'Arial Nova', Arial, sans-serif;
-  color: #ffffff; /* Color de los enlaces por defecto */
+  color: white !important; /* Color de los enlaces por defecto */
   font-size: 16px; /* Ajusta el tamaño de la fuente */
   transition: none; /* Elimina cualquier transición para que el cambio de estilo sea inmediato */
 }
 
 /* Estilo para el enlace activo */
-.activo {
+.nav-link.activo {
   text-decoration: underline;
   text-decoration-thickness: 3.3px; /* Ajusta el grosor de la línea */
   text-underline-offset: 8px; /* Ajusta la distancia del subrayado al texto */
-  color: #ffffff; /* Color blanco del texto */
+  color: white !important; /* Asegura que el color del texto activo sea blanco */
   font-family: 'Arial Nova', Arial, sans-serif;
   font-size: 16px; /* Ajusta el tamaño de la fuente */
   transition: none; /* Elimina cualquier transición para que el subrayado aparezca inmediatamente */
 }
 
 /* Estilo para los enlaces al pasar el mouse (sin subrayado) */
-.nav-link:hover {
-  color: #ffffff; /* Mantiene el color blanco al pasar el mouse */
+.nav-link {
+  color: white !important; /* Mantiene el color blanco al pasar el mouse */
   text-decoration: none; /* Sin subrayado al pasar el mouse */
 }
