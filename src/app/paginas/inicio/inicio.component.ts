@@ -614,27 +614,19 @@ export class InicioComponent implements OnInit {
   @ViewChild('ojoAnal') ojoAnal!: ElementRef;
 
   @ViewChild('banner') banner!: ElementRef;
-  @ViewChild('mexico') mexico!: ElementRef;
 
-  @ViewChild('ecuador') ecuador!: ElementRef;
-
-  @ViewChild('peru') peru!: ElementRef;
-  @ViewChild('chile') chile!: ElementRef;
-  @ViewChild('argentina') argentina!: ElementRef;
-  @ViewChild('dominicana') dominicana!: ElementRef;
-  @ViewChild('guatemala') guatemala!: ElementRef;
-  @ViewChild('salvador') salvador!: ElementRef;
-  @ViewChild('panama') panama!: ElementRef;
-  @ViewChild('honduras') honduras!: ElementRef;
-  @ViewChild('brasil') brasil!: ElementRef;
-
-  @ViewChild('Crea') Crea!: ElementRef;
 
   @ViewChild('perpis') perpis!: ElementRef;
   @ViewChild('dina') dina!: ElementRef;
   @ViewChild('crea') crea!: ElementRef;
   @ViewChild('arriesga') arriesga!: ElementRef;
   @ViewChild('provo') provo!: ElementRef;
+
+  @ViewChild('perpisM') perpisM!: ElementRef;
+  @ViewChild('dinaM') dinaM!: ElementRef;
+  @ViewChild('creaM') creaM!: ElementRef;
+  @ViewChild('arriesgaM') arriesgaM!: ElementRef;
+  @ViewChild('provoM') provoM!: ElementRef;
 
   botonPerpis: boolean = true;
   botonDina: boolean = true;
@@ -678,6 +670,183 @@ export class InicioComponent implements OnInit {
 
   }
 
+  displayPerpis(){
+    this.indiceFlecha = (this.indiceFlecha + 1) % this.flechas.length;
+    this.flechaCerrada = this.flechas[this.indiceFlecha];
+
+    if (this.perpis) {
+
+      if(this.botonPerpis){
+        this.perpis.nativeElement.style.display = 'block';
+        this.botonPerpis = false;
+      } else {
+        this.perpis.nativeElement.style.display = 'none';
+        this.botonPerpis = true;
+      }
+
+    }
+  }
+
+  displayDina(){
+
+    this.indiceFlechaDina = (this.indiceFlechaDina + 1) % this.flechasDina.length;
+    console.log(this.flechasDina.length);
+    
+    this.flechaCerradaDina = this.flechasDina[this.indiceFlechaDina];
+
+    if (this.dina) {
+
+      if(this.botonDina){
+        this.dina.nativeElement.style.display = 'block';
+        this.botonDina = false;
+      } else {
+        this.dina.nativeElement.style.display = 'none';
+        this.botonDina = true;
+      }
+
+    }
+  }
+
+  displayCrea(){
+
+    this.indiceFlechaCrea = (this.indiceFlechaCrea + 1) % this.flechasCrea.length;
+    this.flechaCerradaCrea = this.flechasCrea[this.indiceFlechaCrea];
+
+    if (this.crea) {
+
+      if(this.botonCrea){
+        this.crea.nativeElement.style.display = 'block';
+        this.botonCrea = false;
+      } else {
+        this.crea.nativeElement.style.display = 'none';
+        this.botonCrea = true;
+      }
+
+
+    }
+  }
+
+  displayArriesga(){
+    this.indiceFlechaArriesga = (this.indiceFlechaArriesga + 1) % this.flechasArriesga.length;
+    this.flechaCerradaArriesga = this.flechasArriesga[this.indiceFlechaArriesga];
+    if (this.arriesga) {
+
+      if(this.botonArriesga){
+        this.arriesga.nativeElement.style.display = 'block';
+        this.botonArriesga = false;
+      } else {
+        this.arriesga.nativeElement.style.display = 'none';
+        this.botonArriesga = true;
+      }
+
+
+    }
+  }
+
+  displayProvo(){
+    this.indiceFlechaProvo = (this.indiceFlechaProvo + 1) % this.flechasProvo.length;
+    this.flechaCerradaProvo = this.flechasProvo[this.indiceFlechaProvo];
+    if (this.provo) {
+
+      if(this.botonProvo){
+        this.provo.nativeElement.style.display = 'block';
+        this.botonProvo = false;
+      } else {
+        this.provo.nativeElement.style.display = 'none';
+        this.botonProvo = true;
+      }
+
+
+    }
+  }
+
+  // Para otros tamaños de pantalla 
+  displayPerpisM(){
+    this.indiceFlecha = (this.indiceFlecha + 1) % this.flechas.length;
+    this.flechaCerrada = this.flechas[this.indiceFlecha];
+
+    if (this.perpisM) {
+
+      if(this.botonPerpis){
+        this.perpisM.nativeElement.style.display = 'block';
+        this.botonPerpis = false;
+      } else {
+        this.perpisM.nativeElement.style.display = 'none';
+        this.botonPerpis = true;
+      }
+
+    }
+  }
+
+  displayDinaM(){
+
+    this.indiceFlechaDina = (this.indiceFlechaDina + 1) % this.flechasDina.length;
+    console.log(this.flechasDina.length);
+    
+    this.flechaCerradaDina = this.flechasDina[this.indiceFlechaDina];
+
+    if (this.dinaM) {
+
+      if(this.botonDina){
+        this.dinaM.nativeElement.style.display = 'block';
+        this.botonDina = false;
+      } else {
+        this.dinaM.nativeElement.style.display = 'none';
+        this.botonDina = true;
+      }
+
+    }
+  }
+
+  displayCreaM(){
+
+    this.indiceFlechaCrea = (this.indiceFlechaCrea + 1) % this.flechasCrea.length;
+    this.flechaCerradaCrea = this.flechasCrea[this.indiceFlechaCrea];
+
+    if (this.creaM) {
+
+      if(this.botonCrea){
+        this.creaM.nativeElement.style.display = 'block';
+        this.botonCrea = false;
+      } else {
+        this.creaM.nativeElement.style.display = 'none';
+        this.botonCrea = true;
+      }
+
+    }
+  }
+
+  displayArriesgaM(){
+    this.indiceFlechaArriesga = (this.indiceFlechaArriesga + 1) % this.flechasArriesga.length;
+    this.flechaCerradaArriesga = this.flechasArriesga[this.indiceFlechaArriesga];
+    if (this.arriesgaM) {
+
+      if(this.botonArriesga){
+        this.arriesgaM.nativeElement.style.display = 'block';
+        this.botonArriesga = false;
+      } else {
+        this.arriesgaM.nativeElement.style.display = 'none';
+        this.botonArriesga = true;
+      }
+
+    }
+  }
+
+  displayProvoM(){
+    this.indiceFlechaProvo = (this.indiceFlechaProvo + 1) % this.flechasProvo.length;
+    this.flechaCerradaProvo = this.flechasProvo[this.indiceFlechaProvo];
+    if (this.provoM) {
+
+      if(this.botonProvo){
+        this.provoM.nativeElement.style.display = 'block';
+        this.botonProvo = false;
+      } else {
+        this.provoM.nativeElement.style.display = 'none';
+        this.botonProvo = true;
+      }
+
+    }
+  }
 
   abrirModal1() {
     const contenido = `
@@ -1285,95 +1454,6 @@ export class InicioComponent implements OnInit {
   }
   
 
-  displayPerpis(){
-    this.indiceFlecha = (this.indiceFlecha + 1) % this.flechas.length;
-    this.flechaCerrada = this.flechas[this.indiceFlecha];
-
-    if (this.perpis) {
-
-      if(this.botonPerpis){
-        this.perpis.nativeElement.style.display = 'block';
-        this.botonPerpis = false;
-      } else {
-        this.perpis.nativeElement.style.display = 'none';
-        this.botonPerpis = true;
-      }
-
-    }
-  }
-
-  displayDina(){
-
-    this.indiceFlechaDina = (this.indiceFlechaDina + 1) % this.flechasDina.length;
-    console.log(this.flechasDina.length);
-    
-    this.flechaCerradaDina = this.flechasDina[this.indiceFlechaDina];
-
-    if (this.dina) {
-
-      if(this.botonDina){
-        this.dina.nativeElement.style.display = 'block';
-        this.botonDina = false;
-      } else {
-        this.dina.nativeElement.style.display = 'none';
-        this.botonDina = true;
-      }
-
-    }
-  }
-
-  displayCrea(){
-
-    this.indiceFlechaCrea = (this.indiceFlechaCrea + 1) % this.flechasCrea.length;
-    this.flechaCerradaCrea = this.flechasCrea[this.indiceFlechaCrea];
-
-    if (this.crea) {
-
-      if(this.botonCrea){
-        this.crea.nativeElement.style.display = 'block';
-        this.botonCrea = false;
-      } else {
-        this.crea.nativeElement.style.display = 'none';
-        this.botonCrea = true;
-      }
-
-
-    }
-  }
-
-  displayArriesga(){
-    this.indiceFlechaArriesga = (this.indiceFlechaArriesga + 1) % this.flechasArriesga.length;
-    this.flechaCerradaArriesga = this.flechasArriesga[this.indiceFlechaArriesga];
-    if (this.arriesga) {
-
-      if(this.botonArriesga){
-        this.arriesga.nativeElement.style.display = 'block';
-        this.botonArriesga = false;
-      } else {
-        this.arriesga.nativeElement.style.display = 'none';
-        this.botonArriesga = true;
-      }
-
-
-    }
-  }
-
-  displayProvo(){
-    this.indiceFlechaProvo = (this.indiceFlechaProvo + 1) % this.flechasProvo.length;
-    this.flechaCerradaProvo = this.flechasProvo[this.indiceFlechaProvo];
-    if (this.provo) {
-
-      if(this.botonProvo){
-        this.provo.nativeElement.style.display = 'block';
-        this.botonProvo = false;
-      } else {
-        this.provo.nativeElement.style.display = 'none';
-        this.botonProvo = true;
-      }
-
-
-    }
-  }
 
   cambiarW(){
     this.whatsapp = false;
