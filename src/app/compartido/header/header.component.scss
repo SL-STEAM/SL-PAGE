@@ -1,117 +1,20 @@
-p {
-  cursor: pointer;
-}
-.btn {
-  display: flex;
-  align-items: center;
-  // background-color: rgb(189, 52, 52);
-  color: white; 
-  box-shadow: none; 
-  border: none;
-  margin: 0 0 0px 50px;
-  font-family: Arial Nova, Arial, sans-serif;
-}
-
-  
-p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 0, 0);
-  margin: auto;
-  padding-bottom: 3%;
-}
-
-.clicked {
-  border-bottom: 2.5px solid white;
-  border-radius: 10px 10px 0 0; /* Arriba redondeado, los otros valores para los lados */
-  padding-bottom: 4px; 
-}
-
-.clickedModel {
-  border-bottom: 2.5px solid white;
-  border-radius: 10px 10px 0 0; /* Arriba redondeado, los otros valores para los lados */
-  padding-bottom: 4px; 
-}
-
-.clickedSoluciones {
-  border-bottom: 2.5px solid white;
-  border-radius: 10px 10px 0 0; /* Arriba redondeado, los otros valores para los lados */
-  padding-bottom: 4px; 
-}
-
-.clickedBlog {
-  border-bottom: 2.5px solid white;
-  border-radius: 10px 10px 0 0; /* Arriba redondeado, los otros valores para los lados */
-  padding-bottom: 4px; 
-}
-
-.clickedContact {
-  border-bottom: 2.5px solid white;
-  border-radius: 10px 10px 0 0; /* Arriba redondeado, los otros valores para los lados */
-  padding-bottom: 4px; 
-}
-
-<<<<<<< HEAD
+/* Estilo para el enlace activo */
 .activo {
-  color: #ffffff; /* Color del texto del enlace activo */
+  text-decoration: underline;
+  text-decoration-thickness: 3px; /* Ajusta el grosor de la línea */
+  text-underline-offset: 3px; /* Ajusta la distancia del subrayado al texto */
+  color: #ffffff; /* Color blanco del texto */
+  transition: none; /* Elimina cualquier transición para que el subrayado aparezca inmediatamente */
 }
 
-.underline {
-  position: relative; /* Para ajustar la posición del subrayado */
+/* Estilo para los enlaces por defecto */
+.nav-link {
+  color: #ffffff; /* Color de los enlaces por defecto */
+  transition: none; /* Elimina cualquier transición para que el cambio de estilo sea inmediato */
 }
 
-.underline::after {
-  content: ''; /* Contenido pseudo-elemento para crear la línea */
-  position: absolute; /* Posición absoluta relativa al elemento padre */
-  left: 0; /* Alinear la línea a la izquierda */
-  bottom: 40px; /* Ajustar la distancia desde la parte inferior */
-  width: 100%; /* Ancho completo del elemento */
-  border-bottom: 5px solid #ffffff; /* Grosor y color de la línea */
+/* Estilo para los enlaces al pasar el mouse (sin subrayado) */
+.nav-link:hover {
+  color: #ffffff; /* Mantiene el color blanco al pasar el mouse */
+  text-decoration: none; /* Sin subrayado al pasar el mouse */
 }
-
-.enlace-navegacion .btn {
-  color: #ffffff; /* Color de los enlaces normales */
-  transition: color 0.4s;
-  position: relative; /* Asegurar que el elemento sea un contenedor para pseudo-elemento */
-}
-
-=======
-
-.navbar-nav .nav-item .nav-link p {
-  font-family: Arial Nova, Arial, sans-serif;
-}
-.underline, .underlineModel, .underlineSoluciones, .underlineBlog, .underlineContact {
-  text-decoration: none;
-}
-
-// Dispositivos Móviles Pequeños (menos de 600px)
-@media (min-width: 320px) and (max-width: 599px) {
-  .container-fluid {
-    border: 2px solid blue;
-  }
-
-  .logoSL {
-    width: 40% !important;
-  }
-}
-
-// Dispositivos Móviles Grandes (600px a 767px)
-@media (min-width: 600px) and (max-width: 767px) {
-
-}
-
-// Tabletas (768px a 1024px)
-@media (min-width: 768px) and (max-width: 1024px) {
-  
-}
-
-// Portátiles y Escritorios Pequeños (1025px a 1366px)
-@media (min-width: 1025px) and (max-width: 1366px) {
-  
-}
-// Escritorios Grandes (más de 1366px)
-@media (min-width: 1367px) {
-  
-}
->>>>>>> 7635358180d9d59fe1aa035ac2547761101e908b
