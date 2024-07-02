@@ -56,3 +56,27 @@ p {
   border-radius: 10px 10px 0 0; /* Arriba redondeado, los otros valores para los lados */
   padding-bottom: 4px; 
 }
+
+.activo {
+  color: #ffffff; /* Color del texto del enlace activo */
+}
+
+.underline {
+  position: relative; /* Para ajustar la posición del subrayado */
+}
+
+.underline::after {
+  content: ''; /* Contenido pseudo-elemento para crear la línea */
+  position: absolute; /* Posición absoluta relativa al elemento padre */
+  left: 0; /* Alinear la línea a la izquierda */
+  bottom: 40px; /* Ajustar la distancia desde la parte inferior */
+  width: 100%; /* Ancho completo del elemento */
+  border-bottom: 5px solid #ffffff; /* Grosor y color de la línea */
+}
+
+.enlace-navegacion .btn {
+  color: #ffffff; /* Color de los enlaces normales */
+  transition: color 0.4s;
+  position: relative; /* Asegurar que el elemento sea un contenedor para pseudo-elemento */
+}
+
