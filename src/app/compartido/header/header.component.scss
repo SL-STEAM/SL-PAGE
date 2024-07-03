@@ -22,3 +22,10 @@
   color: white !important; /* Mantiene el color blanco al pasar el mouse */
   text-decoration: none; /* Sin subrayado al pasar el mouse */
 }
+
+// Dispositivos Móviles Pequeños (menos de 600px)
+@media (min-width: 320px) and (max-width: 599px) {
+  .logoSL {
+    width: 35% !important;
+  }
+}
