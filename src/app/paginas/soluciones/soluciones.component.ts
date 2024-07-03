@@ -3,6 +3,7 @@ import { FormBuilder } from '@angular/forms';
 import { Component, ElementRef, HostListener, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { timer } from 'rxjs';
 import { ViewportScroller } from '@angular/common';
+import Aos from 'aos';
 
 import { Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -85,9 +86,18 @@ export class SolucionesComponent implements OnInit {
   @ViewChild('honduras') honduras!: ElementRef;
 
   constructor(private viewportScroller: ViewportScroller, private sanitizer: DomSanitizer, private carruselSVC: CarruselService, private router: Router, private formBuilder: FormBuilder){
- 
-     
-   
+
+
+    Aos.init({
+      offset: 200, // La distancia al viewport en que la animación debe comenzar
+      duration: 1000, // La duración de la animación en milisegundos
+      easing: 'ease', // La curva de aceleración de la animación
+      once: false, // Si la animación debe ocurrir solo una vez
+      mirror: true // Si la animación debe ocurrir en el scroll de retroceso
+  });
+    window.addEventListener('load', Aos.refresh)
+
+    
   }
 
   cambiarA(){

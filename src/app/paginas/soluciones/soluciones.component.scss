@@ -1,3 +1,4 @@
+
 .details-container {
     margin-top: 20px;
     text-align: center; /* Alineación centrada del contenido */
@@ -33,6 +34,7 @@ summary {
     color: #000000; /* Color del texto del contenido */
     text-align: left; /* Alineación del texto a la izquierda */
     margin-top: 15px; /* Margen superior del contenido */
+    font-family: 'Arial Nova', sans-serif; /* Cambio de la fuente a Arial Nova */
 }
 
 .content > p {
@@ -43,7 +45,9 @@ summary {
     padding: 20px; /* Espaciado interior para el contenido del párrafo */
     margin-bottom: -10px; /* Margen inferior */
     position: relative; /* Para posicionamiento interno */
+    font-family: 'Arial Nova', sans-serif; /* Cambio de la fuente a Arial Nova */
 }
+
 
 .content > p::first-letter {
     color: white; /* Cambiar el color de la primera letra a blanco */
