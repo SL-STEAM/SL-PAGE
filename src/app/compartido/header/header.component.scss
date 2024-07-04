@@ -14,10 +14,9 @@
   text-underline-offset: 3px; /* Ajusta la distancia del subrayado al texto */
 }
 
-/* Estilo para los enlaces al pasar el mouse (sin subrayado) */
-.nav-link {
-  color: white !important; /* Mantiene el color blanco al pasar el mouse */
-  text-decoration: none; /* Sin subrayado al pasar el mouse */
+/* Estilo para los enlaces al pasar el mouse */
+.nav-link:hover {
+  color: #ffffff !important;
 }
 
 // Dispositivos Móviles Pequeños (menos de 600px)
