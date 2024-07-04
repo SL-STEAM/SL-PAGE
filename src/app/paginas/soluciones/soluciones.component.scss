@@ -1,3 +1,5 @@
+CSS SOLUCIONES
+
 
 .details-container {
     margin-top: 20px;
@@ -15,17 +17,45 @@ details {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+details {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+
 summary {
     font-size: 20px; /* Tamaño de fuente del resumen */
     font-weight: bold; /* Texto en negrita */
     cursor: pointer; /* Cambio de cursor */
-    padding: 0px; /* Espaciado interno del resumen */
+    padding: 10px; /* Espaciado interno del resumen */
     background-color: #ffffff; /* Color de fondo del resumen */
     border-bottom: 2px solid #cccccc; /* Borde inferior gris */
     border-radius: 10px; /* Borde redondeado */
     color: #393F79; /* Color del texto del resumen */
+    text-align: center; /* Centrando el texto */
+    display: block; /* Asegura que el elemento se comporte como un bloque */
+    position: relative; /* Necesario para el posicionamiento de la flecha */
+    outline: none; /* Quita el borde por defecto en navegadores */
 }
 
+summary::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-right: 4px solid #393F79;
+    border-bottom: 4px solid #393F79;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 40px; /* Alineado a la derecha */
+    top: 50%;
+    transform: translateY(-50%) rotate(310deg); /* Centra verticalmente la flecha */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+details[open] summary::after {
+    transform: translateY(-50%) rotate(45deg); /* Gira la flecha hacia arriba cuando el <details> está abierto */
+}
 
 .content {
     padding: 20px; /* Espaciado interno del contenido */
