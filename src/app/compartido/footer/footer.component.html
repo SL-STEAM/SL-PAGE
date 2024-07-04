@@ -7,37 +7,37 @@
         url('path/to/arial-nova.woff') format('woff');
     }
     body {
-    font-family: 'Arial Nova', Arial, sans-serif;
+        font-family: 'Arial Nova', Arial, sans-serif;
     }
     .footer_header {
-    background-color: black;
-    color: white;
-    font-family: 'Arial Nova', Arial, sans-serif;
+        background-color: black;
+        color: white;
+        font-family: 'Arial Nova', Arial, sans-serif;
     }
     .icono-red-social {
-    width: 40px;
-    height: 40px;
-    margin-left: 20px;
-    cursor: pointer;
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        cursor: pointer;
     }
     .texto-superpuesto {
-    margin-bottom: 160px;
+        margin-bottom: 160px;
     }
     .contact-info p, .modelos-soluciones p, .footer-final p {
-    margin-bottom: 4px;
+        margin-bottom: 4px;
     }
     .footer-final p {
-    color: gray;
-    line-height: 1.2;
+        color: gray;
+        line-height: 1.2;
     }
     .font-bold {
-    font-weight: bold;
+        font-weight: bold;
     }
     .text-white {
-    color: white;
+        color: white;
     }
     .text-gray {
-    color: gray;
+        color: gray;
     }
 </style>
 
@@ -50,9 +50,9 @@
             <!-- Logo 1 -->
             <span id="ondaGris" style="position: absolute; margin-top: -110px; margin-left: -150px; width: 750px;"></span>
             <div class="col-md-6">
-                <img src="assets/imagenes/encabezados/ikeCompensar.svg" class="texto-superpuesto" alt="Logo 11">
+                <img src="assets/imagenes/encabezados/ikeCompensar.svg" class="texto-superpuesto logoSL" alt="Logo 11">
                 <br>
-                <div style="margin-top: 100px;">
+                <div class="logosRedes" style="margin-top: 100px;">
                     <!-- Logos de redes sociales -->
                     <br><br>
                       <img *ngIf="link" src="assets/imagenes/iconos/link.svg" (mouseover)="cambiarL()" (click)="irALink()" class="icono-red-social" alt="Link Icon">
@@ -65,9 +65,9 @@
                       <img *ngIf="facebookColor" src="assets/imagenes/iconos/facebookColor.svg" (mouseout)="cambiarFBlanco()" (click)="irAFacebook()" class="icono-red-social" alt="Facebook Icon Color">
                       <img *ngIf="instagram" src="assets/imagenes/iconos/instagram.svg" (mouseover)="cambiarI()" (click)="irAInstagram()" class="icono-red-social" alt="Instagram Icon">
                       <img *ngIf="instagramColor" src="assets/imagenes/iconos/instagramColor.svg" (mouseout)="cambiarIBlanco()" (click)="irAInstagram()" class="icono-red-social" alt="Instagram Icon Color">
-                    <img src="assets/imagenes/LOGO%20ACEI.svg" alt="ACEI Logo" class="mb-4" style="width: 450px; margin-top: 40px; display: block;" />                  </div>
+                    <img src="assets/imagenes/LOGO%20ACEI.svg" alt="ACEI Logo" class="mb-4 logoACEI" style="width: 450px; margin-top: 40px; display: block;" />                  </div>
                     <div class="mt-0" style="color: gray; line-height: 1.2; font-family: 'Arial Nova', Arial, sans-serif;"> 
-                        <p class="text-sm mb-1">2024 contacto@slg.co</p>
+                        <p class="text-sm mb-1">2024 contacto@slig.co</p>
                         <p class="text-sm mb-1">Copyright — SL Consulting S.A.S.</p>
                         <p class="text-sm mb-0" style="margin-bottom: 20px;">Todos los derechos reservados.</p>
                         <br>
@@ -87,7 +87,7 @@
             </div>
 
             <!-- Modelos y soluciones -->
-            <div class="col-md-3" style="color: white; padding: -5px; text-align: left; position: absolute; top: 0; right: 0; font-family: 'Arial Nova', Arial, sans-serif;">
+            <div class="col-md-3 finalFooter" style="color: white; padding: -5px; text-align: left; position: absolute; top: 0; right: 0; font-family: 'Arial Nova', Arial, sans-serif;">
                 <br><p class="font-bold mb-2" style="font-size: 1.5em; margin-bottom: 5px;"><a [routerLink]="['/modelos']" style="color: white; text-decoration: none;">Modelos</a></p>
                 <p class="mb-1" style="margin-bottom: 4px;"><a [routerLink]="['/#']" style="color: white; text-decoration: none;">Insights</a></p>
                 <p class="mb-1" style="margin-bottom: 4px;"><a [routerLink]="['/#']" style="color: white; text-decoration: none;">Arquetipal</a></p>

@@ -1702,17 +1702,18 @@ body {
     width: 75% !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    // background-color: orange;
   }
   .logos {
-    width: 50px !important;
-    height: 45px !important;
+    width: 55px !important;
+    height: 50px !important;
     // border: 2px solid black;
   }
   .rowLog {
     display: flex;
     flex-wrap: nowrap !important;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -50px;
+    margin-left: 0px;
   }
   .carousel-item {
     margin: 0px !important;
@@ -1722,13 +1723,12 @@ body {
     background-color: #ffffff;
   }
   .carousel-control-next {
-    margin-right: -65px !important;
+    margin-right: -35px !important;
   }
   .carousel-control-prev {
-    margin-left: -50px !important;
+    margin-left: -25px !important;
   }
   // formulario
-
   #seccion-hablemos {
     display: none;
   }
@@ -1822,7 +1822,9 @@ body {
 
 // Tabletas (768px a 1024px)
 @media (min-width: 768px) and (max-width: 1024px) {
-  
+  // .contenido {
+  //   background-color: red !important;
+  // }
 }
 
 // Portátiles y Escritorios Pequeños (1025px a 1366px)
