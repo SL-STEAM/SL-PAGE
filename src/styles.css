@@ -48,7 +48,6 @@ body {
   text-align: center;
   margin-top: -18px;
   font-size: 28px;
-  font-family: Century Gothic;
   z-index: 5;
   position: relative;
 }
@@ -83,14 +82,12 @@ body {
 .containerInf > h2 {
   margin: 0%;
   padding: 0%;
-  font-family: 'Arial Nova', Arial, sans-serif;
   font-size: 22px;
 }
 
 .containerInf >  p {
   margin: 0%;
   padding: 0%;
-  font-family: 'Arial Nova', Arial, sans-serif;
   font-size: 18px;
 }
 
@@ -105,7 +102,6 @@ body {
 .containerEmail >  p {
   margin: 0%;
   padding: 0%;
-  font-family: 'Arial Nova', Arial, sans-serif;
   font-size: 18px;
 }
 
@@ -155,7 +151,6 @@ body {
   margin: 0%;
   padding-left: 20px;
   font-size: 22px;
-  font-family: 'Arial Nova', Arial, sans-serif;
 }
 
 .infoDesc > hr {
@@ -169,7 +164,6 @@ body {
   padding-top: 10px;
   font-size: 18px;
   padding-left: 20px;
-  font-family: 'Arial Nova', Arial, sans-serif;
 }
 
 .containerCard {
@@ -221,7 +215,6 @@ body {
   align-items: center;
   margin: 0%;
   padding: 0%;
-  font-family: 'Arial Nova', Arial, sans-serif;
   font-size: 20px;
 }
 
@@ -231,7 +224,6 @@ body {
   align-items: center;
   margin: 0%;
   padding: 0%;
-  font-family: 'Arial Nova', Arial, sans-serif;
   font-size: 18px;
 }
 
@@ -249,20 +241,17 @@ body {
 }
 
 body {
-  font-family: "TransducerRegular";
   color: black;
   background: #EEF0F6;
   overflow-x: hidden;
 }
 
 .subtitleMain{
-  font-family: "BebasNeueBold";
   color: black;
   background: white;
 }
 
 .subtitleMain2{
-  font-family: "TransducerMedium";
   color: black;
   background: white;
 }
@@ -352,7 +341,6 @@ h1, h2, h3, h4 {
   padding: 10px 4em;
 }
 .alert .alert_inner:before {
-  font-family: "FontAwesome";
   font-weight: 900;
   font-size: 24px;
   content: "\f06a";
@@ -405,7 +393,6 @@ header nav #navbarNav .nav-item a.activo {
 header .btn {
   font-weight: 500;
   font-size: 17px;
-  font-family: "Sarabun" !important;
 }
 header .ike_compensar .row {
   max-width: 285px;
