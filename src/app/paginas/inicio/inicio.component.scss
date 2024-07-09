@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
 
 .form-control {
   width: 65% ;
@@ -294,8 +289,6 @@ body {
     opacity: 1;
   }
 }
-
-
 
 .texto-superpuestoPuente {
   position: absolute;
@@ -1266,12 +1259,22 @@ body {
   .responsive {
     display: block !important;
     visibility: visible;
+    // border: 2px solid red;
+    margin-top: -60px;
+    padding-bottom: 5px;
   }
   .basamos {
     display: block;
     height: auto;
     // border: 2px solid blue;
     margin-bottom: -120px;
+  }
+  .contDesple {
+    padding-right: 62px !important;
+    padding-left: 62px !important;
+  }
+  .parraDesple {
+    text-align: center !important;
   }
   .nosBasa {
     // border: 2px solid orange;
@@ -1355,10 +1358,8 @@ body {
     position: relative !important;
     width: 70% !important;
   }
-  // Seccion de desafiamos
-  #mancae1 {
-    display: none;
-  }
+
+
   .mapa-container10 {
     padding-top: 200px !important;
     width: 100%;
@@ -1693,9 +1694,9 @@ body {
   .txtAliados {
     font-size: 24px !important;
   }
-  html {
-    overflow-x: hidden !important;
-  }
+  // html {
+  //   overflow-x: hidden !important;
+  // }
   .contLogos {
     display: flex !important;
     flex-direction: row !important;
@@ -1811,6 +1812,13 @@ body {
   .tratamiento > p {
     text-align: center !important;
   } 
+  
+  #mancae2 {
+    position: absolute;
+    width: 240% !important;
+    margin-top: -400px !important;
+    margin-left: -360px !important;
+  }
 
 }
 
@@ -1822,10 +1830,16 @@ body {
 
 // Tabletas (768px a 1024px)
 @media (min-width: 768px) and (max-width: 1024px) {
-  // .contenido {
-  //   background-color: red !important;
-  // }
+  #mancae1 {
+    position: absolute;
+    width: 488% !important;
+    margin-top: -500px !important;
+    margin-left: -500px !important;
+  }
+  
+
 }
+
 
 // Portátiles y Escritorios Pequeños (1025px a 1366px)
 @media (min-width: 1025px) and (max-width: 1366px) {
