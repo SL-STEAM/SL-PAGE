@@ -248,19 +248,6 @@ body {
   padding: 10px 2em;
 }
 
-@font-face {
-  font-family: 'BebasNeueBold';
-  src: url('../src/assets/Fonts/BebasNeueBold.otf') format('opentype');
-}
-@font-face {
-  font-family: 'TransducerMedium';
-  src: url('../src/assets/Fonts/TransducerMedium.otf') format('opentype');
-}
-@font-face {
-  font-family: 'TransducerRegular';
-  src: url('../src/assets/Fonts/TransducerRegular.otf') format('opentype');
-}
-
 body {
   font-family: "TransducerRegular";
   color: black;

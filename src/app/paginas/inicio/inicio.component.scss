@@ -1812,17 +1812,26 @@
   .tratamiento > p {
     text-align: center !important;
   } 
-  
   #mancae2 {
+    display: block !important;
     position: absolute;
     width: 240% !important;
     margin-top: -400px !important;
     margin-left: -360px !important;
   }
+  #mancae1 {
+    display: none !important;
+  }
 
 }
 
-
+// #mancae1 {
+//   display: block;
+//   position: absolute;
+//   width: 488% !important;
+//   margin-top: -500px !important;
+//   margin-left: -500px !important;
+// }
 // Dispositivos Móviles Grandes (600px a 767px)
 @media (min-width: 600px) and (max-width: 767px) {
 
@@ -1830,12 +1839,7 @@
 
 // Tabletas (768px a 1024px)
 @media (min-width: 768px) and (max-width: 1024px) {
-  #mancae1 {
-    position: absolute;
-    width: 488% !important;
-    margin-top: -500px !important;
-    margin-left: -500px !important;
-  }
+
   
 
 }
