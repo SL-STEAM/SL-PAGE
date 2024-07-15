@@ -1763,6 +1763,8 @@ export class InicioComponent implements OnInit {
   banderaLinea3 = true;
 
   banderaLinea4 = true;
+  
+  banderaLinea5 = true;
 
   banderaLineaInit = true;
 
@@ -1835,6 +1837,30 @@ export class InicioComponent implements OnInit {
 
           }
         }
+
+
+        if(scrollYPos > 3220 && this.banderaLinea5 == true){
+
+          this.banderaLinea5 = false;
+
+          const animationContainerChico2 = document.getElementById('mancae2');
+
+          if (animationContainerChico2) {
+            timer(0).subscribe(() => {
+
+            const animation16 = lottie.loadAnimation({ container: animationContainerChico2, renderer: 'svg', loop: true, autoplay: true, path: 'assets/json/mancae1.json' });
+            animation16.addEventListener('DOMLoaded', () => {
+            });
+
+            animation16.setSpeed(0.7);
+
+
+          });
+
+          }
+        }
+        
+        
 
         if(scrollYPos > 4008){
 

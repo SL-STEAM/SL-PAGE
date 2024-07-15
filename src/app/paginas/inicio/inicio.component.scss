@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
 
 .form-control {
   width: 65% ;
@@ -43,10 +38,10 @@ body {
 }
 
 .invisub {
-  margin-top: -66px !important; 
+  margin-top: -60px !important; 
   width: 575px; 
   margin: 0px;
-  margin-left: -80px;
+  margin-left: -82px;
   // border: 2px solid red;
 }
 
@@ -294,8 +289,6 @@ body {
     opacity: 1;
   }
 }
-
-
 
 .texto-superpuestoPuente {
   position: absolute;
@@ -1266,12 +1259,22 @@ body {
   .responsive {
     display: block !important;
     visibility: visible;
+    // border: 2px solid red;
+    margin-top: -60px;
+    padding-bottom: 5px;
   }
   .basamos {
     display: block;
     height: auto;
     // border: 2px solid blue;
     margin-bottom: -120px;
+  }
+  .contDesple {
+    padding-right: 62px !important;
+    padding-left: 62px !important;
+  }
+  .parraDesple {
+    text-align: center !important;
   }
   .nosBasa {
     // border: 2px solid orange;
@@ -1355,10 +1358,8 @@ body {
     position: relative !important;
     width: 70% !important;
   }
-  // Seccion de desafiamos
-  #mancae1 {
-    display: none;
-  }
+
+
   .mapa-container10 {
     padding-top: 200px !important;
     width: 100%;
@@ -1693,26 +1694,27 @@ body {
   .txtAliados {
     font-size: 24px !important;
   }
-  html {
-    overflow-x: hidden !important;
-  }
+  // html {
+  //   overflow-x: hidden !important;
+  // }
   .contLogos {
     display: flex !important;
     flex-direction: row !important;
     width: 75% !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    // background-color: orange;
   }
   .logos {
-    width: 50px !important;
-    height: 45px !important;
+    width: 55px !important;
+    height: 50px !important;
     // border: 2px solid black;
   }
   .rowLog {
     display: flex;
     flex-wrap: nowrap !important;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -50px;
+    margin-left: 0px;
   }
   .carousel-item {
     margin: 0px !important;
@@ -1722,13 +1724,12 @@ body {
     background-color: #ffffff;
   }
   .carousel-control-next {
-    margin-right: -65px !important;
+    margin-right: -35px !important;
   }
   .carousel-control-prev {
-    margin-left: -50px !important;
+    margin-left: -25px !important;
   }
   // formulario
-
   #seccion-hablemos {
     display: none;
   }
@@ -1811,10 +1812,26 @@ body {
   .tratamiento > p {
     text-align: center !important;
   } 
+  #mancae2 {
+    display: block !important;
+    position: absolute;
+    width: 240% !important;
+    margin-top: -400px !important;
+    margin-left: -360px !important;
+  }
+  #mancae1 {
+    display: none !important;
+  }
 
 }
 
-
+// #mancae1 {
+//   display: block;
+//   position: absolute;
+//   width: 488% !important;
+//   margin-top: -500px !important;
+//   margin-left: -500px !important;
+// }
 // Dispositivos Móviles Grandes (600px a 767px)
 @media (min-width: 600px) and (max-width: 767px) {
 
@@ -1822,8 +1839,11 @@ body {
 
 // Tabletas (768px a 1024px)
 @media (min-width: 768px) and (max-width: 1024px) {
+
   
+
 }
+
 
 // Portátiles y Escritorios Pequeños (1025px a 1366px)
 @media (min-width: 1025px) and (max-width: 1366px) {
