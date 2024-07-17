@@ -360,7 +360,241 @@ body {
 
 // Tabletas (768px a 1024px)
 @media (min-width: 768px) and (max-width: 1024px) {
+  // .contenido {
+  //   background-color: #868482 !important;
+  // }
 
+    // formulario
+    #seccion-hablemos {
+      display: none;
+    }
+    #seccion-hablemos2 {
+      display: block;
+      background-image: url('/assets/videos/fondo2.gif'); 
+      height: 1420px !important; 
+      background-size: cover; 
+      background-color :#FFFFFF;
+      margin-top: -80px;
+      width: 100%;
+    }
+    .containerF {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px !important;
+      height: 100%;
+    }
+    .versati {
+      text-align: center !important;
+    }
+    .desafio {
+      text-align: center !important;
+    }
+    .lineaRoja {
+      position: absolute !important;
+      left: 32% !important;
+      margin-top: 8% !important;
+      width: 35% !important;
+    }
+    .containerPrin {
+      width: 90% ;
+      height: 100% !important;
+      // border: 2px solid blue !important;
+
+    }
+    .contHijo {
+      height: 100% !important;
+      // border: 2px solid #14eaf1 !important;
+    }
+    .rowss {
+      display: flex;
+      justify-content: center;
+      height: auto !important;
+    }
+    .princ {
+      width: 90% ;
+      height: 100% !important;
+      // border: 2px solid blue !important;
+      justify-content: center !important;
+    }  
+    .col-md-5 {
+      flex: none !important;
+      max-width: 65% !important;
+    }
+    .formulario {
+      // border: 2px solid #b700ff;
+      margin-top: 0px !important;
+      height: 90% !important;
+      width: 100%;
+      margin: 0px !important;
+      gap: 8px;
+      padding-right: 0 !important;
+    }
+    .form-control {
+      width: 100% ;
+      height: 14%;
+      padding: 16px;
+      margin-bottom: 15px; 
+      border-radius: 8px;
+    }
+    .text-area {
+      width: 100%;
+      resize: none;
+      border: 1.5px solid silver;
+      border-radius: 8px;
+      height: 65%;
+      padding: 15px;
+    }
+    .form-check-input {
+      padding: 5px !important;
+      border-radius: 100%;
+      margin-top: 8px !important;
+      width: 18px;
+      height: 20px;
+    }
+    .tratamiento {
+      text-align: center !important;
+      width: 100% !important;
+      // border: 2px solid yellowgreen !important;
+    }
+    .tratamiento > p {
+      text-align: center !important;
+    } 
+    // fondo de ojo
+    .fondoOjo {
+      background: url(../../../assets/imagenes/ojoBanner.png); 
+      background-size: 100% 100% !important; 
+      background-position: center;
+      width: 100% !important; 
+      height: 365px !important; 
+    }
+    // Insights y Arquetipos
+    .insightsVis {
+      display: none;
+    }
+    .insightsOcul {
+      display: block;
+      padding: 55px 30px 55px 30px;
+      font-size: 26px !important;
+    }
+    // elInsight
+    .elInsight {
+      background-color: #ffffff;
+      margin-left: 65px !important;
+      width: 90% !important;
+    }
+    .bolaIns {
+      z-index: 1;
+      position: absolute;
+      height: 10% !important;
+      width: 7% !important;
+      left: 50px !important;
+      margin-top: -18px !important;
+    }
+    .bolaLos {
+      z-index: 1;
+      position: absolute;
+      height: 14% !important;
+      width: 10% !important;
+      left: 50px !important;
+      margin-top: -30px !important;
+    }
+    .tituloElInsight {
+      text-align: left !important;
+      font-size: 28px !important;
+      margin-left: 12px;
+    }
+    .textoElInsight {
+      display: none;
+      font-size: 20px !important;
+    }
+    .textoElInsightOcul {
+      display: block;
+      font-size: 20px !important;
+      margin-left: 40px !important;
+      margin-right: 20px !important;
+    }
+    // patrones
+    .textoPatrones {
+      display: none;
+      font-size: 20px !important;
+    }
+    .textoPatronescul {
+      display: block;
+      font-size: 22px !important;
+      margin-left: 70px !important;
+      margin-right: 20px !important;
+    }
+    .textoElInsightOcul2 {
+      display: block;
+      font-size: 22px !important;
+      margin-left: 40px !important;
+      margin-right: 20px !important;
+    }
+    .detras {
+      z-index: 1;
+      height: 3%; 
+      width: 41.3% !important; 
+      margin-top: -12% !important; 
+      background-color: #ff6112d2;
+    }
+    .sectionInsight {
+      height: 250px !important;
+      margin-top: 65px !important;
+      // border: 2px solid red;
+    }
+    .videoContainer {
+      display: flex; 
+      justify-content: center; 
+      align-content: center; 
+      border-top-left-radius: 90px !important; 
+      border-top-right-radius: 90px !important; 
+      border-left: 4px solid #FF6012; 
+      border-top: 4px solid #FF6012; 
+      border-right: 4px solid #FF6012; 
+      width: 75% !important;
+    }
+    .videoI {
+      border-top-left-radius: 90px !important; 
+      border-top-right-radius: 90px !important;
+    }
+    .btnContact {
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      padding: 10px; 
+      height: 20%;
+      margin-top: 50px;
+    }
+    .btnVolver {
+      display: flex; 
+      justify-content: center; 
+      align-items: center;
+      margin-top: 0px !important;
+      margin-bottom: 8px; 
+      height: 20%;
+      margin-top: 60px !important;
+
+    }
+    .btnContact > button {
+      padding-top: 6px !important; 
+      font-size: 20px !important; 
+      padding-bottom: 6px !important; 
+      padding-left: 20px !important; 
+      padding-right: 20px !important; 
+      border-radius: 20px !important; 
+      font-weight: bold !important;
+      background-color: #F7003E;
+    }
+    .btnVolver > a {
+      padding-top: 6px !important; 
+      padding-bottom: 6px !important; 
+      padding-left: 55px !important; 
+      padding-right: 55px !important; 
+      font-weight: bold !important;
+      border-radius: 20px !important; 
+      font-size: 22px !important;
+    }
 }
 
 // Portátiles y Escritorios Pequeños (1025px a 1366px)

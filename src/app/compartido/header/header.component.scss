@@ -25,3 +25,46 @@
     width: 35% !important;
   }
 }
+
+@media (max-width: 575.98px) {
+  .navbar {
+    display: flex;
+  }
+  .navbar-brand {
+    width: 75%;
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  .navbar-collapse.collapse.show {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-toggler {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// Dispositivos Móviles Grandes (600px a 767px)
+@media (min-width: 600px) and (max-width: 767px) {
+
+}
+
+// Tabletas (768px a 1024px)
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logoSL {
+    width: 45% !important;
+  }
+
+}
+
+
+// Portátiles y Escritorios Pequeños (1025px a 1366px)
+@media (min-width: 1025px) and (max-width: 1366px) {
+  
+}
+// Escritorios Grandes (más de 1366px)
+@media (min-width: 1367px) {
+  
+}

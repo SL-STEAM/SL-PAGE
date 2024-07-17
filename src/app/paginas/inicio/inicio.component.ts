@@ -39,9 +39,7 @@ export class InicioComponent implements OnInit {
   defaultPositionX = 0;
   defaultPositionY = 0;
 
-
   isOval: boolean = false;
-
 
   onMouseMoveArri(event: MouseEvent) {
     if (this.followImageArri) {
