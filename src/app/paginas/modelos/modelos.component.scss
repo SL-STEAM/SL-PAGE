@@ -488,8 +488,8 @@ body {
       position: absolute;
       height: 10% !important;
       width: 7% !important;
-      left: 53px !important;
-      margin-top: -30px !important;
+      left: 47px !important;
+      margin-top: -45px !important;
     }
     .bolaLos {
       z-index: 1;
@@ -497,7 +497,7 @@ body {
       height: 14% !important;
       width: 10% !important;
       left: 50px !important;
-      margin-top: -50px !important;
+      margin-top: -65px !important;
     }
     .tituloElInsight {
       text-align: left !important;
@@ -508,6 +508,13 @@ body {
       display: none;
       font-size: 20px !important;
     }
+    .formModel {
+      margin-top: 7px !important;
+      gap: 8% !important;
+      // border: 2px solid rgb(16, 127, 231) !important;
+      margin-left: 50px !important;
+    }
+    
     .textoElInsightOcul {
       display: block;
       font-size: 20px !important;
@@ -573,8 +580,8 @@ body {
       margin-top: 0px !important;
       margin-bottom: 8px; 
       height: 20%;
-      margin-top: 60px !important;
-
+      margin-top: 55px !important;
+      padding: 15px !important;
     }
     .btnContact > button {
       padding-top: 6px !important; 
@@ -599,7 +606,267 @@ body {
 
 // Portátiles y Escritorios Pequeños (1025px a 1366px)
 @media (min-width: 1025px) and (max-width: 1366px) {
-  
+    // .contenido {
+  //   background-color: #868482 !important;
+  // }
+
+    // formulario
+    #seccion-hablemos {
+      display: none;
+    }
+    #seccion-hablemos2 {
+      display: block;
+      background-image: url('/assets/videos/fondo2.gif'); 
+      height: 1900px !important; 
+      background-size: cover; 
+      background-color :#FFFFFF;
+      margin-top: -75px;
+      width: 100%;
+    }
+    .containerF {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px !important;
+      height: 100%;
+    }
+    .versati {
+      font-size: 35px !important;
+      text-align: center !important;
+    }
+    .desafio {
+      font-size: 40px !important;
+      text-align: center !important;
+    }
+    .lineaRoja {
+      position: absolute !important;
+      left: 32% !important;
+      margin-top: 2% !important;
+      width: 35% !important;
+    }
+    .containerPrin {
+      width: 90% ;
+      height: 100% !important;
+      // border: 2px solid blue !important;
+    }
+    .contHijo {
+      height: 100% !important;
+      // border: 2px solid #14eaf1 !important;
+    }
+    .rowss {
+      display: flex;
+      justify-content: center;
+      height: auto !important;
+    }
+    .princ {
+      width: 90% ;
+      height: 100% !important;
+      // border: 2px solid blue !important;
+      justify-content: center !important;
+    }  
+    .col-md-5 {
+      flex: none !important;
+      max-width: 65% !important;
+    }
+    .formulario {
+      // border: 2px solid #b700ff;
+      margin-top: 0px !important;
+      height: 90% !important;
+      width: 100%;
+      margin: 0px !important;
+      gap: 8px;
+      padding-right: 0 !important;
+    }
+    .form-control {
+      width: 100% ;
+      height: 40%;
+      padding: 30px;
+      margin-bottom: 15px; 
+      border-radius: 8px;
+      font-size: 25px;
+    }
+    .text-area {
+      width: 100%;
+      resize: none;
+      border: 1.5px solid silver;
+      border-radius: 8px;
+      height: 65%;
+      padding: 15px;
+      font-size: 25px;
+    }
+    .form-check-input {
+      padding: 5px !important;
+      border-radius: 100%;
+      margin-top: 8px !important;
+      width: 25px;
+      height: 29px;
+    }
+    .form-check-label {
+      margin-left: 35px !important;
+    }
+    .tratamiento {
+      text-align: center !important;
+      width: 100% !important;
+      // border: 2px solid yellowgreen !important;
+    }
+    .btn-secondary {
+      background: white;
+      width: 150px !important;
+      padding: 8px !important;
+      color: red;
+      font-weight: bold;
+      font-size: 25px !important;
+      margin-top: 15px;
+    }
+    .tratamiento > p {
+      text-align: center !important;
+      font-size: 22px !important;
+    } 
+    // fondo de ojo
+    .fondoOjo {
+      background: url(../../../assets/imagenes/ojoBanner.png); 
+      background-size: 100% 100% !important; 
+      background-position: center;
+      width: 100% !important; 
+      height: 365px !important; 
+    }
+    // Insights y Arquetipos
+    .insightsVis {
+      display: none;
+    }
+    .insightsOcul {
+      display: block;
+      padding: 0px !important;
+      width: 60% !important;
+      font-size: 33px !important;
+    }
+    // elInsight
+    .elInsight {
+      background-color: #ffffff;
+      margin-left: 65px !important;
+      width: 90% !important;
+      margin-top: 100px;
+    }
+    .bolaIns {
+      z-index: 1;
+      position: absolute;
+      height: 10% !important;
+      width: 7% !important;
+      left: 160px !important;
+      margin-top: -15px !important;
+    }
+    .bolaLos {
+      z-index: 1;
+      position: absolute;
+      height: 14% !important;
+      width: 10% !important;
+      left: 150px !important;
+      margin-top: -35px !important;
+    }
+    .tituloElInsight {
+      text-align: left !important;
+      font-size: 45px !important;
+      margin-left: 130px;
+    }
+    .textoElInsight {
+      display: none;
+      font-size: 20px !important;
+    }
+    .formModel {
+      margin-top: 30px !important;
+      gap: 8% !important;
+      // border: 2px solid rgb(16, 127, 231) !important;
+      margin-left: 140px !important;
+      font-size: 30px !important;
+    }
+    
+    .textoElInsightOcul {
+      display: block;
+      font-size: 20px !important;
+      margin-left: 40px !important;
+      margin-right: 20px !important;
+    }
+    // patrones
+    .textoPatrones {
+      display: none;
+      font-size: 20px !important;
+    }
+    .textoPatronescul {
+      display: block;
+      font-size: 30px !important;
+      margin-left: 220px !important;
+      margin-right: 120px !important;
+    }
+    .textoElInsightOcul2 {
+      display: block;
+      font-size: 30px !important;
+      margin-left: 180px !important;
+      margin-right: 250px !important;
+    }
+    .detras {
+      z-index: 1;
+      height: 2%; 
+      width: 48% !important; 
+      margin-top: -10% !important; 
+      background-color: #ff6112d2;
+    }
+    .sectionInsight {
+      height: 250px !important;
+      margin-top: 150px !important;
+      // border: 2px solid red;
+    }
+    .videoContainer {
+      display: flex; 
+      justify-content: center; 
+      align-content: center; 
+      border-top-left-radius: 200px !important; 
+      border-top-right-radius: 200px !important; 
+      border-left: 5px solid #FF6012; 
+      border-top: 5px solid #FF6012; 
+      border-right: 5px solid #FF6012; 
+      width: 65% !important;
+    }
+    .videoI {
+      border-top-left-radius: 200px !important; 
+      border-top-right-radius: 200px !important;
+    }
+    .btnContact {
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      padding: 10px; 
+      height: 20%;
+      margin-top: 145px;
+    }
+    .btnVolver {
+      display: flex; 
+      justify-content: center; 
+      align-items: center;
+      margin-top: 0px !important;
+      margin-bottom: 8px; 
+      height: 20%;
+      margin-top: 145px !important;
+      padding: 15px !important;
+    }
+    .btnContact > button {
+      padding-top: 7px !important; 
+      font-size: 30px !important; 
+      padding-bottom: 7px !important; 
+      padding-left: 45px !important; 
+      padding-right: 45px !important; 
+      border-radius: 30px !important; 
+      font-weight: bold !important;
+      background-color: #F7003E;
+    }
+    .btnVolver > a {
+      padding-top: 7px !important; 
+      padding-bottom: 7px !important; 
+      padding-left: 65px !important; 
+      padding-right: 65px !important; 
+      font-weight: bold !important;
+      border-radius: 30px !important; 
+      font-size: 30px !important;
+    }
 }
 // Escritorios Grandes (más de 1366px)
 @media (min-width: 1367px) {

@@ -688,8 +688,6 @@ export class InicioComponent implements OnInit {
   displayDina(){
 
     this.indiceFlechaDina = (this.indiceFlechaDina + 1) % this.flechasDina.length;
-    console.log(this.flechasDina.length);
-    
     this.flechaCerradaDina = this.flechasDina[this.indiceFlechaDina];
 
     if (this.dina) {
