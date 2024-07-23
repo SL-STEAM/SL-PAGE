@@ -15,7 +15,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
             "allowedCommonJsDependencies": [
               "lottie-web",
@@ -23,9 +23,8 @@
             ],
             "outputPath": "dist/paginasl",
             "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            
+            "browser": "src/main.ts",
+            "polyfills": ["src/polyfills.ts"] ,
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/assets",
@@ -44,8 +43,7 @@
               "node_modules/aos/dist/aos.js"
             ],
             "optimization": true,
-            "outputHashing": "all",
-            "buildOptimizer": true
+            "outputHashing": "all"
           },
           "configurations": {
             "production": {
@@ -70,9 +68,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
