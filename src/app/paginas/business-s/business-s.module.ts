@@ -4,12 +4,10 @@ import { BusinessSComponent } from './business-s.component';
 import { BusinessSRoutingModule } from './business-s-routing.module';
 
 @NgModule({
-  declarations: [
-    BusinessSComponent
-  ],
-  imports: [
-    CommonModule,
-    BusinessSRoutingModule
-  ]
+    imports: [
+        CommonModule,
+        BusinessSRoutingModule,
+        BusinessSComponent
+    ]
 })
 export class BusinessSModule { }

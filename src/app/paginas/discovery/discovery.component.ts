@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import Aos from 'aos';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-discovery',
-  templateUrl: './discovery.component.html',
-  styleUrls: ['./discovery.component.scss']
+    selector: 'app-discovery',
+    templateUrl: './discovery.component.html',
+    styleUrls: ['./discovery.component.scss'],
+    standalone: true,
+    imports: [RouterLink]
 })
 export class DiscoveryComponent implements OnInit {
   isPopupVisible = false;

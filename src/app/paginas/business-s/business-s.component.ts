@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import Aos from 'aos';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-business-s',
-  templateUrl: './business-s.component.html',
-  styleUrls: ['./business-s.component.scss']
+    selector: 'app-business-s',
+    templateUrl: './business-s.component.html',
+    styleUrls: ['./business-s.component.scss'],
+    standalone: true,
+    imports: [RouterLink]
 })
 export class BusinessSComponent implements OnInit {
   isPopupVisible = false;

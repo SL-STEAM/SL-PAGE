@@ -8,15 +8,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  declarations: [
-    InicioComponent,
-    ModalComponent
-
-  ],
-  imports: [
-    CommonModule,
-    InicioRoutingModule,
-    ReactiveFormsModule
-  ]
+    imports: [
+        CommonModule,
+        InicioRoutingModule,
+        ReactiveFormsModule,
+        InicioComponent,
+        ModalComponent
+    ]
 })
 export class InicioModule { }

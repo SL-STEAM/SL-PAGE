@@ -5,16 +5,18 @@ import { timer } from 'rxjs';
 import { ViewportScroller } from '@angular/common';
 import Aos from 'aos';
 
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import lottie from 'lottie-web';
 
 
 @Component({
-  selector: 'app-soluciones',
-  templateUrl: './soluciones.component.html',
-  styleUrls: ['./soluciones.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-soluciones',
+    templateUrl: './soluciones.component.html',
+    styleUrls: ['./soluciones.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
+    imports: [RouterLink]
 })
 
 

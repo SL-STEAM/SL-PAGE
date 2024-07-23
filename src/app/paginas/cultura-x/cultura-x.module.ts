@@ -4,12 +4,10 @@ import { CulturaXComponent } from './cultura-x.component';
 import { CulturaXRoutingModule } from './cultura-x-routing.module';
 
 @NgModule({
-  declarations: [
-    CulturaXComponent
-  ],
-  imports: [
-    CommonModule,
-    CulturaXRoutingModule
-  ]
+    imports: [
+        CommonModule,
+        CulturaXRoutingModule,
+        CulturaXComponent
+    ]
 })
 export class CulturaXModule { }

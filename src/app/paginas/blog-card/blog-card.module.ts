@@ -8,13 +8,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
-  declarations: [
-    BlogCardComponent
-  ],
-  imports: [
-    CommonModule,
-    BlogCardRoutingModule,
-    ReactiveFormsModule
-  ]
+    imports: [
+        CommonModule,
+        BlogCardRoutingModule,
+        ReactiveFormsModule,
+        BlogCardComponent
+    ]
 })
 export class BlogCardModule { }

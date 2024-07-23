@@ -9,20 +9,17 @@ import { FooterComponent } from './compartido/footer/footer.component';
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-    BrowserAnimationsModule
-  ],
-  providers: [provideClientHydration()],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        ReactiveFormsModule,
+        BrowserAnimationsModule,
+        HeaderComponent,
+        FooterComponent
+    ],
+    providers: [provideClientHydration()],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

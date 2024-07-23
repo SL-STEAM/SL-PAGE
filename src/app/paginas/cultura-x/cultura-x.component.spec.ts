@@ -8,8 +8,8 @@ describe('CulturaXComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CulturaXComponent]
-    });
+    imports: [CulturaXComponent]
+});
     fixture = TestBed.createComponent(CulturaXComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

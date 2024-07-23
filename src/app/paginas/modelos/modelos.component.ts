@@ -7,10 +7,11 @@ import { Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-modelos',
-  templateUrl: './modelos.component.html',
-  styleUrls: ['./modelos.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-modelos',
+    templateUrl: './modelos.component.html',
+    styleUrls: ['./modelos.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true
 })
 
 
