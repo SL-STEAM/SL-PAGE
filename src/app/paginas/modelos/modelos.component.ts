@@ -1,9 +1,7 @@
-import { CarruselService } from '../../compartido/servicios/carrusel.service';
 import { FormBuilder } from '@angular/forms';
-import { Component, ElementRef, HostListener, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
-import { iif, timer } from 'rxjs';
+import { Component, ElementRef, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
@@ -11,9 +9,9 @@ import { DomSanitizer } from '@angular/platform-browser';
     templateUrl: './modelos.component.html',
     styleUrls: ['./modelos.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true
+    standalone: true,
+    imports: [RouterLink]
 })
-
 
 export class ModelosComponent implements OnInit {
   
@@ -21,7 +19,6 @@ export class ModelosComponent implements OnInit {
   @ViewChild('playButton', { static: false }) playButton?: ElementRef;
   @ViewChild('contactFormSection') contactFormSection?: ElementRef;
   @ViewChild('contactFormSection2') contactFormSection2?: ElementRef;
-
 
   scrollToForm() {
     if (this.contactFormSection) {
@@ -60,8 +57,6 @@ export class ModelosComponent implements OnInit {
   constructor(private elRef: ElementRef, private sanitizer: DomSanitizer, private router: Router, private formBuilder: FormBuilder){
 
   }
-
-
 
   cambiarA(){
     this.arquetipos = false;
