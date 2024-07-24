@@ -1,8 +1,8 @@
 import { FormBuilder } from '@angular/forms';
 import { Component, ElementRef, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
-
 import { Router, RouterLink } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
+import { NgIf } from '@angular/common'; // Importa NgIf
 
 @Component({
     selector: 'app-modelos',
@@ -10,9 +10,8 @@ import { DomSanitizer } from '@angular/platform-browser';
     styleUrls: ['./modelos.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
     standalone: true,
-    imports: [RouterLink]
+    imports: [RouterLink, NgIf] // Agrega NgIf a la lista de imports
 })
-
 export class ModelosComponent implements OnInit {
   
   @ViewChild('videoElement', { static: false }) videoElement?: ElementRef;
@@ -95,15 +94,13 @@ export class ModelosComponent implements OnInit {
   cambiarWBlanco(){
     this.whatsapp = true;
     this.whatsappColor = false;
-  }
-
+  } 
 
   cambiarFBlanco(){
     this.facebook = true;
     this.facebookColor = false;
   }
 
-  
   cambiarL(){
     this.link = false;
     this.linkColor = true;
