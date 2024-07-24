@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import Aos from 'aos';
 import { RouterLink } from '@angular/router';
+import { NgIf } from '@angular/common'; // Importa NgIf
 
 @Component({
     selector: 'app-cultura-x',
     templateUrl: './cultura-x.component.html',
     styleUrls: ['./cultura-x.component.scss'],
     standalone: true,
-    imports: [RouterLink]
+    imports: [RouterLink, NgIf] // Agrega NgIf a la lista de imports
 })
 export class CulturaXComponent implements OnInit {
   isPopup1Visible = false;
