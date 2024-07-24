@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import Aos from 'aos';
 import { RouterLink } from '@angular/router';
+import { NgIf } from '@angular/common'; // Importa NgIf
 
 @Component({
     selector: 'app-business-s',
     templateUrl: './business-s.component.html',
     styleUrls: ['./business-s.component.scss'],
     standalone: true,
-    imports: [RouterLink]
+    imports: [RouterLink, NgIf] // Agrega NgIf a la lista de imports
 })
 export class BusinessSComponent implements OnInit {
   isPopupVisible = false;

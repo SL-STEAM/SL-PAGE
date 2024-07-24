@@ -1,17 +1,17 @@
 /* Contenedor del popup */
 .popup-container {
     position: fixed; /* Para mantener el popup fijo en la pantalla */
-    top: 15%; /* Ajusta esta propiedad para mostrar el popup un poco más abajo */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, 0); /* Centra el popup completamente en pantalla */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    height: 100%; /* Ocupa toda la altura disponible */
+    top: 50px; /* Ajusta esta propiedad para mostrar el popup en la parte superior */
+    left: 0; /* Alinea el popup al borde izquierdo */
+    width: 100vw; /* Ocupa todo el ancho disponible */
+    height: 100vh; /* Ocupa toda la altura disponible */
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente oscuro */
     display: flex; /* Para alinear el contenido */
     justify-content: center; /* Centra horizontalmente */
-    align-items: flex-start; /* Alinea verticalmente al inicio */
+    align-items: center; /* Centra verticalmente */
     z-index: 1000; /* Asegura que esté encima de otros elementos */
     backdrop-filter: blur(20px); /* Aplica un filtro de desenfoque al fondo */
+    overflow: hidden; /* Oculta cualquier contenido desbordante */
 }
 
 /* Contenido del popup */
@@ -20,22 +20,54 @@
     padding: 20px; /* Espaciado interno */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    max-width: 80%; /* Ancho máximo del contenido del popup */
-    max-height: 80%; /* Altura máxima del contenido del popup */
-    overflow: auto; /* Habilita el desplazamiento si el contenido es más grande */
+    width: 80vw; /* Ancho máximo del contenido del popup */
+    max-height: 80vh; /* Altura máxima del contenido del popup */
+    overflow: hidden; /* Oculta cualquier contenido desbordante */
     display: flex; /* Habilita Flexbox */
     flex-direction: column; /* Alinea los elementos en una columna */
     justify-content: center; /* Centra verticalmente el contenido */
     align-items: center; /* Centra horizontalmente el contenido */
-    text-align: justified; /* Centra el texto */
-    top: 30%;
+}
+
+/* Contenedor de columnas */
+.columns-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Columna individual */
+.column {
+    width: 30%;
+    padding-right: 20px;
+}
+
+/* Lista sin viñetas */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0; /* Elimina márgenes adicionales */
+}
+
+/* Elementos de lista */
+li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+/* Imagen de viñeta */
+li img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
 }
 
 /* Botón de cierre del popup */
 .close-button {
     position: absolute; /* Para posicionarse absolutamente en el popup */
-    top: 0px; /* Distancia desde la parte superior */
-    right: 150px; /* Distancia desde la derecha */
+    top: 120px; /* Distancia desde la parte superior */
+    right: 145px; /* Distancia desde la derecha */
     font-size: 30px; /* Tamaño del texto */
     cursor: pointer; /* Cambia el cursor a mano para indicar que es clickeable */
 }
