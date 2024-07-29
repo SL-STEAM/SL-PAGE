@@ -43,5 +43,11 @@
         "duplicate-id-active": "off"
       }
     ]
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not firefox <= 124",
+    "not safari <= 17.4"
+  ]
 }

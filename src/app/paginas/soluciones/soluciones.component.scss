@@ -93,9 +93,15 @@ details[open] summary::after {
     .contenido {
         overflow-x: hidden;
     }
-    // .container {
-    //     margin-top: 0px !important;
-    // }
+    .fondoedificio {
+        background: url(../../../assets/imagenes/soluciones/Fondo_menu2.png); 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        width: 100%; 
+        height: 1650px !important; 
+        margin-top: 0px; 
+        position: relative;
+    }
     .fondopersonas {
         background-size: cover !important;
         width: 100% !important;
@@ -107,14 +113,12 @@ details[open] summary::after {
         flex-direction: column !important;
         margin-top: 30px !important;
         padding-top: 80px !important;
-        border: 2px solid red;
+        // border: 2px solid red;
     }
-
     .titulo {
         margin-top: 30px !important;
         font-size: 20px !important;
     }
-
     .fondoedificio {
         background-size: cover !important; 
         width: 100% !important;
@@ -133,45 +137,44 @@ details[open] summary::after {
         font-size: 22px !important;
         margin-left: 0px !important;
     }
-
     .ocul {
         visibility: hidden;
         display: none !important;
     }
     .dat {
         display: block;
-        // visibility: visible;
         padding-top: 90px;
     }
-
     .menu1 {
-        margin-top: -215% !important;
+        margin-top: -325% !important;
     }
     .menu2 {
-        margin-top: -110% !important;
+        margin-top: -215% !important;
     }
     .co-crear {
         font-size: 24px !important;
-        // border: 2px solid red;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         width: 95%;
         text-align: center;
         margin-left: 0px !important;
-        margin-top: -850px !important;
+        margin-top: -1200px !important;
     }
     .detras {
         position: absolute; 
         height: 1%; 
-        width: 35% !important; 
-        left: 20% !important; 
+        width: 95% !important; 
+        left: 2.2% !important; 
         // right: 50% !important;
-        margin-top: 120% !important; 
+        margin-top: -282% !important; 
         background-color: #4DB2B0;
     }
-
     .summary {
         font-size: 22px !important; /* Tamaño de fuente del resumen */
         font-weight: bold !important; /* Texto en negrita */
 
+    }
+    .details-container {
+        margin-top: 0px !important;
     }
 }
 
@@ -216,6 +219,8 @@ details[open] summary::after {
         margin-top: -45.5% !important; 
         background-color: #4DB2B0;
     }
+
+
 
 
 }

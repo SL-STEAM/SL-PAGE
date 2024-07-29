@@ -5,8 +5,12 @@ html {
 
 body {
   overflow-x: hidden;
-  -webkit-text-size-adjust: 100%; /* Para navegadores antiguos que aún soportan esta propiedad */
-  text-size-adjust: 100%;  
+  /* Prefijos para Safari y navegadores antiguos */
+  -webkit-text-size-adjust: 100%;
+  /* Prefijos para Firefox y otros navegadores */
+  -moz-text-size-adjust: 100%;
+  /* Propiedad estándar */
+  text-size-adjust: 100%;
 }
 
 
