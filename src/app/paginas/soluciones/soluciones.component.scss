@@ -180,12 +180,183 @@ details[open] summary::after {
 
 // Dispositivos Móviles Grandes (600px a 767px)
 @media (min-width: 600px) and (max-width: 767px) {
+    .contenido {
+        overflow-x: hidden;
+    }
+    .fondoedificio {
+        background: url(../../../assets/imagenes/soluciones/Fondo_menu2.png); 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        width: 100%; 
+        height: 1650px !important; 
+        margin-top: 0px; 
+        position: relative;
+    }
+    .fondopersonas {
+        background-size: cover !important;
+        width: 100% !important;
+        height: 280px !important;
+        margin-top: -15px !important;
+    }
+    .mapa-container-c {
+        display: flex !important; 
+        flex-direction: column !important;
+        margin-top: 30px !important;
+        padding-top: 80px !important;
+        // border: 2px solid red;
+    }
+    .titulo {
+        margin-top: 30px !important;
+        font-size: 20px !important;
+    }
+    .fondoedificio {
+        background-size: cover !important; 
+        width: 100% !important;
+        height: 800px;
+    }
+    .manos {
+        width: 50% !important;
+        margin-right: 0px !important;
+    }
+    .align-items-center {
+        justify-content: center;
+        align-items: center;
+    }
+    .text-left {
+        text-align: center !important;
+        font-size: 22px !important;
+        margin-left: 0px !important;
+    }
+    .ocul {
+        visibility: hidden;
+        display: none !important;
+    }
+    .dat {
+        display: block;
+        padding-top: 90px;
+    }
+    .menu1 {
+        margin-top: -325% !important;
+    }
+    .menu2 {
+        margin-top: -215% !important;
+    }
+    .co-crear {
+        font-size: 24px !important;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        width: 95%;
+        text-align: center;
+        margin-left: 0px !important;
+        margin-top: -1200px !important;
+    }
+    .detras {
+        position: absolute; 
+        height: 1%; 
+        width: 95% !important; 
+        left: 2.2% !important; 
+        // right: 50% !important;
+        margin-top: -282% !important; 
+        background-color: #4DB2B0;
+    }
+    .summary {
+        font-size: 22px !important; /* Tamaño de fuente del resumen */
+        font-weight: bold !important; /* Texto en negrita */
 
+    }
+    .details-container {
+        margin-top: 0px !important;
+    }
 }
 
 // Tabletas (768px a 1024px)
 @media (min-width: 768px) and (max-width: 1024px) {
+    .contenido {
+        overflow-x: hidden;
+    }
+    .fondoedificio {
+        background: url(../../../assets/imagenes/soluciones/Fondo_menu2.png); 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        width: 100% !important; 
+        height: 500px !important; 
+        margin-top: 0px; 
+        position: relative;
+    }
+    .fondopersonas {
+        background-size: cover !important;
+        width: 100% !important;
+        height: 480px !important;
+        margin-top: -25px !important;
+    }
+    .mapa-container-c {
+        display: flex !important; 
+        // flex-direction: column !important;
+        margin-top: 45px !important;
+        padding-top: 25px !important;
+        padding-left: 45px;
+        // border: 2px solid red;
+    }
+    .titulo {
+        margin-top: 20px !important;
+        font-size: 30px !important;
+        font-weight: 800;    
+    }
+    .aport {
+        margin-left: -80px !important; 
+        font-size: 19px !important;
+    }
+    .habi {
+        margin-left: 15px !important; 
+        font-size: 19px !important;
+    }
+    .transi { 
+        margin-left: -80px !important; 
+        font-size: 19px !important;
+    }
+    .transf {
+        margin-left: 230px !important; 
+        text-align: right;
+        font-size: 19px !important;
+    }
 
+    .divHabi {
+        margin-top: -10px !important;
+    }
+    .divTransi {
+        margin-top: -10px !important;
+    }
+    .fondoedificio {
+        background-size: cover !important; 
+        width: 100% !important;
+        height: 1250px !important;
+        margin-top: -20px !important;
+    }
+    .menu1 {
+        margin-top: -138% !important;
+    }
+    .menu2 {
+        margin-top: -138% !important;
+    }
+    .co-crear {
+        font-size: 30px !important;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        width: 95%;
+        text-align: center;
+        margin-left: 0px !important;
+        margin-top: -850px !important;
+    }
+    .detras {
+        position: absolute; 
+        height: 1%; 
+        width: 65% !important; 
+        left: 17.5% !important; 
+        // right: 50% !important;
+        margin-top: -109% !important; 
+        background-color: #4DB2B0;
+    }
+    .details-container {
+        margin-top: 0px !important;
+    }
 }
 
 // Portátiles y Escritorios Pequeños (1025px a 1366px)
@@ -219,9 +390,6 @@ details[open] summary::after {
         margin-top: -45.5% !important; 
         background-color: #4DB2B0;
     }
-
-
-
 
 }
 
