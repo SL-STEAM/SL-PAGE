@@ -22,6 +22,9 @@ export class BusinessSComponent implements OnInit {
       mirror: true // Si la animación debe ocurrir en el scroll de retroceso
     });
     window.addEventListener('load', Aos.refresh);
+
+        // Desplaza la vista al inicio cuando se carga el componente
+        window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   openPopup() {
